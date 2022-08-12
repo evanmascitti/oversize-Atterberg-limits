@@ -1,0 +1,17 @@
+test_type,date,experiment_name,sample_name,batch_sample_number,tin_number,blow_count,tin_w_wet_sample,tin_w_OD_sample,tin_tare_set,comments
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_39,1,28,32,15.082,13.902,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_39,1,29,29,14.363,13.294,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_39,1,30,28,15.413,14.175,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_39,1,31,22,13.492,12.550,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_40,2,32,33,17.477,15.265,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_40,2,33,26,15.353,13.545,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_40,2,34,24,17.485,15.217,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_40,2,35,21,19.590,16.838,2020-05-24,-
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_42,4,36,27,14.439,12.757,2020-05-24,tested out of order- tin numbers are correct!
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_42,4,37,22,14.849,13.035,2020-05-24,tested out of order- tin numbers are correct!
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_42,4,38,22,15.819,13.755,2020-05-24,tested out of order- tin numbers are correct!
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_42,4,39,19,16.921,14.575,2020-05-24,tested out of order- tin numbers are correct!
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_41,3,40,30,17.775,16.360,2020-05-24,tested out of order- tin numbers are correct!
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_41,3,41,28,14.492,13.502,2020-05-24,tested out of order- tin numbers are correct!
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_41,3,42,24,19.190,17.530,2020-05-24,tested out of order- tin numbers are correct!
+LL,2021-02-02,Quickcrete_Cu_Casselman,mix_41,3,43,43,17.212,15.857,2020-05-24,tested out of order- tin numbers are correct!

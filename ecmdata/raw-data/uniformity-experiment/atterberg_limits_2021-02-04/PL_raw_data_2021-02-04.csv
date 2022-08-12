@@ -1,0 +1,7 @@
+test_type,date,experiment_name,sample_name,batch_sample_number,replication,tin_number,tin_w_wet_sample,tin_w_OD_sample,tin_tare_set,comments
+PL,2021-02-04,Quickcrete_Cu_Casselman,mix_36,1,1,1,11.761,11.051,2020-05-24,-
+PL,2021-02-04,Quickcrete_Cu_Casselman,mix_36,1,2,2,12.547,11.707,2020-05-24,-
+PL,2021-02-04,Quickcrete_Cu_Casselman,mix_36,1,3,3,11.149,10.530,2020-05-24,-
+PL,2021-02-04,Quickcrete_Cu_Casselman,mix_37,2,1,4,12.686,11.997,2020-05-24,-
+PL,2021-02-04,Quickcrete_Cu_Casselman,mix_37,2,2,5,13.336,12.569,2020-05-24,-
+PL,2021-02-04,Quickcrete_Cu_Casselman,mix_37,2,3,6,12.605,11.935,2020-05-24,-

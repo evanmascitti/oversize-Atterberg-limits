@@ -1,0 +1,36 @@
+---
+title: "latex kable"
+mainfont: "Roboto"
+mathfont: "Fira Math Regular"
+toc: false
+linestretch: 1.2
+output: 
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    includes:
+      in_header: preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F,
+                      fig.align = 'center', out.width = '90%')
+knitr::opts_knit$set(root.dir = here::here())
+```
+
+```{r load-packages}
+library(magrittr)
+```
+
+Here's some text 
+
+```{r experiment-1-d50-ANOVA}
+source(
+  here::here(
+  'src/R/table-generation/experiment-1-d50-ANOVA-table.R')
+  )
+
+if(knitr::is_latex_output()){experiment_1_d50_anova_tables$latex_kable}
+
+```
+
+Everything was getting messed with by \LaTeX{}

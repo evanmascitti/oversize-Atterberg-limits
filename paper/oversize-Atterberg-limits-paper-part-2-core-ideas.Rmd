@@ -1,0 +1,38 @@
+---
+title:  "Coarse additions affect the plasticity and toughness of soil mixtures, Part II: Sand angularity and sand-size uniformity"
+date: "last compiled `r ecmfuns::ecm_timestamp()`"
+mainfont: Roboto
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: false
+    includes:
+      in_header: preamble.tex
+  officedown::rdocx_document:
+    reference_docx: "oversizeAttLims-paper_word-doc-template.docx"
+    number_sections: false
+    tables:
+      caption:
+        pre: 'Table '
+bibliography: [library.bib, packages.bib]
+csl: soil-science-society-of-america-journal.csl
+linestretch: 1.5
+links-as-notes: false
+papersize: letter
+link-citations: true
+urlcolor: blue
+linkcolor: blue
+toccolor: blue
+mathfont: Fira Math Regular
+toc: false
+---
+
+
+# Core ideas 
+
+1. Sand angularity has little affect on the liquid and plastic limits of sand-clay mixtures
+
+1. For equivalent sand content, the mixtures produced with non-uniform sand had higher liquid limits but similar plastic limits. 
+
+1. Sand-clay mixtures produced using a non-uniform sand required less clay and more water to yield a soil having measurable plasticity, compared to mixes produced using uniform sand with the same mean particle size.
+1. 

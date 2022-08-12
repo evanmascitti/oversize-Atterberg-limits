@@ -1,0 +1,81 @@
+---
+title: "Transitional fines content as a function of water content, G~s~ of sand and clay, and void ratio of sand"
+date: "derived 2022-05-06"
+---
+
+
+To compute the TFC, one must know _either_ water content and also either the bulk density or effective saturation. 
+If density is known, S~e~ can be computed using the water content.
+In the case of the PL, the density is _not_ known, so one must assume a value for S~e~.
+
+
+There are basically three parts to this derivation:
+
+1. Void ratio of the sand (this must be measured or assumed)^[note that it is important to use void ratio $e$ and not porosity $n$. This is because $n$ is normalized to a total soil volume of 1, whereas $e$ is computed using absolute volumes of each phase derived from the mass and specific gravity. If you must use $n$, it is relatively straightforward to substitute $e = \frac{n}{1-n}$].
+
+2. Void volume must be computed from S~e~ and water content
+
+3. Substitute for $V_v$ with the second part into the first to arrive at a formula for $m_{sa}$. I prefer to use $m_{sa}$ rather than $m_{c}$ because it is commonly how people think about this in baseball field soils; we think of the % sand, not the % fines.
+
+
+___
+
+Start with the formula for void ratio, and assume that the void ratio of the sand is equal to the void ratio of the soil. 
+This is a good assumption because we are going to account for the volumes of all three of the three other phases (clay solids, water, and air).
+
+
+$$e = e_{sa} = \frac{V_{voids}}{V_{sand}} = \frac{V_{v} + V_{c}}{V_{sa}}$$
+We must now immediately jump to the formula for total voids because we need to substitute for $V_v$.
+
+
+$$S_{e}=\frac{V_w}{V_v}$$
+
+$$V_{v} = \frac{V_{w}}{S_{e}}$$
+Substitute in for the volume of water, which we can calculate from the 
+known or assumed water content.
+
+$$V_{v} = \frac{\frac{m_w}{G_w}}{S_e}$$
+Great. 
+Now we are going to return to the equation for $e_{sa}$.
+We need to substitute for $V_{c}$ so that both the sand volume and clay volume are expressed in terms of the sand mass, which is what we want to calculate.
+
+
+$$e = \frac{V_{v} + V_{c}}{V_{sa}} = \frac{V_{v} +  \frac{1 - m_{sa}}{G_c}  }{\frac{m_{sa}}{G_{sa}}}$$
+
+Next we will do some re-arranging to get $m_{sa}$ all by itself.
+
+First multiply the left side by the denominator of the right side:
+
+$$\frac{e_{sa} m_{sa}}{G_{sa}} = V_v + \frac{1 - m_{sa}}{G_c}$$
+Multiply both sides by $G_c$ to get it out of the denominator on the right side:
+
+
+$$\frac{e_{sa} m_{sa} G_c }{G_{sa}} = V_v G_c + (1 - m_{sa})$$
+Add $m_{sa}$ to both sides:
+
+$$\frac{e_{sa} m_{sa} G_c }{G_{sa}} + m_{sa} = V_v G_c + 1$$
+
+Pull out the $m_{sa}$ term from the left side:
+
+$$m_{sa} \left( \frac{e_{sa} G_c}{G_{sa}} + 1 \right)  + m_{sa} = V_v G_c + 1$$
+And now we can isolate $m_{sa}$:
+
+$$m_{sa} = \frac{1 + V_v G_c}{1 + \frac{e_{sa} G_c}{G_{sa}}}$$
+
+Finally, we will sub the formula for the void volume $V_v$ into the equation above:
+
+$$m_{sa} = \frac{1 + V_v G_c}{1 + \frac{e_{sa} G_c}{G_{sa}}}$$
+
+
+$$m_{sa} = \frac{1 +  \frac{\frac{m_w}{G_w}}{S_e}  G_c}{1 + \frac{e_{sa} G_c}{G_{sa}}}$$
+
+
+$$m_{sa} = \frac{1 +  \frac{\frac{m_w G_c }{G_w}}{S_e}}{1 + \frac{e_{sa} G_c}{G_{sa}}}$$
+
+
+
+Because $m_w$ is the same as $w \cdot m_s$ and everything is normalzed to a soil mass of 1, the $m_w$ term is identical to the water content $w$.
+Now we have a useful equation!
+Every parameter is known besides $m_{sa}$.
+
+$$m_{sa} = \frac{1 +  \frac{\frac{w G_c }{G_w}}{S_e}}{1 + \frac{e_{sa} G_c}{G_{sa}}}$$

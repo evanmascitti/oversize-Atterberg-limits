@@ -1,0 +1,13 @@
+date,experiment_name,protocol_ID,sample_name,replication,batch_sample_number,bouyoucos_cylinder_number,Gs,beaker_tare_set,microns,beaker_number,beaker_mass_w_OD_sample,comments
+2021-03-06,oversizeALims,1,Casselman_clay,1,1,1,2.7,2021-01-15,20,13,49.17,-
+2021-03-06,oversizeALims,1,Casselman_clay,1,1,1,2.7,2021-01-15,5,14,49.775,-
+2021-03-06,oversizeALims,1,Casselman_clay,1,1,1,2.7,2021-01-15,2,15,49.178,-
+2021-03-06,oversizeALims,1,Casselman_clay,1,1,1,2.7,2021-01-15,0.2,16,48.867,-
+2021-03-06,oversizeALims,1,Casselman_clay,2,2,2,2.7,2021-01-15,20,17,51.039,-
+2021-03-06,oversizeALims,1,Casselman_clay,2,2,2,2.7,2021-01-15,5,18,48.33,-
+2021-03-06,oversizeALims,1,Casselman_clay,2,2,2,2.7,2021-01-15,2,19,49.264,-
+2021-03-06,oversizeALims,1,Casselman_clay,2,2,2,2.7,2021-01-15,0.2,20,50.949,-
+2021-03-06,oversizeALims,1,Casselman_clay,3,3,3,2.7,2021-01-15,20,21,50.224,-
+2021-03-06,oversizeALims,1,Casselman_clay,3,3,3,2.7,2021-01-15,5,22,49.585,-
+2021-03-06,oversizeALims,1,Casselman_clay,3,3,3,2.7,2021-01-15,2,23,48.751,-
+2021-03-06,oversizeALims,1,Casselman_clay,3,3,3,2.7,2021-01-15,0.2,24,49.187,-

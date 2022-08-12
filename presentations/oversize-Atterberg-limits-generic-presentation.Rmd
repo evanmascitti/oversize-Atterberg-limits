@@ -1,0 +1,122 @@
+---
+title: "Leave the coarse grains in there! "
+author: "Evan C. Mascitti"
+institute: "Penn State University"
+date: "slides last updated ``r format(Sys.time(), format = '%a %b %e %Y, %I%:%M %p')``"
+output:
+  ecmfuns::ecm_xaringan:
+    lib_dir: libs
+    css: ["ecm-16x9-theme.css", "default", "default-fonts"]
+---
+
+
+
+# Washing samples is a lot of work
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(message = F,
+                      warning= F,
+                      echo = F,
+                      out.width = "100%",
+                      fig.asp = 9/16,
+                      fig.align = 'center',
+                      dev = 'svglite',
+                      fig.retina = 3)
+# knitr::opts_knit$set(root.dir = 'presentations')
+```
+
+- if we can avoid it, that would be better
+
+---
+class: center, middle, big-table
+
+```{r usga-sand-sizes-table}
+# have to set working directory for this chunk to source the script 
+#setwd(here::here())
+source(here::here('src/R/table-generation/USGA-sieve-sizes-table.R'))
+usga_sand_sizes_html_kable
+```
+
+
+---
+background-image: url('./presentation-figs/experiment-1-particle-size-curves.png')
+background-size: contain
+
+---
+background-image: url('./presentation-figs/experiment-1-atterberg-limit-facets.png')
+background-size: contain
+
+???
+
+- Sand > 0.35 mm basically all behaves the same 
+- anything finer gets progressively worse 
+- the more H~2~O in the mixture, the lower the toughness
+- for high toughness, best to dry the soil down as much as possible
+- coarser sands won't 'get in the way' and let the clay be itself
+
+
+---
+background-image: url('./presentation-figs/experiment-1-estimated-toughness.png')
+background-size: contain
+
+---
+background-image: url('./presentation-figs/experiment-1-atterberg-limits-vs-d50-faceted-by-sand-percent.png')
+background-size: contain
+
+---
+background-image: url('./presentation-figs/experiment-1-atterberg-limits-slopes-vs-d50-by-sand-percent.png')
+background-size: contain
+
+---
+
+---
+background-image: url('./presentation-figs/experiment-1-d50-effect-size.png')
+background-size: contain
+
+---
+class: center, middle, med-table 
+```{r experiment-2-anova-table}
+source(here::here('src/R/table-generation/shape-experiment-ANOVA-table.R'))
+shape_experiment_anova_tables$html_kable
+```
+
+---
+background-image: url('./presentation-figs/experiment-2-atterberg-limit-facets.png')
+background-size: contain
+
+---
+background-image: url('./presentation-figs/uniformity-experiment-particle-size-curves.png')
+background-size: contain
+
+
+---
+
+```{r uniformity-experiment-sand-porosity-table}
+source(
+  here::here(
+    'src/R/table-generation/uniformity-experiment-sand-porosity-table.R'
+  )
+)
+
+uniformity_experiment_sand_porosity_tables$html_kable
+```
+
+---
+
+background-image: url('./presentation-figs/uniformity-experiment-atterberg-limit-facets.png')
+background-size: contain
+
+---
+
+background-image: url('./presentation-figs/experiment-1-matrix-water-contents-at-LL-and-PL.png')
+background-size: contain
+
+---
+class: center, middle, x3
+
+Thank you!
+
+
+

@@ -1,0 +1,612 @@
+make: Nothing to be done for 'all'.
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Jun 18 14:43:02 2021
+
+# Variables
+
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+SYSTEMDRIVE = C:
+# environment
+PYTHONIOENCODING = utf-8
+# environment
+USERPROFILE = C:\Users\ecm200
+# environment
+MOZ_CRASHREPORTER_DATA_DIRECTORY = C:\Users\ecm200\AppData\Roaming\Mozilla\Firefox\Crash Reports
+# environment
+ProgramW6432 = C:\Program Files
+# environment
+TMPDIR = C:\Users\ecm200\AppData\Local\Temp
+# environment
+LOCALAPPDATA = C:\Users\ecm200\AppData\Local
+# environment
+MINGW_PREFIX = E:/Git/mingw64
+# environment
+SYSTEMROOT = C:\WINDOWS
+# makefile (from 'mf-vars.mk', line 78)
+CLEANED_RDS_DIR = ecmdata/derived-data/cleaned-rds-files
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+MOZ_CRASHREPORTER_STRINGS_OVERRIDE = C:\Program Files\Mozilla Firefox\browser\crashreporter-override.ini
+# default
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# environment
+USERDNSDOMAIN = AD.PSU.EDU
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+ACLOCAL_PATH = E:\Git\mingw64\share\aclocal;E:\Git\usr\share\aclocal
+# environment
+ORIGINAL_TEMP = C:/Users/ecm200/AppData/Local/Temp
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# default
+.VARIABLES := 
+# environment
+PWD = E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+HOSTNAME = A8-ES-ECM200
+# environment
+PS1 = \[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ 
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile (from 'mf-vars.mk', line 41)
+TABLE_GENERATION_FILES = $(notdir $(wildcard ./src/R/table-generation/*.R) )
+# automatic
+%F = $(notdir $%)
+# environment
+SSH_ASKPASS = E:/Git/mingw64/libexec/git-core/git-gui--askpass
+# environment
+LANG = en_US.UTF-8
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\ecm200\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# environment
+ChocolateyInstall = C:\ProgramData\chocolatey
+# makefile
+MAKEFLAGS = nprR --warn-undefined-variables
+# environment
+PKG_CONFIG_PATH = E:\Git\mingw64\lib\pkgconfig;E:\Git\mingw64\share\pkgconfig
+# makefile
+CURDIR := E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims
+# environment
+MSYSTEM_CARCH = x86_64
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+KEYSHOT7 = C:\Users\Public\Documents\KeyShot 7
+# environment
+MFLAGS = -nprR --warn-undefined-variables
+# makefile (from 'mf-vars.mk', line 6)
+.SHELLFLAGS := -eu -o pipefail -c
+# environment
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'mf-vars.mk', line 1)
+MAKEFILE_LIST := Makefile mf-vars.mk
+# automatic
+@F = $(notdir $@)
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+ProgramFiles(x86) = C:\Program Files (x86)
+# environment
+MINGW_CHOST = x86_64-w64-mingw32
+# automatic
+*F = $(notdir $*)
+# makefile (from 'mf-vars.mk', line 47)
+CSS_FILES = $(shell find -name "*.css" -type f)
+# environment
+MANPATH = E:\Git\mingw64\local\man;E:\Git\mingw64\share\man;E:\Git\usr\local\man;E:\Git\usr\share\man;E:\Git\usr\man;E:\Git\share\man
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+OneDrive = E:\OneDrive - The Pennsylvania State University
+# environment
+RS_SHARED_SECRET = 63341846741
+# default
+MAKE_HOST := Windows32
+# environment
+MOZ_CRASHREPORTER_RESTART_ARG_0 = C:\Program Files\Mozilla Firefox\firefox.exe
+# environment
+INFOPATH = E:\Git\usr\local\info;E:\Git\usr\share\info;E:\Git\usr\info;E:\Git\share\info
+# makefile
+SHELL = E:/Git/usr/bin/sh.exe
+# environment
+ORIGINAL_PATH = E:\Git\mingw64\bin;E:\Git\usr\bin;C:\Users\ecm200\bin;C:\Program Files\R\R-4.1.0\bin\x64;C:\Program Files\Mozilla Firefox;C:\Python39\Scripts;C:\Python39;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\SASHome\SASFoundation\9.4\ets\sasexe;C:\Program Files\SASHome\Secure\ccme4;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Program Files\Pandoc;C:\ProgramData\chocolatey\bin;C:\Program Files\Inkscape\bin;E:\Git\cmd;C:\Program Files\dotnet;C:\Users\ecm200\AppData\Local\Microsoft\WindowsApps;C:\Users\ecm200\AppData\Local\Programs\MiKTeX\miktex\bin\x64;C:\Program Files\gs\gs9.53.3\bin;C:\Program Files\SASHome\SASFoundation\9.4\sas.exe;C:\Users\ecm200\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\R\R-4.0.5\bin\x64;C:\Users\ecm200\AppData\Local\Microsoft\WindowsApps;C:\Users\ecm200\AppData\Roaming\TinyTeX\bin\win32;E:\onedrive-psu\Baseball-misc\april-study;E:\Git\usr\bin;C:\Program Files\RStudio\bin\msys-ssh-1000-18
+# environment
+QT_D3DCREATE_MULTITHREADED = 1
+# environment
+HOMEPATH = \Users\ecm200
+# environment
+SHLVL = 1
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# makefile (from 'mf-vars.mk', line 72)
+R_TABS_DIR = src/R/tab-generation
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Users\ecm200\bin;E:\Git\mingw64\bin;E:\Git\usr\local\bin;E:\Git\usr\bin;E:\Git\usr\bin;E:\Git\mingw64\bin;E:\Git\usr\bin;C:\Users\ecm200\bin;C:\Program Files\R\R-4.1.0\bin\x64;C:\Program Files\Mozilla Firefox;C:\Python39\Scripts;C:\Python39;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\SASHome\SASFoundation\9.4\ets\sasexe;C:\Program Files\SASHome\Secure\ccme4;C:\Program Files\SASHome\x86\Secure\ccme4;C:\Program Files\Pandoc;C:\ProgramData\chocolatey\bin;C:\Program Files\Inkscape\bin;E:\Git\cmd;C:\Program Files\dotnet;C:\Users\ecm200\AppData\Local\Microsoft\WindowsApps;C:\Users\ecm200\AppData\Local\Programs\MiKTeX\miktex\bin\x64;C:\Program Files\gs\gs9.53.3\bin;C:\Program Files\SASHome\SASFoundation\9.4\sas.exe;C:\Users\ecm200\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\R\R-4.0.5\bin\x64;C:\Users\ecm200\AppData\Local\Microsoft\WindowsApps;C:\Users\ecm200\AppData\Roaming\TinyTeX\bin\win32;E:\onedrive-psu\Baseball-misc\april-study;E:\Git\usr\bin;C:\Program Files\RStudio\bin\msys-ssh-1000-18;E:\Git\usr\bin\vendor_perl;E:\Git\usr\bin\core_perl;C:\Program Files\SASHome\SASFoundation\9.4\
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = A8-ES-ECM200
+# environment
+R_HOME = C:\PROGRA~1\R\R-41~1.0
+# default
+MAKEFILES := 
+# makefile (from 'mf-vars.mk', line 45)
+RMD_PRESENTATION_FILES = $(wildcard presentations/*.Rmd)
+# automatic
+^F = $(notdir $^)
+# environment
+MINGW_PACKAGE_PREFIX = mingw-w64-x86_64
+# environment
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\DC11
+# environment
+CLIENTNAME = LAPTOP-26U9USQC
+# environment
+RS_LOCAL_PEER = \\.\pipe\37859-rsession
+# environment
+RS_INITIAL_WD = E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims
+# environment
+USERNAME = ecm200
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+ChocolateyLastPathUpdate = 132608034505417310
+# environment
+MSYSTEM_CHOST = x86_64-w64-mingw32
+# environment
+OneDriveCommercial = E:\OneDrive - The Pennsylvania State University
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'mf-vars.mk', line 42)
+RDS_TABLES = ./tables/$(TABLE_GENERATION_FILES:.R=.rds )
+# automatic
++F = $(notdir $+)
+# environment
+CONFIG_SITE = E:/Git/etc/config.site
+# environment
+USERDOMAIN = PSU
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth DetectorsShimLog DetectorsWin7
+# makefile (from 'mf-vars.mk', line 37)
+PNG_ONLY_FIGS = 
+# environment
+MSYSTEM_PREFIX = E:/Git/mingw64
+# makefile
+.DEFAULT_GOAL := all
+# environment
+sqlite3 = C:\Users\ecm200\OneDrive - The Pennsylvania State University\PSU2019-present\Classes\ecol-597-programming-for-ecologists\SQL
+# environment
+DISPLAY = needs-to-be-defined
+# default
+MAKE_VERSION := 4.3
+# environment
+MSYS = enable_pcon
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+USERDOMAIN_ROAMINGPROFILE = PSU
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+ProgramData = C:\ProgramData
+# environment
+_ = C:/ProgramData/chocolatey/bin/make
+# environment
+APPDATA = C:\Users\ecm200\AppData\Roaming
+# environment
+MOZ_CRASHREPORTER_PING_DIRECTORY = C:\Users\ecm200\AppData\Roaming\Mozilla\Firefox\Pending Pings
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# makefile (from 'mf-vars.mk', line 71)
+R_FIGS_DIR = src/R/fig-generation
+# default
+MAKE_TERMERR := CONOUT$$
+# environment
+DriverData = C:\Windows\System32\Drivers\DriverData
+# environment
+RTOOLS40_HOME = C:\rtools40
+# makefile (from 'mf-vars.mk', line 69)
+R_DATA_GENERATION_DIR = src/R/data-generation
+# environment
+MSYSTEM = MINGW64
+# environment
+HOME = C:\Users\ecm200
+# makefile (from 'mf-vars.mk', line 46)
+HTML_PRESENTATIONS = $(RMD_PRESENTATION_FILES:Rmd=html)
+# makefile (from 'mf-vars.mk', line 68)
+R_DATA_CLEANING_DIR = src/R/data-cleaning
+# environment
+EXEPATH = E:\Git\bin
+# environment
+CommonProgramW6432 = C:\Program Files\Common Files
+# environment
+TEMP = C:\Users\ecm200\AppData\Local\Temp
+# environment
+TERM = xterm-256color
+# makefile (from 'mf-vars.mk', line 54)
+CLEANED_RDS_FILES = $(shell cat ./ecmdata/derived-data/cleaned-rds-files/cleaned-rds-files-index.txt)
+# default
+.RECIPEPREFIX := 
+# environment
+ORIGINAL_TMP = C:/Users/ecm200/AppData/Local/Temp
+# automatic
+<F = $(notdir $<)
+# environment
+PLINK_PROTOCOL = ssh
+# environment
+PVIEW_KEYSHOT7_HOME = C:\Program Files\KeyShot7\bin\
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = RDP-Tcp#0
+# environment
+MOZ_CRASHREPORTER_EVENTS_DIRECTORY = C:\Users\ecm200\AppData\Roaming\Mozilla\Firefox\Profiles\vu92v3ao.default-release\crashes\events
+# makefile (from 'mf-vars.mk', line 38)
+IMAGE_FIGS = ./figs/png/image-figs/sand-photo-micrographs.png
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = a505
+# makefile (from 'mf-vars.mk', line 17)
+R_SCRIPT = Rscript --no-save --no-restore --no-site-file --verbose
+# makefile (from 'mf-vars.mk', line 35)
+PDF_FIGS_DIR = ./figs/pdf
+# makefile (from 'mf-vars.mk', line 36)
+PDF_FIGS = $(shell Rscript --vanilla src/R/helpers/figs-to-build.R)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+# variable set hash-table stats:
+# Load=143/1024=14%, Rehash=0, Collisions=15/225=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# src/R/fig-generation (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims/src/R/fig-generation, mtime 1624035374): 4 files, no impossibilities so far.
+# src/R/tab-generation (key (null), mtime 0): No files, 1 impossibilities.
+# paper (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims/paper, mtime 1624041540): 6 files, no impossibilities so far.
+# presentations/libs/remark-css (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims/presentations/libs/remark-css, mtime 1624041503): 4 files, no impossibilities so far.
+# ./src/R/table-generation (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims/src/R/table-generation, mtime 1624036630): 3 files, no impossibilities.
+# presentations (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims/presentations, mtime 1624041503): 8 files, no impossibilities.
+# . (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims, mtime 1624041639): 32 files, no impossibilities.
+# ./photos-videos-screenshots/sand-photo-micrographs (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims/photos-videos-screenshots/sand-photo-micrographs, mtime 1624034573): 4 files, no impossibilities.
+# tables (key E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeAttLims/tables, mtime 1624037939): No files, no impossibilities so far.
+
+# 61 files, 1 impossibilities in 9 directories.
+
+# Implicit Rules
+
+presentations/%.html: presentations/%.Rmd presentations/ecm-16x9-theme.css presentations/extra-css.css presentations/libs/remark-css/default-fonts.css presentations/libs/remark-css/default.css tables/USGA-sieve-sizes-table.rds figs tables
+#  recipe to execute (from 'Makefile', line 26):
+	$(R_SCRIPT) -e "rmarkdown::render('$<')"
+
+paper/%.pdf: paper/%.Rmd tables/USGA-sieve-sizes-table.rds figs tables
+#  recipe to execute (from 'Makefile', line 30):
+	$(R_SCRIPT) -e "rmarkdown::render('$<')"
+
+figs/pdf/%.pdf: src/R/fig-generation/%-fig.R library.bib
+#  recipe to execute (from 'Makefile', line 37):
+	$(R_SCRIPT) $<
+	rm Rplots.pdf
+
+tables/%.rds: src/R/tab-generation/%.R
+#  recipe to execute (from 'Makefile', line 66):
+	$(R_SCRIPT) $< $@
+
+# 4 implicit rules, 0 (0.0%) terminal.
+# Files
+
+.ONESHELL:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+presentations/oversize-Atterberg-limits.html: presentations/oversize-Atterberg-limits.Rmd presentations/ecm-16x9-theme.css presentations/extra-css.css presentations/libs/remark-css/default-fonts.css presentations/libs/remark-css/default.css tables/USGA-sieve-sizes-table.rds figs tables
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'oversize-Atterberg-limits'
+#  Last modified 2021-06-18 14:38:23
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 26):
+	$(R_SCRIPT) -e "rmarkdown::render('$<')"
+
+# Not a target:
+library.bib:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:11:48
+#  File has been updated.
+#  Successfully updated.
+
+figs/png/image-figs/sand-photo-micrographs.png: src/R/fig-generation/sand-photo-micrographs-fig-PNG-ONLY.R photos-videos-screenshots/sand-photo-micrographs/01-Mancino-angular-photomicrograph.png photos-videos-screenshots/sand-photo-micrographs/02-granusil-photomicrograph.png
+#  Implicit rule search has not been done.
+#  Last modified 2021-06-18 13:42:33
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 54):
+	$(R_SCRIPT) $< $@
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:40:39
+#  File has been updated.
+#  Successfully updated.
+
+paper: paper/oversizeAttLims-paper.pdf
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:39:00
+#  File has been updated.
+#  Successfully updated.
+
+.DELETE_ON_ERROR:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+photos-videos-screenshots/sand-photo-micrographs/02-granusil-photomicrograph.png:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 12:34:40
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+presentations/ecm-16x9-theme.css:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-05 18:29:47
+#  File has been updated.
+#  Successfully updated.
+
+ecmdata/derived-data/cleaned-rds-files/experiment-2-tidy-atterberg-limits-cleaned-data.rds: src/R/data-cleaning/mancino-porcelain-att-lims-cleaning.R
+#  Implicit rule search has not been done.
+#  Last modified 2021-06-05 18:08:57
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 85):
+	$(R_SCRIPT) $<
+
+tables/USGA-sieve-sizes-table.rds: ecmdata/metadata/USGA-sieve-sizes.csv
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:38:22
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/R/fig-generation/experiment-1-atterberg-limit-facets-fig.R:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-04 13:53:44
+#  File has been updated.
+#  Successfully updated.
+
+figs: ecmdata/derived-data/cleaned-rds-files/experiment-1-tidy-atterberg-limits-cleaned-data.rds ecmdata/derived-data/cleaned-rds-files/experiment-2-tidy-atterberg-limits-cleaned-data.rds ecmdata/derived-data/cleaned-rds-files/experiment-3-tidy-atterberg-limits-cleaned-data.rds figs/pdf/experiment-1-atterberg-limit-facets.pdf figs/pdf/experiment-3-atterberg-limit-facets.pdf figs/png/image-figs/sand-photo-micrographs.png
+#  Implicit rule search has been done.
+#  Last modified 2021-06-04 14:03:37
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+figs/pdf/experiment-1-atterberg-limit-facets.pdf: src/R/fig-generation/experiment-1-atterberg-limit-facets-fig.R library.bib ecmdata/derived-data/cleaned-rds-files/experiment-1-tidy-atterberg-limits-cleaned-data.rds
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'experiment-1-atterberg-limit-facets'
+#  Last modified 2021-06-18 14:13:22
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 37):
+	$(R_SCRIPT) $<
+	rm Rplots.pdf
+
+all: presentations paper
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+photos-videos-screenshots/sand-photo-micrographs/01-Mancino-angular-photomicrograph.png:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 12:35:42
+#  File has been updated.
+#  Successfully updated.
+
+presentations: presentations/oversize-Atterberg-limits.html
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:38:23
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+presentations/extra-css.css:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-04 13:50:43
+#  File has been updated.
+#  Successfully updated.
+
+ecmdata/derived-data/cleaned-rds-files/experiment-1-tidy-atterberg-limits-cleaned-data.rds: src/R/data-cleaning/mancino-porcelain-att-lims-cleaning.R
+#  Implicit rule search has not been done.
+#  Last modified 2021-06-05 18:08:57
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 81):
+	$(R_SCRIPT) $<
+
+# Not a target:
+src/R/fig-generation/experiment-3-atterberg-limit-facets-fig.R:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-17 09:58:28
+#  File has been updated.
+#  Successfully updated.
+
+tables: ecmdata/derived-data/cleaned-rds-files/experiment-1-tidy-atterberg-limits-cleaned-data.rds ecmdata/derived-data/cleaned-rds-files/experiment-2-tidy-atterberg-limits-cleaned-data.rds ecmdata/derived-data/cleaned-rds-files/experiment-3-tidy-atterberg-limits-cleaned-data.rds tables/USGA-sieve-sizes-table.rds
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 13:38:59
+#  File has been updated.
+#  Successfully updated.
+
+paper/oversizeAttLims-paper.pdf: paper/oversizeAttLims-paper.Rmd tables/USGA-sieve-sizes-table.rds figs tables
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'oversizeAttLims-paper'
+#  Last modified 2021-06-18 14:39:00
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(R_SCRIPT) -e "rmarkdown::render('$<')"
+
+# Not a target:
+src/R/fig-generation/sand-photo-micrographs-fig-PNG-ONLY.R:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 13:41:30
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+presentations/libs/remark-css/default-fonts.css:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:38:23
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/R/data-cleaning/qc-cu-cleaning.R:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-05 18:57:28
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+paper/oversizeAttLims-paper.Rmd:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:35:38
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+presentations/libs/remark-css/default.css:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:38:23
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/R/data-cleaning/mancino-porcelain-att-lims-cleaning.R:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-05 18:04:20
+#  File has been updated.
+#  Successfully updated.
+
+ecmdata/derived-data/cleaned-rds-files/experiment-3-tidy-atterberg-limits-cleaned-data.rds: src/R/data-cleaning/qc-cu-cleaning.R
+#  Implicit rule search has not been done.
+#  Last modified 2021-06-05 18:57:35
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 93):
+	$(R_SCRIPT) $< $@
+
+.PHONY: all vars_check
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+figs/pdf/experiment-3-atterberg-limit-facets.pdf: src/R/fig-generation/experiment-3-atterberg-limit-facets-fig.R library.bib ecmdata/derived-data/cleaned-rds-files/experiment-3-tidy-atterberg-limits-cleaned-data.rds
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'experiment-3-atterberg-limit-facets'
+#  Last modified 2021-06-18 14:13:24
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 37):
+	$(R_SCRIPT) $<
+	rm Rplots.pdf
+
+vars_check:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 101):
+	@echo -e .rds tables to build are $(RDS_TABLES)
+
+# Not a target:
+presentations/oversize-Atterberg-limits.Rmd:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-05 18:57:17
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ecmdata/metadata/USGA-sieve-sizes.csv:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:40:57
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+mf-vars.mk:
+#  Implicit rule search has been done.
+#  Last modified 2021-06-18 14:30:56
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=37/1024=4%, Rehash=0, Collisions=0/124=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 96 / storage = 2591 B / avg = 26 B
+# current buf: size = 8174 B / used = 2591 B / count = 96 / avg = 26 B
+
+# strcache performance: lookups = 193 / hit rate = 50%
+# hash-table stats:
+# Load=96/8192=1%, Rehash=0, Collisions=1/193=1%
+# Finished Make data base on Fri Jun 18 14:43:02 2021
+

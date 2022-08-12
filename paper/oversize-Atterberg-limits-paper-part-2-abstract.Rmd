@@ -1,0 +1,127 @@
+---
+title: "Coarse additions affect the plasticity and toughness of soil mixtures, Part II: Sand angularity and sand-size uniformity"
+date: "last compiled `r ecmfuns::ecm_timestamp()`"
+mainfont: Roboto
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: false
+    includes:
+      in_header: preamble.tex
+  officedown::rdocx_document:
+    reference_docx: "oversizeAttLims-paper_word-doc-template.docx"
+    number_sections: false
+    tables:
+      caption:
+        pre: 'Table '
+bibliography: [library.bib, packages.bib]
+csl: soil-science-society-of-america-journal.csl
+linestretch: 1.5
+links-as-notes: false
+papersize: letter
+link-citations: true
+urlcolor: blue
+linkcolor: blue
+toccolor: blue
+mathfont: Fira Math Regular
+toc: false
+---
+
+<!-- Note that in the text of this paper, two experiments are referenced. -->
+<!-- The original deal was having everything in one paper. So the experiments  -->
+<!-- are numbered 1-3. All the data analyses was done with this in mind.  -->
+<!-- So the dynamic number references in this paper all refer to experiments  2, and 3 -->
+<!-- when in fact they are referring to what are (for this paper) termed  -->
+<!-- experiments 1 and 2. A little confusing but leaving it this way  -->
+<!-- will be much, much simpler than trying to re-do all the dynamic references, -->
+<!-- figures, etc.  -->
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F,
+                    fig.align = 'center',
+                    dpi = 72,
+                    out.width = '90%')
+
+knitr::opts_knit$set(root.dir = here::here())
+
+options(
+  knitr.graphics.rel_path = FALSE,
+  knitr.kable.NA = "-"
+)
+
+library(purrr)
+```
+
+
+<!-- need to load some variables that will be dynamically referenced in the abstract  -->
+
+
+```{r load-uniformity-experiment-Cu-values}
+# read and unload the list into global environment, then delete the 
+# original list to reduce environment clutter
+uniformity_experiment_d_x_values <- readr::read_rds(
+file = here::here(
+  "ecmdata/derived-data/dynamic-number-references/uniformity-experiment-dx-values.rds"
+)
+)
+
+uniformity_experiment_d_50_values <- uniformity_experiment_d_x_values$uniformity_experiment_d_50_values
+uniformity_experiment_Cu_values <- uniformity_experiment_d_x_values$uniformity_experiment_Cu_values
+```
+
+```{r load-max-testable-sand-contents}
+max_testable_sand_contents <- readr::read_rds(
+  file = "./ecmdata/derived-data/dynamic-number-references/uniformity-experiment-max-testable-sand-contents.rds") %>% 
+   map(~format(100 * ., digits = 3, drop0trailing = TRUE))
+
+```
+
+
+
+```{r load-shape-experiment-pure-clay-atterberg-limit-values}
+
+shape_experiment_pure_clay_atterberg_limit_values <- readr::read_rds(
+here::here('ecmdata/derived-data/dynamic-number-references/shape-experiment-pure-clay-atterberg-limit-values.rds'))
+
+```
+
+
+```{r load-uniformity-experiment-pure-clay-atterberg-limit-values}
+uniformity_experiment_pure_clay_atterberg_limit_values <- readr::read_rds(
+here::here('ecmdata/derived-data/dynamic-number-references/uniformity-experiment-pure-clay-atterberg-limit-values.rds')
+)
+```
+
+
+
+# Abstract 
+
+
+The Atterberg limits may offer a useful means to evaluate baseball infield soils because they quantitatively relate soil behavior to water content. 
+Prior research has demonstrated that liquid and plastic limits (LL and PL) of sand-clay mixtures are affected by the quantity and type of admixed sand, but these studies have used <425 &mu;m sand exclusively and little attention has been devoted to sand angularity and sand-size uniformity. 
+
+
+This research was conducted to clarify the effect of sand angularity and sand-size uniformity on the Atterberg limits of soil mixtures containing a range of sand contents and a significant mass percentage 425-2000 &mu;m. 
+
+
+Experiment 1 compared the effect of mixing either an angular or a round sand (both 0.5-1 mm) with a kaolinitic clay at sand contents between 0 and 80%. 
+Little difference was observed in LL and PL, suggesting angularity plays a minimal role on mix performance.
+
+
+<!-- Experiment 2 compared the effect of sand-size uniformity on LL and PL.  -->
+Experiment 2 compared the effect of mixing one of two sands having similar D~50~ (`r uniformity_experiment_d_50_values[["low_Cu"]]` and `r uniformity_experiment_d_50_values[["high_Cu"]]` mm) but varying uniformity (uniformity coefficients of `r uniformity_experiment_Cu_values[["low_Cu"]]` vs. `r uniformity_experiment_Cu_values[["high_Cu"]]`) with an illitic clay at sand content 0-80%.
+<!-- The high-C~u~ sand had slightly higher LL and PL at equivalent sand content. -->
+Mixtures including the high-C~u~ sand maintained their plasticity to higher sand content (~`r max_testable_sand_contents$high_Cu_max_rollable_sand_pct`%) than those produced with the low-C~u~ sand (~`r max_testable_sand_contents$low_Cu_max_rollable_sand_pct`%).
+
+Calculations for the threshold fines content and intergranular porosity agreed closely with the experiments, indicating a potential to estimate TFC from sand porosity alone. 
+
+
+<!-- This research demonstrated the effect of sand angularity on LL and PL was minimal. -->
+<!-- The uniformity effect was measurable, but it was small compared with that of total sand content. -->
+<!-- Uniformity had a more notable influence on the sand content separating plastic and nonplastic mixtures.  -->
+
+
+

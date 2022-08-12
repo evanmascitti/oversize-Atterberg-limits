@@ -1,0 +1,63 @@
+---
+title: "Part 1 equations only"
+date: "compiled `r Sys.Date()`"
+output:
+  bookdown::word_document2:
+    reference_docx: "oversizeAttLims-paper_word-doc-template.docx"
+    number_sections: false
+---
+
+
+\begin{equation}
+w_{whole-soil} = w_{<425{\mu}m~fraction} \times m_{<425{\mu}m~fraction}
+(\#eq:oversize-correction-formula)
+\end{equation}
+
+
+___
+
+
+\begin{equation}
+w_{whole-soil} = (1 - c) \times w_{fines}
+(\#eq:linear-law-of-mixtures)
+\end{equation}
+
+
+___
+
+
+\begin{equation}
+w_{matrix} = \frac{w_{whole-soil}}{m_{<2\mu m}}
+(\#eq:barnes-matrix-water-content)
+\end{equation}
+
+
+___
+
+
+\begin{equation}
+T_{max}~(kJ~m^{-3}) = \frac{\frac{PI}{LL}-0.3397}{0.0077}
+(\#eq:moreno-marato-toughness-equation)
+\end{equation}
+
+
+___
+
+
+\begin{equation}
+SSA = \frac{4~pi~r^2} {\frac{4}{3} ~ \pi ~ r^3 ~ \rho_p}
+(\#eq:specific-surface-area)
+\end{equation}
+
+
+___
+
+
+\begin{equation}
+w_{matrix} = \frac{w_{whole-soil}}{1 - m_{coarse~addition}}
+(\#eq:my-matrix-water-content)
+\end{equation}
+
+___
+
+

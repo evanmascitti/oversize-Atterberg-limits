@@ -1,0 +1,28 @@
+---
+title: "latex kable"
+mainfont: "Roboto"
+mathfont: "Fira Math Regular"
+toc: false
+linestretch: 1.2
+output: 
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    includes:
+      in_header: preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F,
+                      fig.align = 'center', out.width = '90%')
+knitr::opts_knit$set(root.dir = here::here())
+```
+
+```{r load-packages}
+library(magrittr)
+```
+
+```{r usga-sieve-sizes-table}
+source('./src/R/table-generation/USGA-sieve-sizes-table.R')
+if(knitr::is_latex_output()){usga_sand_sizes_latex_kable}
+if(knitr::is_html_output()){usga_sand_sizes_latex_kable}
+```

@@ -1,0 +1,63 @@
+---
+title:  "Coarse additions affect plasticity and toughness of soil mixtures, Part I: Particle size"
+#"Coarse additions influence plasticity and toughness of soil mixtures, Part I: Effect of particle size"
+#"Influence of coarse additions on the Atterberg limits of of soil mixtures, Part I: Effect of particle size."
+date: "last compiled `r ecmfuns::ecm_timestamp()`"
+mainfont: Roboto
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: false
+    includes:
+      in_header: preamble.tex
+  officedown::rdocx_document:
+    reference_docx: "oversizeAttLims-paper_word-doc-template.docx"
+    number_sections: false
+    tables:
+      caption:
+        pre: 'Table '
+bibliography: [library.bib, packages.bib]
+csl: soil-science-society-of-america-journal.csl
+linestretch: 1.5
+links-as-notes: false
+papersize: letter
+link-citations: true
+urlcolor: blue
+linkcolor: blue
+toccolor: blue
+mathfont: Fira Math Regular
+toc: false
+---
+
+
+# Abstract 
+
+Sand-clay mixtures are commonly produced for use on baseball infield skin surfaces.
+<!-- Historically, infield mixes have been designed based on particle size analysis. -->
+<!-- Atterberg plasticity tests may be a more informative way to characterize infield mixes because the tests directly measure the soil's response to changing water content. -->
+<!-- Atterberg plasticity tests may be an informative way to characterize infield mixes because the tests directly measure a soil's response to changing water content. -->
+Atterberg plasticity tests may be a useful way to characterize infield soils because the tests directly measure a soil's response to changing water content.
+
+Atterberg limit protocols mandate that sand >425 &mu;m be removed before testing.
+<!-- via washing. -->
+This directive makes it difficult to compare mixes with different sand gradations because variation between two soils' plasticity may be confounded by removing different amounts of sand.
+
+Research was conducted to re-appraise the practice of removing ‘oversize’ particles prior to Atterberg limit testing.
+
+Coarse additions corresponding to five individual mesh sizes of sand (2000-1000, 1000-500, 500-250, 250-150, and 150-53 &mu;m) and silt (<53 &mu;m) were mixed with a kaolinitic clay at 0-80% coarse addition.
+The liquid limit (LL) and plastic limit (PL) were determined for each mixture.
+
+At low coarse addition contents, LL and PL decreased proportionally with sand or silt content. 
+<!-- This suggests the coarse grains are fully suspended in the clay-water matrix and do not participate in the soil’s behavior. -->
+Mixes containing the largest particles adhered closely to a linear reduction in LL or PL with increasing coarse additions, while finer sands or silt showed elevated LL above 50% and elevated PL above 50%.
+<!-- higher-than-expected -->
+<!-- coarse addition for LL and above 30% coarse addition for PL. -->
+<!-- It is postulated that in a drying soil thread, a greater number of particle contacts among finer sand grains encourages the formation of defects and micro-cracks. -->
+<!-- These cracks then coalesce to induce premature crumbling relative to mixes with coarser sand. -->
+
+This research suggests particles 2000-425 &mu;m should remain in infield mixes before Atterberg limit tests.
+<!-- need not be removed -->
+These particles influence LL and PL less than finer additions which remain in the sample.
+<!-- are permitted to remain in the -->
+These findings may improve the utility of Atterberg limit tests for evaluating baseball infield soils.
+<!-- , potentially increasing adoption of Atterberg limit tests for  -->

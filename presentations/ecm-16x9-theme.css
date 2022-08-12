@@ -1,0 +1,33 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: #041E42;
+}
+
+p, li {
+	font-size: 2em;
+}
+
+
+h1 {
+  color: red;
+}
+
+.x3 p {
+  font-size: 3em;
+}
+
+.big-table table {
+  font-size: 2em;
+}
+
+.med-table table {
+  font-size: 1.5em;
+}

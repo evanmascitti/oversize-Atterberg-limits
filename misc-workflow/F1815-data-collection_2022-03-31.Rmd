@@ -1,0 +1,77 @@
+---
+title: "Density of sil-co-sil-75 material"
+date: "2022-03-31"
+mainfont: Roboto
+geometry: landscape
+output:
+  pdf_document:
+    latex_engine: xelatex
+    includes:
+      in_header: preamble.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(magrittr)
+library(kableExtra)
+
+#options(knitr.kable.na = "")
+options(knitr.kable.NA = '')
+```
+
+
+# Maximum density 
+
+## Procedure 
+
+-load material in a single lift 
+
+- 15 drops from 12" height
+
+- final reading should be between `r (3+1.57) - 0.2` and `r (3+1.57) + 0.2`
+  - likely about `r round( pi * (2.54^2) * (3*2.54) * 1.45, -1)` g
+- record uncorrected height reading (inches) and total mass (grams, including rubber band + cheesecloth)
+
+- 5 reps of each; save material 
+
+
+<!-- \clearpage -->
+
+```{r max-data}
+
+max_data_table <- list.files(path = here::here("ecmdata/raw-data/experiments-1-and-2/F1815-cylinders-data/sil-co-sil-75"), pattern = "max.*\\.csv$", recursive = T, full.names = T) %>%
+  readr::read_csv(show_col_types = F, na = c("", "-")) %>%
+  dplyr::select(-dplyr::matches("tin.*"), -c(date, ambient_temp_c, w_target))
+
+max_data_table %>% 
+  kbl(format = 'latex', caption = "Data collection for max density",
+      longtable = TRUE) %>% 
+  row_spec(row = 0, bold = TRUE) %>% 
+  kable_styling(latex_options = c('hold_position', 'striped', 'repeat_header', 'scale_down'))
+```
+
+
+\clearpage 
+
+# Minumum density 
+
+## Procedure 
+
+- gently fill cylinder using funnel
+
+- flatten top w/ straight edge
+
+- record total mass (including rubber band + cheesecloth)
+
+```{r min-data}
+
+min_data_table <- list.files(path = here::here("ecmdata/raw-data/experiments-1-and-2/F1815-cylinders-data/sil-co-sil-75"), pattern = "min.*\\.csv$", recursive = T, full.names = T) %>% 
+  readr::read_csv(show_col_types = F, na = c("", "-"))  %>% 
+  dplyr::select(-dplyr::matches("tin.*"), -c(date, ambient_temp_c, w_target))
+
+min_data_table %>% 
+  kbl(format = 'latex', caption = "Data collection for minimum density",
+      longtable = TRUE) %>% 
+  row_spec(row = 0, bold = TRUE) %>% 
+  kable_styling(latex_options = c('hold_position', 'striped', 'repeat_header', 'scale_down'))
+```

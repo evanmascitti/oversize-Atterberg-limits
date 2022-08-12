@@ -1,0 +1,49 @@
+test_type,date,experiment_name,sample_name,batch_sample_number,tin_number,blow_count,tin_w_wet_sample,tin_w_OD_sample,tin_tare_set,comments
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_1,1,1,26,13.462,12.078,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_1,1,2,21,14.385,12.801,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_1,1,3,20,13.401,12.029,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_1,1,4,19,13.082,11.749,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_2,2,5,33,12.816,11.689,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_2,2,6,29,11.237,10.416,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_2,2,7,26,13.177,11.932,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_2,2,8,15,12.46,11.294,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_3,3,9,27,15.004,13.66,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_3,3,10,23,13.514,12.408,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_3,3,11,21,13.248,12.178,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_3,3,12,19,12.691,11.692,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_4,4,13,26,13.541,12.064,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_4,4,14,20,13.272,11.872,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_4,4,15,22,15.711,13.744,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_4,4,16,24,12.863,11.547,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_5,5,17,28,14.915,13.718,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_5,5,18,26,13.121,12.197,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_5,5,19,23,14.027,12.958,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_5,5,20,16,15.542,14.206,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_6,6,21,33,15.789,14.532,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_6,6,22,28,12.429,11.652,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_6,6,23,24,14.852,13.693,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_6,6,24,20,15.621,14.326,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_7,7,29,30,12.905,11.567,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_7,7,30,27,12.762,11.448,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_7,7,31,21,16.318,14.203,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_7,7,32,17,13.963,12.374,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_8,8,25,31,14.353,13.453,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_8,8,26,30,11.517,10.992,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_8,8,27,26,14.922,13.953,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_8,8,28,18,15.912,14.8,2020-05-24,note change in tin numbers- I skipped over sample 7 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_9,9,33,15,14.432,13.359,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_9,9,34,23,17.902,16.356,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_9,9,35,26,13.701,12.767,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_9,9,36,18,15.761,14.506,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_10,10,37,29,14.477,13.583,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_10,10,38,26,13.108,12.375,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_10,10,39,23,17.173,15.922,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_10,10,40,19,16.082,14.96,2020-05-24,-
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_11,11,45,29,15.35,13.673,2020-05-24,dropped when pulling out of dessicator. I think I salvaged it but may have lost a bit of mass. Also note change in tin numbers- I skipped over sample 11 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_11,11,46,24,15.457,13.761,2020-05-24,dropped when pulling out of dessicator. I think I salvaged it but may have lost a bit of mass. Also note change in tin numbers- I skipped over sample 11 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_11,11,47,23,23.772,21.737,2020-05-24,dropped when pulling out of dessicator. I think I salvaged it but may have lost a bit of mass. Also note change in tin numbers- I skipped over sample 11 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_11,11,48,18,20.611,19.155,2020-05-24,dropped when pulling out of dessicator. I think I salvaged it but may have lost a bit of mass. Also note change in tin numbers- I skipped over sample 11 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_12,12,41,32,15.345,14.3,2020-05-24,note change in tin numbers- I skipped over sample 11 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_12,12,42,29,14.635,13.64,2020-05-24,note change in tin numbers- I skipped over sample 11 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_12,12,43,25,15.432,14.344,2020-05-24,note change in tin numbers- I skipped over sample 11 as it was drying
+LL,2020-09-06,Quickcrete_Cu_Casselman,mix_12,12,44,21,14.817,13.784,2020-05-24,note change in tin numbers- I skipped over sample 11 as it was drying

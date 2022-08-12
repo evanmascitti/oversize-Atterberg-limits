@@ -1,0 +1,98 @@
+---
+title: "Experiment notes for oversize particle inclusion in Atterberg limits experiment"
+date: "begun 2021-06-02; last updated `r Sys.Date()` "
+output: html_document
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = FALSE)
+
+options(
+  knitr.graphics.rel_path = FALSE
+)
+
+library(purrr)
+```
+
+# Overview 
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+This project is paper #4 of my PhD dissertation.
+
+The goal is to learn how larger sand particles (> 425 &mu;m sieve diameter) affect the results of Atterberg limit tests. 
+
+There are 3 experiments:
+
+1. coarse addition size (5 sand sizes and one silt) mixed with porcelain clay. The sand is referred to as "Mancino angular" because it was an angular white sand left over from a Charlie Mancino experiment in ASI 468. I further processed the sand with repeated sieving to get it really clean. The silt was sil-co-sil purchased from Sheffield pottery; it is almost pure silt with very little sand or clay. 
+
+2. sand shape (2 sand types, each of the same size), mixed with porcelain clay. Each sand was sieved to 1.0-0.5 mm. One was the same sample from experiment 1, i.e. Mancino angular. The other was US Silica granusil, sieved to the same size. 
+
+3. effect of sand uniformity. This used two sands which I made myself from some Quickcrete concrete sand I bought at Home Depot. The idea was to use relatively coarse sands...both of these would pass DuraEdge's specification for sand size. Both have most of their particles above the acceptable size limit for Atterberg limits. To get different Cu values, I sieved a batch to exclude all particles < 0.25 mm and also all particles > 1 mm. Then I played around with adding back some of the overs and unders until I got a well-graded product with a very similar D~50~ to the uniform one. This was done when I was still using MS OneNote. Other files invlolved in that process can be found in the "archive" folder of my PSU2019-present/A_inf_soils_PhD directory in my PSU OneDrive account. 
+
+___
+
+
+# 2021-06-04
+
+Doing some data cleaning and munging. Some of the adhesion limit samples have 6 replications - I can only assume this means I thought the results of the first 3 trials were not correct.
+
+After doing some brief EDA this does seem likely; the ones that have extra reps are for the 20% sand mixes and when using reps 4-6 instead of 1-3 the results are much more similar to one another, which you might expect. 
+
+Therefore, I made a new csv file that has reps 1-3 for all samples that only had 3 reps, and uses reps 4-6 for those which have extras. The script that generated this "new" csv file is titled 
+./src/R/data-cleaning/mancino-porcelain-AL-cleaning-INTERACTIVE.R and the output csv it generates is called 'ecmdata/derived-data/mancino-intermediate-data/all-porcelain-AL-samples_2021-06-04.csv'. The data cleaning script that combines all the Atterberg limits data from the porcelain mixes will therefore need to read in this file from the derived data directory and some raw data files from the raw data directory. This is the data cleaning file that should be tracked by `Make`. 
+
+
+# 2021-10-30
+
+Today started a rough calculation for the expected water content differences that would be expected if the change in LL or PL were due simply to increased surface area. See the file `./computing-expected-water-content-differences-if-due-to-surface-area-alone.R`
+
+
+# 2022-02-21
+
+Labeled experiment 4 as sand sizes vs 3 clay types 
+
+# 2022-03-21
+
+Computed specific surface area. Ended up not really using the drawings or the concept of the encapsulating sphere...but here are the paper notes I made on that just in case:
+
+```{r fig.show='hold', out.width='90%'}
+
+knitr::include_graphics(
+  here::here(
+  "misc-workflow", "specific-surface-area-drawing.png"
+)
+)
+
+knitr::include_graphics(
+  here::here(
+  "misc-workflow", "specific-surface-area-brainstorming.png"
+)
+)
+```
+
+# 2022-04-05
+
+Wrote all day. Made excellent progress. Also worked on table for porosity in Experiment 1. 
+
+# 2022-04-14
+
+Wrote for almost 2 hr w/ McNitt. 
+He suggested thinking about splitting this into 2 papers, a Part I and a Part II. 
+
+I am going to use git to make a new branch and try this because it will be easy to 
+revert back to where I am now 
+
+
+# 2022-05-10
+
+Today forming new samples for re-doing some of the compression testing. 
+I just don't feel the data quality is very good, and I am going to be 
+more deliberate about how I am drying the samples down and also about 
+using petrolatum on the plastic disks during the test. 
+
+I am going to just continue with unique test IDs, starting at 420. 
+
+The first mix I am using today is 30% promound.
+

@@ -1,0 +1,82 @@
+---
+title: "Replies to comments"
+date: "last compiled `r ecmfuns::ecm_timestamp()`"
+mainfont: Roboto
+mathfont: "Fira Math Regular"
+linestretch: 1.1
+papersize: letter
+output: 
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: false
+    includes:
+      in_header: preamble.tex
+classoption:
+  - twocolumn
+---
+
+<!-- \color{blue} -->
+\color{psunavy}
+
+Too much on this page to reply to each comment individually, but I re-worked per your suggestions and moved most of the infield soils verbiage to the top.
+Originally I never planned to mention infield soils. 
+The paper is not really about baseball.
+I want to use these tests in my research, and I would not be able to do so with the canonical protocol, which is why I did the experiment - to prove that the washing is unnecessary.
+Last year when I presented at the ASA conference you suggested I add the baseball part so that it could be entered in C-5, and since then I kept it in.
+<!-- I want to use these tests as a basic characterization technique in my project, but that would not be allowed without doing all the washing and then you end up with the dilema of not being able to compare the mixes.  -->
+I can see why the "why" needs to be laid out but I also worry that somebody not familiar with baseball fields might become distracted. What do you think? 
+
+
+
+\vspace{0.25in}
+
+
+I have scoured the literature and searched far and wide on this question, without any success. I also contacted several geotechnical engineers and none of them had an answer. After performing the tests both ways, I came to this conclusion on my own, and
+one of the people I e-mailed agreed. I have adjusted the language to clarify that the statement is, as you say, "conjecture."
+
+\vspace{0.25in}
+
+Where I am going is that this equation does not apply for higher sand contents. I added some clarification about why one would wish/
+need to use the correction.
+
+\vspace{0.25in}
+
+added an overview here
+
+\vspace{0.25in}
+
+added a definition of particle shape
+
+\vspace{0.25in}
+
+I added the Cu equation, although it is only one of many possible ways to define uniformity
+
+\vspace{0.25in}
+
+Yes, it does matter. If I read between the lines I must assume you mean that since this is academic research, the problem should be treated in a purely theoretical sense....however I'm surprised you would summarily dismiss the importance of time, as somebody who has run a
+profitable soil testing lab (time is money!). 
+Money aside, for 'pure' research, skipping the wash could be the difference between testing a
+few dozen samples or testing a few hundred.
+Personally, I believe this method will make a difference between drawing meaningful conclusions in my project vs. having to wave my arms at a puny data set.
+I believe it is an important point to make, so I re-constructed the paragraph to put less emphasize on the time and more on the apples/
+oranges part. 
+If you still fundamentally disagree, I will (begrudgingly) remove it.
+
+\vspace{0.25in}
+
+I don't really understand what you mean here...do you prefer it all in one sentence? I mashed it together but please help me understand
+what it should look like.
+
+\vspace{0.25in}
+
+Fixed. The sizes are further discussed in the next paragraph and compiled in a table.
+
+\vspace{0.25in}
+
+It's only one material so not sure what you mean by list here?
+
+
+
+
+
+

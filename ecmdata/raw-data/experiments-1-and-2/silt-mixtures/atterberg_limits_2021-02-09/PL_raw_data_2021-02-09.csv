@@ -1,0 +1,19 @@
+test_type,date,experiment_name,sample_name,batch_sample_number,replication,tin_number,tin_w_wet_sample,tin_w_OD_sample,tin_tare_set,comments
+PL,2021-02-09,Mancino_porcelain,mix_43,1,1,47,20.051,19.172,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_43,1,2,48,19.152,18.345,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_43,1,3,49,19.052,18.278,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_44,2,1,50,18.118,17.546,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_44,2,2,51,19.670,18.843,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_44,2,3,52,19.100,18.351,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_45,3,1,53,18.837,18.127,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_45,3,2,54,17.903,17.308,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_45,3,3,71,19.790,18.879,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_46,4,1,72,17.931,17.356,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_46,4,2,55,18.310,17.625,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_46,4,3,56,17.693,17.116,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_47,5,1,57,17.979,17.371,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_47,5,2,73,17.771,17.144,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_47,5,3,74,17.834,17.262,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_48,6,1,75,16.996,16.492,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_48,6,2,76,19.294,18.431,2020-05-24,be very careful with tin orders
+PL,2021-02-09,Mancino_porcelain,mix_48,6,3,77,19.271,18.454,2020-05-24,be very careful with tin orders

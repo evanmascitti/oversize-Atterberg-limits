@@ -1,0 +1,52 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.19)  12 OCT 2021 14:54
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**equations.tex
+(./equations.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-08-27>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{equation}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--1
+[] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+
+Overfull \hbox (138.54378pt too wide) detected at line 4
+\OML/cmm/m/it/10 C[] \OT1/cmr/m/n/10 = [](#\OML/cmm/m/it/10 eq \OT1/cmr/m/n/10 
+: \OML/cmm/m/it/10 Cu \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 equation\OT1/cmr/m/
+n/10 )
+ []
+
+)
+! Emergency stop.
+<*> equations.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 478492
+ 424 string characters out of 5860352
+ 291567 words of memory out of 5000000
+ 20423 multiletter control sequences out of 15000+600000
+ 403438 words of font info for 28 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 18i,3n,12p,65b,89s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

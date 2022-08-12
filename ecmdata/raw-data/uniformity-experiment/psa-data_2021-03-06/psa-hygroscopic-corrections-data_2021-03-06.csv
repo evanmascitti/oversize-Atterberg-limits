@@ -1,0 +1,4 @@
+date,experiment_name,sample_name,replication,batch_sample_number,tin_tare_set,tin_number,tin_w_wet_sample,tin_w_OD_sample,comments
+2021-03-06,oversizeALims,Casselman_clay,1,1,2021-03-04,41,6.975,6.811,-
+2021-03-06,oversizeALims,Casselman_clay,2,2,2021-03-04,42,10.15,9.897,-
+2021-03-06,oversizeALims,Casselman_clay,3,3,2021-03-04,43,7.081,6.916,-

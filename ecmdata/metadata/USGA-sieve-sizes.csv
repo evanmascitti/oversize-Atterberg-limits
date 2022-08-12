@@ -1,0 +1,7 @@
+expt_sand_number,size_class,sub_class,mesh_size,upper_mm,lower_mm
+1,Sand,Very coarse,10-18,2.0,1.0
+2,Sand,Coarse,18-35,1.0,0.5
+3,Sand,Medium,35-60,0.5,0.25
+4,Sand,Fine,60-100,0.25,0.15
+5,Sand,Very fine,100-270,0.15,0.05
+6,Silt,-,< 270,0.05,0.002

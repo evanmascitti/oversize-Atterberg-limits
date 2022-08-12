@@ -1,0 +1,127 @@
+% this file was copied from my PhD thesis proposal project 2021-06-16
+% It has manuy useful options and packages; many are probably not required for a 
+% simple manuscript so I will clean up the extraneous ones that get in 
+% the way but leave the others in case they prove useful 
+
+
+
+% a useful website for knowing what things are called in latex
+% http://www.texfaq.org/FAQ-fixnam
+
+
+
+% packages I had already put in here 
+\usepackage[none]{hyphenat}
+\usepackage[font=small,labelfont=bf]{caption}
+
+
+% all packages that kableExtra depends on 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+% this one not needed because I always use UTF-8 \usepackage[utf8]{inputenc}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% load cancel package for clearer unit conversions
+\usepackage{cancel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% apparently this package makes better bookmarks, 
+% I need it for putting the TOC into the document tree
+% see https://tex.stackexchange.com/questions/65544/how-to-link-table-of-contents-in-thesis-pdf
+
+\usepackage{bookmark}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% set vertical line spacing for amsmath equations 
+\setlength{\jot}{8pt}
+
+% everything abve works well
+
+% extras that I am testing come below 
+
+
+% set paragraph indentation back to > 0; default is 20pt
+\parindent=10pt
+
+
+
+% define navy as a link color and use it for internal links
+% depends on xcolor which is already loaded above 
+\definecolor{dodgerblue4}{HTML}{104E8B}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=dodgerblue4
+}
+
+
+% number the lines with small grey text, see https://tex.stackexchange.com/questions/247165/can-i-change-linenumber-colour
+\usepackage{lineno}
+
+% define R's grey75 color in HTML hex notation
+\definecolor{grey75}{HTML}{BFBFBF}
+
+% set color of line numbers 
+% this was the code I copied from the URL above \renewcommand{\linenumberfont}{\normalfont\bfseries\small\color{grey75}}
+
+% and this is my own version which uses the mono font. 
+\renewcommand{\linenumberfont}{\ttfamily\small\color{grey75}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% re-style block quotations??
+% there are 2 environments that handle block quotations- the quotation environment 
+% is for multi-paragraph quotes and each paragraph is indented.
+% the quote environment is meant for shorter quotes. Evidently R Markdown 
+% puts at least the short ones in the quote environment; I discovered this by 
+% inspecting the .tex file usingkeep_tex: true in the YAML
+
+
+% see https://stackoverflow.com/questions/4018493/vertical-line-with-every-quotation/4023967
+% for solution
+\usepackage{framed}
+
+
+% define R's grey30 color in HTML hex notation
+\definecolor{grey30}{HTML}{4D4D4D}
+
+% change bar size to 0.5 pt instead of the default 3 pt
+% use the newly defined grey color 
+\renewenvironment{leftbar}{\def\FrameCommand{\color{grey30}\vrule width 1pt \hspace{10pt}}\MakeFramed {\advance\hsize-\width \FrameRestore}}{\endMakeFramed}
+
+% for multi-paragraph quotations 
+% \renewenvironment{quotation}%
+% {\begin{leftbar}\begin{quotation}}%
+% {\end{quotation}\end{leftbar}}
+
+% for single-paragraph quotations 
+% remove indent with \noindent
+
+
+\renewenvironment{quote}%
+{\begin{leftbar} \begin{quotation} \noindent \small }%
+{\end{quotation}\end{leftbar}}
+
+

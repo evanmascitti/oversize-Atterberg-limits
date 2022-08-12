@@ -1,0 +1,106 @@
+(Tables .....).
+Equations \@ref(eq:air-dry-sand-mass)-\@ref(eq:air-dry-clay-mass) show the formulas used to determine the air-dry masses for each component: 
+\begin{align}
+\text{Sand~air-dry~mass~(g)} &= \frac{S_{final}-S_{clay}}{S_{sand} - S_{clay}}  \cdot m_{total~mixture~(g)} \cdot (1+w_{sand })
+(\#eq:air-dry-sand-mass) \\
+\nonumber \\
+\text{Clay~air-dry~mass~(g)} &= \left[1 - \left( \frac{S_{final} - S_{clay}}{S_{sand} - S_{clay}} \right) \right] \cdot m_{total~mixture~(g)} \cdot (1+w_{clay})
+(\#eq:air-dry-clay-mass)
+\end{align}
+
+where 
+$S_{final}$ is the final mixture's sand percentage as a decimal,
+$S_{sand}$ is the mass fraction of the sand/silt component > 53 &mu;m as a decimal,
+$S_{clay}$ is the mass fraction of the clay component > 53 &mu;m as a decimal^[Note that because $S_{ sand}$ and $S_{clay}$ are referenced to different soils, $S_{sand}~+~S_{clay}~\neq~S_{final}$],
+$m_{sand}$ is the oven-dry mass of the "sand" component (as a decimal fraction of the final mixture mass), 
+$m_{clay}$ is the oven-dry mass of the clay component (as a decimal of the final mixture mass),
+$m_{final}$ the total oven-dry mass of the final mixture, equal to unity, and
+$w$ is the gravimetric water content of a given component in decimal form.
+
+
+____
+
+
+Table \@ref(tab:experiment-descriptions-table) summarizes the objective of each experiment and the materials employed. 
+
+```{r experiment-descriptions-table}
+
+source(here::here('src/R/table-generation/experiment-descriptions-table.R'))
+if(knitr::is_latex_output()){experiment_descriptions_latex_kable}
+if(knitr::is_html_output()){experiment_descriptions_html_kable}
+if(!knitr::is_html_output() && !knitr::is_latex_output()){experiment_descriptions_word_table}
+
+```
+
+____
+
+
+# results and discussion
+
+<!-- Of the `r n_uniformity_experiment_sand_contents` sand contents having a measurable LL and PL, this was observed on `r n_uniformity_experiment_high_Cu_w_exceeding_low_Cu_LL` for the LL and `r n_uniformity_experiment_high_Cu_w_exceeding_low_Cu_PL` for the PL. -->
+
+
+<!-- Although the uniformity effect on LL and PL was small, it is interesting to note that the mixtures became non-plastic at lower sand content for the low-C~u~ sand. -->
+<!-- Interestingly -->
+
+
+
+___
+
+# intro
+
+<!-- The behavior of a mixed-grain soil is ultimately governed by the volumes occupied by the four soil phases (sand, clay, water, and air). -->
+
+
+<!-- Be careful because this paper is not really about the transitional fines content, but it is an interesting observation and it should be talked about.  -->
+
+___
+
+# materials and methods 
+
+<!-- Both sands contained significant quantities of particles >425 &mu;m. -->
+
+
+# conclusions 
+
+These results may be due to more inter-packing of sand particles within the high-C~u~ mixtures, which would require more water to separate the sand particles and permit sliding or slumping
+
+
+
+
+____
+
+# Misc stuff, not sure where it's from 
+
+
+
+<!-- In Experiment 1, the LL and PL of mixtures containing equivalent sand content but varying uniformity were virtually identical.  -->
+
+<!-- In Experiment 1, mixtures containing equivalent sand content of varying uniformity had similar LL and PL.  -->
+
+<!-- Experiment 1 showed no difference in LL and PL were almost indistinguishable for mixtures containing equivalent sand content with varying uniformity. -->
+
+In Experiment 1, no differences were found in LL and PL between mixtures containing sands of varying uniformity but equivalent sand content.
+
+
+<!-- In Experiment 2, Low-C~u~ mixtures had significantly higher LL compared to high-C~u~ mixtures having equivalent sand content.  -->
+<!-- In Experiment 2, LL and PL of low-C~u~ mixtures were significantly higher than those of high-C~u~ mixtures having equivalent sand content.  -->
+In Experiment 2, LL of low-C~u~ mixtures were significantly greater than LL of high-C~u~ mixtures with equivalent sand content. 
+An analogous trend was observed for PL, but the effect was not significant. 
+These trends could be due to the higher specific surface area of the high-C~u~ sand. 
+
+
+Mixtures produced with the high-C~u~ sand sand became nonplastic at relatively lower sand content.
+This suggests the threshold fines content (marking a transition between plastic and nonplastic behavior) could potentially be computed from the void ratio of the sand alone.
+
+
+Future research could evaluate potential interactions between sand uniformity and clays of varying plasticity. 
+
+
+Additional work could investigate mixtures using less-uniform sands to determine whether a predictive model could use void ratio, C~u~ and/or other sand properties to accurately estimate TFC. 
+
+
+<!-- Higher plasticity clays may consume more water and  -->
+
+<!-- The results of this research can aid soil suppliers and grounds managers in measuring and predicting the performance of baseball infield soils.  -->
+

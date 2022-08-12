@@ -1,0 +1,37 @@
+test_type,date,experiment_name,sample_name,batch_sample_number,tin_number,blow_count,tin_w_wet_sample,tin_w_OD_sample,tin_tare_set,comments
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_13,13,-,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_13,13,-,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_13,13,-,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_13,13,-,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_14,14,5,26,12.582,11.525,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_14,14,6,25,10.801,10.091,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_14,14,7,18,11.733,10.827,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_14,14,8,16,12.038,11.02,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_15,15,9,33,13.567,12.675,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_15,15,10,31,11.779,11.138,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_15,15,11,22,13.147,12.29,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_15,15,12,16,13.904,12.896,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_16,16,13,31,13.104,12.19,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_16,16,14,23,12.631,11.787,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_16,16,15,18,11.703,11.005,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_16,16,16,16,12.5,11.668,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_17,17,17,31,12.956,11.912,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_17,17,18,24,13.052,11.961,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_17,17,19,21,13.613,12.408,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_17,17,20,19,12.696,11.67,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_18,18,21,29,12.853,11.775,2020-05-24,overshot target water content....dried under lamp for ~20 min and then had to add ~5 g water back
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_18,18,22,26,13.479,12.252,2020-05-24,overshot target water content....dried under lamp for ~20 min and then had to add ~5 g water back
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_18,18,23,25,11.983,11.055,2020-05-24,overshot target water content....dried under lamp for ~20 min and then had to add ~5 g water back
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_18,18,24,21,13.222,12.032,2020-05-24,overshot target water content....dried under lamp for ~20 min and then had to add ~5 g water back
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_19,19,25,29,12.912,11.957,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_19,19,26,23,12.795,11.87,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_19,19,27,22,14.117,12.959,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_19,19,28,19,14.116,12.919,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_20,20,29,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_20,20,30,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_20,20,31,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_20,20,32,-,-,-,2020-05-24,test could not be performed (sample slides in cup)
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_21,21,33,31,13.78,12.969,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_21,21,34,26,12.591,11.912,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_21,21,35,21,13.672,12.865,2020-05-24,-
+LL,2021-01-10,Quickcrete_Cu_Casselman,mix_21,21,36,17,12.477,11.806,2020-05-24,-

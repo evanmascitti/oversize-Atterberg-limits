@@ -1,0 +1,460 @@
+
+
+<!-- Minimum and maximum density tests were performed to characterize the particle packing obtainable from the low-C~u~ and high-C~u~ sands.  -->
+<!-- The methods employed were modified versions of ASTM D4254 and F1815 [@D4254-16; @ASTMF1815-11].  -->
+<!-- In the minimum density test, the air-dry sand was gently poured through a funnel into an 11.4-cm high cylinder. -->
+<!-- The surface was leveled with a straight edge and the sample was weighed. -->
+<!-- The F1815 test was performed both at 8 % gravimetric water content (as required by the protocol) and also on air-dry sand.  -->
+<!-- The air-dry test produced greater compaction for all materials, so these are the values presented.  -->
+<!-- Table \@ref(tab:uniformity-experiment-sand-porosity-table) shows the porosity values attained for each test. -->
+
+<!-- ```{r uniformity-experiment-sand-porosity-table, out.width = if(!knitr::is_latex_output()){"95%"}else{knitr::opts_chunk$get("out.width")}} -->
+<!-- source( -->
+<!--   here::here( -->
+<!--     'src/R/table-generation/uniformity-experiment-sand-porosity-table.R' -->
+<!--   ) -->
+<!-- ) -->
+
+
+
+<!-- if(knitr::is_latex_output()){uniformity_experiment_sand_porosity_tables$latex_kable} -->
+<!-- if(knitr::is_html_output()){uniformity_experiment_sand_porosity_tables$html_kable} -->
+<!-- if(!knitr::is_html_output() && !knitr::is_latex_output()){kableExtra::as_image(uniformity_experiment_sand_porosity_tables$html_kable, width = 6)} -->
+<!-- ``` -->
+
+_____
+
+Additionally, the porosity of each sand was measured using a modified version of ASTM F1815. 
+Each sand was loaded in an air-dry condition and packed using 15 blows of a 1.36 kg hammer from a height of 30 cm, for a total a dynamic compaction effort of 45 J cm^-2^.
+Total porosity values were compared with an improvised vibratory method (data not shown).
+The values from the vibratory method were similar to those obtained with the F1815 method. 
+Minumum and maximum porosity values for the 6 materials are shown in Table \@ref(tab:experiment-1-coarse-additions-dry-density-and-total-porosity-table).
+
+
+
+```{r experiment-1-coarse-additions-dry-density-and-total-porosity-table, tab.cap="Physical properties of pure coarse additions used in Experiment 1 mixtures.", tab.id = "experiment-1-coarse-additions-dry-density-and-total-porosity-table", tab.cap.style = "Table Caption", comment=""}
+
+
+source(
+  here::here(
+    "src/R/table-generation/experiment-1-coarse-additions-bulk-density-and-porosity-table.R")
+)
+
+if(knitr::is_latex_output()){
+  experiment_1_porosity_tables$latex_kable
+} else{
+  if(knitr::is_html_output()){
+    experiment_1_porosity_tables$html_kable
+  } else{
+    experiment_1_porosity_tables$word_table
+  }
+}
+```
+
+
+
+
+## mixture production 
+
+<!-- before mixing with the relevant coarse material.  -->
+
+<!-- before mixing with the relevant coarse material.  -->
+
+<!-- were based on oven-dry mass using these water contents . correction   -->
+
+<!-- Corrections for the hygroscopic water content of each component and the trace amount of sand contained in the clay component were included when calculating the air-dry mix masses. -->
+<!-- The coarse fraction content of the clay component was accounted for in the mixture component percentages to ensure the final mixture contained the desired percentage of sand.  -->
+
+
+
+## objectives 
+
+<!-- Atterberg limit test results on various infield mixes would be simpler to compare if the maximum allowable particle size were changed from 425 &mu;m to 2000 &mu;m. -->
+<!-- This change would eliminate the need to wet-sieve the sample and perform a linear law correction for oversize content.  -->
+
+<!-- Eliminating the washing step could also streamline the test procedure, potentially reducing barriers to adoption. -->
+<!-- oversize removal procedure could be eliminated. -->
+<!-- Streamlining the test procedure could also encourage more widespread use of the tests. -->
+
+
+# experiment descriptions 
+
+## Experiment descriptions 
+
+In Experiment 1, mixtures containing six size ranges of coarse particles were evaluated. 
+In the second experiment, the size of the coarse particles was held constant while particle shape was varied. 
+In Experiment 3, the average particle diameter and particle shape of the coarse additions were held constant while the particle-size uniformity was varied. 
+
+Table \@ref(tab:experiment-descriptions-table) summarizes the objective of each experiment and the materials employed. 
+
+```{r experiment-descriptions-table}
+
+source(here::here('src/R/table-generation/experiment-descriptions-table.R'))
+if(knitr::is_latex_output()){experiment_descriptions_latex_kable}
+if(knitr::is_html_output()){experiment_descriptions_html_kable}
+if(!knitr::is_html_output() && !knitr::is_latex_output()){experiment_descriptions_word_table}
+
+```
+
+
+
+# other methods stuff 
+
+D~50~ values were determined graphically from Figure \@ref(fig:experiment-1-particle-size-curves).
+
+
+# adhesion limit method 
+
+
+<!-- Leaving adhesion limit data out for now. Code and text is below. -->
+
+<!-- An adhesion limit test was also performed for Experiments 1 and 2. -->
+<!-- The test was modeled after Atterberg's original description [@Atterberg1974]. -->
+<!-- The sticky soil was gradually dried from its liquid limit using cool air from a hairdryer.  -->
+<!-- As it dried, the soil was continually remolded with the operator's fingers and periodically agitated with a galvanized steel nail. -->
+<!-- The adhesion limit was reached when the lump of soil could be pressed against the nail and then readily separated in a single piece, with no soil adhering to the metal surface. -->
+<!-- Figure \@ref(fig:adhesion-limit-method) shows a sample above and at the adhesion limit. -->
+<!-- The sample was weighed to 0.001 g, oven-dried, and weighed again to determine its gravimetric water content $w$. -->
+<!-- Three adhesion limit determinations were made for each mixture and averaged to produce a representative value.  -->
+
+<!-- <!-- (ref:adhesion-limit-method-caption) **A.** Soil with water content above the adhesion limit. **B.** The same sample having dried just below the adhesion limit.  --> -->
+
+```{r adhesion-limit-method, eval=F, fig.cap='**A.** Soil with water content above the adhesion limit. **B.** The same sample having dried just below the adhesion limit.'}
+knitr::include_graphics(
+  here::here(
+    'figs', 'png', 'image-figs', 'adhesion-limit-method.png'
+  )
+)
+```
+
+
+
+
+# methods 
+
+Footnote to component mixture metadata :
+
+
+Qualitative X-ray diffraction data were obtained for the clay soil components using oriented specimen mounts prepared with a suction apparatus [@Moore1997].
+
+
+Intensities were collected from 3-60 &deg; 2&theta; using an Empyrean X-ray diffractometer employing Cu-K~&alpha;~ radiation, a step size of 0.02&deg; and a soller slit aperture of 0.04 radians.
+
+Footnote : Final mixture percentages are expressed as oven-dry mass (Tables .....).
+
+
+# stats 
+
+<!-- used because particle-size classes were originally de -->
+<!-- fined using a geometric rather than arithmetic scale [@ref....]. -->
+
+# Expt 1 results 
+
+<!-- Note that when variation due to the % coarse addition was already accounted for, the main effect of D~50~ was not significant.  -->
+<!-- This highlights the importance of both the % coarse fraction and its D~50~ to the LL or PL test result. -->
+
+
+<!-- The vertical spread among the points in Figure \@ref(fig:experiment-1-d50-effect-size) confirms the effect was more pronounced for finer particles.  -->
+<!-- For the 2 coarsest sands -  particles which must be removed according to ASTM D4318 - the measured values corresponded closely with those predicted by the linear law. -->
+<!-- These data points are tightly clustered and there was minimal departure even at sand content up to 70%. -->
+<!-- Greater separation was observed with finer sands and silt. -->
+<!-- These finer particles - which are not removed by D4218 - notably affected the water content at both behavioral thresholds.  -->
+<!-- Evidence is given by the larger deviations from the linear law at the left side of each panel in Figure \@ref(fig:experiment-1-d50-effect-size). -->
+<!-- This is counter to the initial hypothesis that coarse particles would cause more interference during the tests.  -->
+
+
+
+
+<!-- (ref:experiment-1-d50-effect-size-caption) Deviation from linear law of mixtures as a function of D~50~. Values at left indicate the mass % sand or silt in the mixture.  -->
+
+<!-- ```{r experiment-1-d50-effect-size, fig.cap='(ref:experiment-1-d50-effect-size-caption)'} -->
+<!-- knitr::include_graphics( -->
+<!--   here::here( -->
+<!--     'figs', 'pdf', 'experiment-1-d50-effect-size.pdf' -->
+<!--   ) -->
+<!-- ) -->
+<!-- ``` -->
+
+
+
+
+# Conclusions 
+
+Coarse additions 2000-425 &mu;m are prohibited by ASTM D4318, but in this study resulted in a minimal difference between predicted and measured LL and PL.
+Conversely, predicted LL and PL for soil mixtures with allowable coarse additions deviated from the linear law to a greater degree than prohibited coarse additions.
+
+
+__
+
+
+### from 2022-05-02 version 
+
+
+The measured LL and PL and estimated toughness deviated less from a linear interpolation as the particle size of the coarse additions increased. 
+based on the percent coarse addition.  deviated to a lesser degree from the values predicted by linear law.  
+
+Atterberg limit tests procedures mandate a maximum particle diameter of 425 &mu;m.
+An upper limit to particle size is required to ensure smooth groove closure in the Casagrande cup and permit the soil to be rolled into a thin thread.
+However, the authors are not aware of a fundamental rationale for the choice of 425 &mu;m as the upper boundary. 
+The limit of 425 &mu;m poses a number of challenges when performing the Atterberg limit tests on baseball infield soils. 
+
+These soils typically comprise >50% total sand, much of which must be removed using the established procedure. 
+Two options are then available to compare test results from different soils:
+(1) compare the results without adjustment, or (2) compute the whole-soil LL and PL using a linear correction.
+If no adjustment is performed, the test results cannot be fairly compared because the the total fines content of the soils are no longer proportional to their presence in the bulk soil. 
+If the second approach is chosen, the computed whole-soil LL or PL would be inaccurate for most infield mixes because prior research has suggested that linear corrections to obtain the whole-soil LL and PL are unreliable when coarse addition content exceeds ~30%. 
+Therefore, neither approach is optimal. 
+
+An alternative strategy is to test infield mixes without removing any particles >425 &mu;m,. 
+So long as the maximum particle diameter is <3.2 mm, the soil can theoretically be rolled into a qualifying PL thread. 
+
+
+Infield soils are commonly dry screened to <2 mm. 
+The present research was conducted to determine whether an alternative procedure in which the sample was dry-screened to 2 mm could accurately measure LL and PL.
+The tests were performed successfully, and mixtures containing the oversize particles actually adhered more closely to the linear law than mixtures containing equivalent amounts of allowable particles.
+Therefore, the authors suggest that when performing LL and PL tests on infield mixes, ASTM D4318 be modified to allow particles up to 2 mm. 
+This should result in more accurate test results. 
+
+
+
+Finally, this research demonstrated that the toughness of soil mixtures is affected by coarse addition particle size. 
+
+
+The results of this research can aid soil suppliers and grounds managers develop a more mechanistic design framework for baseball infield mixes.
+
+___
+
+
+
+last version written w/ Andy 2022-04-25:
+
+
+
+# Re: toughness (save for a later paper )
+
+There is no fundamental basis for this assumption, because the plastic limit is an arbitrary water content and may not represent the water content corresponding to a true maximum consumption of energy.
+However, the PL is a useful threshold at which to evaluate soil toughness because it corresponds with a marked change in behavior important in tillage and earthmoving operations. 
+
+
+
+___
+
+# from the introduction in the first draft 
+
+<!-- Plasticity is a conspicuous feature of fine-grained soils.  -->
+
+
+<!-- Much of a baseball game is played on the infield skin.  -->
+<!-- The infield skin comprises bare, highly-compacted soil and makes up ~10% of the total playing surface.   -->
+<!-- This area is intensively maintained because of its importance to gameplay. -->
+
+
+<!-- An ideal infield surface exhibits high stiffness yet maintains a plastic mode of yield. -->
+<!-- A general definition of ‘plastic’ is the capacity to undergo non-reversible deformation by an applied stress [@Worrall1986]. -->
+<!-- Figure \@ref(fig:cleat-in-cleat-out-concept) A shows that a plastic infield soil allows players' cleats to penetrate the surface but minimize the size of the cleat marks. -->
+<!-- These small indentations are unlikely to alter ball response.  -->
+<!-- As the soil dries, the cleats induce a more brittle failure mechanism in which larger chips and clods are formed (Figure \@ref(fig:cleat-in-cleat-out-concept) B).  -->
+<!-- If a batted ball strikes one of these lamarger imperfections, an unpredictable change in ball path may induce fielding errors and player injuries. -->
+
+<!-- ```{r cleat-in-cleat-out-concept, fig.cap='A. A stiff but plastic soil promotes predictable ball response. B. Cleat indentations and soil clods inhibit a smooth, predictable ball path.', out.width='60%'} -->
+<!-- knitr::include_graphics( -->
+<!--   here::here( -->
+<!--     'figs', 'manually-built', -->
+<!--     'cleat-in-cleat-out-concept.png' -->
+<!--   ) -->
+<!-- ) -->
+<!-- ``` -->
+
+
+<!-- Proper soil moisture is critical for producing a quality infield surface, and it is the critical variable affecting soil plasticity  [@SportsTurfManagersAssociation2015; @Holtz2010]. -->
+<!-- The Atterberg limits are simple plasticity tests which measure how a soil responds to changing water content. -->
+<!-- Therefore, the Atterberg limits may be useful for predicting how a given infield soil will interact with water. -->
+
+<!-- The remainder of this section describes the historical development of Atterberg limit tests, their potential utility and shortcomings when applied to infield soils, and prior research on the effect of coarse particles on the test results. -->
+
+
+
+
+<!-- a given soil abruptly changes its state. -->
+<!-- represent thresholds which abrupt changes in behavior occur.  -->
+<!-- demarcate  -->
+
+
+# from beginning of lit review section
+<!-- Distill the following paragraphs into what exactly the tests are. Just a couple of sentences w/ good references.  -->
+
+<!-- Done !  -->
+
+<!-- Atterberg limit tests characterize the mechanical behavior of fine-grained soils with changing water content.  -->
+<!-- The tests identify unique water contents corresponding to definite changes in soil behavior.  -->
+
+
+<!-- mark denote indicate delineate -->
+<!-- at which changes in soil behavior occur. -->
+<!-- definite changes -->
+
+<!-- identify -->
+
+
+# derivatives 
+
+To further explore this concept, the slopes (i.e., first derivative) from Figure \@ref(fig:experiment-1-atterberg-limits-vs-d50-faceted-by-sand-pct) are re-plotted in Figure \@ref(fig:experiment-1-d50-slopes-vs-sand-percent). 
+This highlights the increasing separation between the sands with greater coarse content.
+
+
+
+
+```{r experiment-1-atterberg-limits-vs-d50-faceted-by-sand-pct, fig.cap='LL and PL as a function of both the percent coarse addition and $D_{50}$.'}
+ecmfuns::insert_fig('experiment-1-atterberg-limits-vs-d50-faceted-by-sand-percent')
+```
+
+
+```{r experiment-1-d50-slopes-vs-sand-percent, fig.cap='Absolute value of slope coefficients for LL or PL vs $D_{50}$ for each percent coarse addition.'}
+ecmfuns::insert_fig('experiment-1-d50-slopes-vs-sand-percent')
+```
+
+
+
+# extra stuff from discussion on SSA, etc.
+
+<!-- When a unit of water is expended to coat the sand, the water content of the clay matrix is reduced. Additional water is required to permit the platy particles to glide past one another. -->
+<!-- This additional water may account for the higher LL and PL in mixes containing equivalent % coarse addition but relatively finer particles.  -->
+
+<!-- However, it is clear that above &ge40% coarse addition, $w_{matrix}$ is much higher than predicted, indicating the coarse additions play a role in determining the LL or PL.  -->
+
+# old conculsions versions 
+
+## 2022-04-27 version
+
+This research compared the measured LL, PL, and estimated toughness of soil mixtures comprising a single clay mixed with one of six sizes of coarse additions at seven coarse addition contents. 
+
+
+Atterberg limit tests procedures mandate a maximum particle diameter of 425 &mu;m.
+An upper limit to particle size is required to permit smooth groove closure in the Casagrande cup and to permit the soil to be rolled into a thin thread.
+However, the authors are not aware of a fundamental rationale for the choice of 425 &mu;m as the upper boundary. 
+The limit of 425 &mu;m poses a number of challenges when performing the Atterberg limit tests on baseball infield soils. 
+
+These soils typically comprise >50% total sand, much of which must be removed using the established procedure. 
+Two options are then available to compare test results from different soils:
+(1) compare the results without adjustment, or (2) compute the whole-soil LL and PL using a linear correction.
+If no adjustment is performed, the test results cannot be fairly compared because the the total fines content of the soils are no longer proportional to their presence in the bulk soil. 
+If the second approach is chosen, the computed whole-soil LL or PL would be inaccurate for most infield mixes because prior research has suggested that linear corrections to obtain the whole-soil LL and PL are unreliable when coarse addition content exceeds ~30%. 
+Therefore, neither approach is optimal. 
+
+An alternative strategy is to test infield mixes without removing any particles >425 &mu;m,. 
+So long as the maximum particle diameter is <3.2 mm (the diameter of a PL thread), the soil can theoretically be rolled into a 3.2 mm thread. 
+
+
+Infield soils are commonly dry screened to <2 mm. 
+The present research was conducted to determine whether an alternative procedure in which the sample was dry-screened to 2 mm could accurately measure LL and PL.
+The tests were performed successfully, and mixtures containing the oversize particles actually adhered more closely to the linear law than mixtures containing equivalent amounts of allowable particles.
+Therefore, the authors suggest that when performing LL and PL tests on infield mixes, ASTM D4318 be modified to allow particles up to 2 mm. 
+This should result in more accurate test results. 
+
+
+
+Finally, this research demonstrated that the toughness of soil mixtures is affected by coarse addition particle size. 
+Toughness was not directly measured in this research, but the data clearly show that mixtures containing a coarse sand can be dried to a lower water content before reaching their plastic limit, compared with mixtures incorporating equivalent amount of finer sands or silt. <!--too wordy-->
+This allows the clay-water matrix to stiffen and yield a higher toughness at the PL. 
+Mixtures containing significant quantities of fine sand or silt are more brittle and have lower toughness at their respective plastic limits than mixtures containing equivalent amounts of coarse sand. 
+If higher toughness is a desired trait of the mixture, it should be made using the coarsest sand available.
+
+
+Further work should expand on other properties of the coarse fraction such as particle shape and particle-size uniformity.
+Additional work could also explore the toughness concept further and demonstrate whether the plasticity of the clay interacts with the size and quantity of coarse additions.
+
+
+The results of this research can aid soil suppliers and grounds managers develop a more mechanistic design framework for baseball infield mixes. 
+
+________________
+
+2022-04-25
+ 
+1. You have to sieve the sample to _some_ max diameter so you can perform the test.
+1. We find no evidence to validate the choice was made at 425 microns. 
+1. We want to test a soil with particles 2 mm, so we are going to test it. 
+1  We found that everything above 425 didn't screw up the test results.
+1. In fact they had even less of an effect than legal coarse additions on the difference between the measured LL and PL compared to what they are supposed to be.
+1  Thus the authors suggest ASTM D4318 could be modified to allow particles up to 2000 &mu;m. 
+
+
+This approach would yield test results at least as accurate as a linear law correction.
+
+
+
+1. Therefore why would you bother to take them out 
+
+Barnes found with coarse additions that _are_ allowed. 
+
+
+
+Previous researchers have questioned the validity of the approach of removing coarse particles and then computing whole-soil LL and PL using the linear law. 
+
+
+
+Coarse additions are used to study the effect of particles coarser than silt or clay
+
+
+Barnes shows that the particles within the accepted range screw up the test. 
+Our particles don't, or at least they don't make it any worse. 
+So you need to expand the range. 
+
+
+This researh demonstrated that the LL and PL tests can be successfully performed when the samples contain particles 2000-425 &mu;m. 
+Not only do these particles not nullify invalidate falter inhibit the performing of the test, they actually interfere less with the plasticity of the fines themselves. 
+
+
+
+
+_____
+
+
+The linear law is used to compute the whole-soil LL or PL. 
+This research demonstrated that the linear law cannot apply for the PL when coarse addition content &GreaterEqual;20% or for the LL with coarse additions &GreaterEqual;40%.
+This finding supports prior work suggesting the linear law is invalid at coarse addition content &ge; 30-40% [@Seed1964a; @Barnes2013; @Sivapullaiah1985].
+This means the computed whole-soil LL or PL would be inaccurate for most infield mixes.
+An alternative approach would be to test infield mixes without removing any particles >425 &mu;m,.
+Results of this research showed that particles 2000-425 &mu;m had no deleterious effects on the test results. 
+Therefore, the authors suggest that the maximum permissible particle diameter be moved from 425 to 2000 when performing Atterberg limit tests on infield mixes.
+
+
+The crux of the whole paper is that 
+To obtain whole-soil LL or PL, one MUST either use the linear law or not
+take any of the coarse particles out. and since the linear law doesn't work,
+it's better to just test the whole sample <2 mm.
+
+
+
+
+
+
+
+When you don't add any sand who cares what size the sand is??
+The size of the particles becomes more important as you add more of them. 
+
+<!-- , compared with coarse additions allowed by ASTM D4318 (<425 &mu;m) [@ASTMD4318-2018] -->
+<!-- this needs to be brought up sooner if we are going to even mention PI. Clarify that it is measured vs predicted again -->
+<!-- PI was less affected by coarse addition size because the LL and PL experienced similar deviations for mixtures having equivalent coarse addition content.  -->
+
+<!-- deviathigher LL and PL than predicted by the linear law of mixtures. -->
+
+
+The effect of coarse particle size became increasingly important above 40% coarse addition.
+
+
+
+The toughness of the soil at its plastic limit is also affected by coarse addition particle size.
+Mixtures containing coarser sands had higher estimated $T_{max}$ at their plastic limits compared with mixtures containing finer additions.
+This effect probably can be explained by fewer contacts between coarse particles and lower specific surface area, permitting the clay matrix to experience a more extensive drydown before crumbling. 
+The lower water content allowed the clay matrix to stiffen without losing its plasticity. 
+If higher toughness is a desired mixture property of the mixture, it is suggested to use the coarsest sand possible.
+
+
+There is no evidence  that taking the coarse particles out improves the accuracy or utility of the test results. 
+
+The results of this study demonstrate that the wet-sieving protocol may be omitted when testing the Atterberg limits of infield mixes. 
+<!-- The larger particles change the test results less than "legal" sand and silt particles. -->
+Performing Atterberg limit tests on infield mixes without removing particles 0.425-2.0 mm would reduce processing time and yield more meaningful analyses.
+
+
+

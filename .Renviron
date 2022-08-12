@@ -1,0 +1,6 @@
+# when calling Make on Windows it should always find the first library....when calling in WSL it won't find the first 
+# one but t should find the second one....sine Windows uses semi-colons, but because it doesn't need to use the 
+# first one maybe it will still work??
+
+#R_LIBS="E:/OneDrive - The Pennsylvania State University/Documents/R/win-library/4.1:~/R/x86_64-pc-linux-gnu-library/4.1"
+R_LIBS="E:/OneDrive - The Pennsylvania State University/Documents/R/win-library/4.2"

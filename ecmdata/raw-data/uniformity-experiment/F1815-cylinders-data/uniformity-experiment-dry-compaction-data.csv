@@ -1,0 +1,11 @@
+expt_sand_number,sand_name,sand_size,rep,cylinder_ID,sand_configuration,preparation_method,compaction_lifts,compaction_moisture,filled_wt,ht_reading_raw,ht_reading_corrected_mm,tin_number,tin_w_wet_sample,tin_w_OD_sample,experiment_number
+7,high_Cu_Quickcrete,-,1,1,dense,dry_1_lift,1,air_dry,332.2,3.99,61.404500000000006,-,-,-,3
+7,high_Cu_Quickcrete,-,2,1,dense,dry_1_lift,1,air_dry,347.47,4.18,66.23049999999999,-,-,-,3
+7,high_Cu_Quickcrete,-,3,1,dense,dry_1_lift,1,air_dry,341.95,4.1,64.1985,-,-,-,3
+7,high_Cu_Quickcrete,-,4,2,dense,dry_1_lift,1,air_dry,351.49,4.23,67.50050000000002,-,-,-,3
+7,high_Cu_Quickcrete,-,5,3,dense,dry_1_lift,1,air_dry,336.03,4.06,63.18249999999999,-,-,-,3
+8,low_Cu_Quickcrete,-,1,1,dense,dry_1_lift,1,air_dry,318.17,4.03,62.42050000000001,-,-,-,3
+8,low_Cu_Quickcrete,-,2,1,dense,dry_1_lift,1,air_dry,309.38,3.89,58.86449999999999,-,-,-,3
+8,low_Cu_Quickcrete,-,3,1,dense,dry_1_lift,1,air_dry,339.05,4.27,68.5165,-,-,-,3
+8,low_Cu_Quickcrete,-,4,1,dense,dry_1_lift,1,air_dry,322.69,4.02,62.16649999999999,-,-,-,3
+8,low_Cu_Quickcrete,-,5,1,dense,dry_1_lift,1,air_dry,315.18,3.99,61.404500000000006,-,-,-,3

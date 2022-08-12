@@ -1,0 +1,7 @@
+./ecmdata/derived-data/cleaned-rds-files/experiment-1-atterberg-limits-cleaned-data.rds
+
+./ecmdata/derived-data/cleaned-rds-files/experiment-2-atterberg-limits-cleaned-data.rds
+
+./ecmdata/derived-data/cleaned-rds-files/experiment-3-atterberg-limits-cleaned-data.rds
+
+./ecmdata/derived-data/cleaned-rds-files/experiment-1-particle-size-curves-cleaned-data.rds

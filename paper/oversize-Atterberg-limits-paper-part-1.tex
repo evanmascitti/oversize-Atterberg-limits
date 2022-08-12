@@ -1,0 +1,828 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{Roboto}
+  \setmathfont[]{Fira Math Regular}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+% this file was originally copied from my PhD thesis proposal project 2021-06-16
+% It has manuy useful options and packages; many are probably not required for a 
+% simple manuscript so I will clean up the extraneous ones that get in 
+% the way but leave the others in case they prove useful 
+
+
+
+% a useful website for knowing what things are called in latex
+% http://www.texfaq.org/FAQ-fixnam
+
+
+
+% packages I had already put in here 
+\usepackage[none]{hyphenat}
+\usepackage[font=small,labelfont=bf]{caption}
+
+
+% all packages that kableExtra depends on 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+% this one not needed because I always use UTF-8 \usepackage[utf8]{inputenc}
+\usepackage{makecell}
+
+% allow for use of more colors 
+% \usepackage[svgnames]{xcolor}
+% \usepackage[]{xcolor}
+\usepackage{xcolor}
+\definecolor{psunavy}{HTML}{041E42}
+
+% define a dark blue color for printing my comments 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% load cancel package for clearer unit conversions
+\usepackage{cancel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% apparently this package makes better bookmarks, 
+% I need it for putting the TOC into the document tree
+% see https://tex.stackexchange.com/questions/65544/how-to-link-table-of-contents-in-thesis-pdf
+
+\usepackage{bookmark}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% set vertical line spacing for amsmath equations 
+\setlength{\jot}{8pt}
+
+% everything abve works well
+
+% extras that I am testing come below 
+
+
+% set paragraph indentation back to > 0; default is 20pt
+\parindent=10pt
+
+
+
+% define navy as a link color and use it for internal links
+% depends on xcolor which is already loaded above 
+\definecolor{dodgerblue4}{HTML}{104E8B}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,
+  linkcolor=dodgerblue4
+}
+
+
+% number the lines with small grey text, see https://tex.stackexchange.com/questions/247165/can-i-change-linenumber-colour
+\usepackage{lineno}
+
+% define R's grey75 color in HTML hex notation
+\definecolor{grey75}{HTML}{BFBFBF}
+
+% set color of line numbers 
+% this was the code I copied from the URL above 
+\renewcommand{\linenumberfont}{\normalfont\bfseries\small\color{grey75}}
+
+% and this is my own version which uses the mono font. 
+% \renewcommand{\linenumberfont}{\ttfamily\small\color{grey75}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% re-style block quotations??
+% there are 2 environments that handle block quotations- the quotation environment 
+% is for multi-paragraph quotes and each paragraph is indented.
+% the quote environment is meant for shorter quotes. Evidently R Markdown 
+% puts at least the short ones in the quote environment; I discovered this by 
+% inspecting the .tex file usingkeep_tex: true in the YAML
+
+
+% see https://stackoverflow.com/questions/4018493/vertical-line-with-every-quotation/4023967
+% for solution
+\usepackage{framed}
+
+
+% define R's grey30 color in HTML hex notation
+\definecolor{grey30}{HTML}{4D4D4D}
+
+% change bar size to 0.5 pt instead of the default 3 pt
+% use the newly defined grey color 
+\renewenvironment{leftbar}{\def\FrameCommand{\color{grey30}\vrule width 1pt \hspace{10pt}}\MakeFramed {\advance\hsize-\width \FrameRestore}}{\endMakeFramed}
+
+% for multi-paragraph quotations 
+% \renewenvironment{quotation}%
+% {\begin{leftbar}\begin{quotation}}%
+% {\end{quotation}\end{leftbar}}
+
+% for single-paragraph quotations 
+% remove indent with \noindent
+
+
+\renewenvironment{quote}%
+{\begin{leftbar} \begin{quotation} \noindent \small }%
+{\end{quotation}\end{leftbar}}
+
+
+% to remove parentheses around equations 
+% copied from https://tex.stackexchange.com/questions/318627/remove-parentheses-that-surround-equation-labels
+
+\usepackage{mathtools}
+% not needed since this package is already loaded \usepackage{hyperref}
+\usepackage[capitalise,nameinlink,noabbrev]{cleveref}
+
+\creflabelformat{equation}{#2#1#3}
+
+\newtagform{noparen}{}{}
+\usetagform{noparen}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Coarse additions affect plasticity and toughness of soil mixtures, Part I: Particle size},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Coarse additions affect plasticity and toughness of soil mixtures, Part I: Particle size}
+\author{}
+\date{\vspace{-2.5em}last compiled Fri. 2022-08-12, 1:17 PM}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=blue}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\setstretch{1.5}
+\linenumbers
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{definitions-of-soil-behavior-thresholds}{%
+\subsection{Definitions of soil behavior thresholds}\label{definitions-of-soil-behavior-thresholds}}
+
+The Atterberg limits represent unique soil water contents corresponding to definite changes in mechanical behavior.
+Test results can be used to predict soil shear strength, compressibility, and permeability (\protect\hyperlink{ref-McBride2002}{McBride, 2002}; \protect\hyperlink{ref-Holtz2010}{Holtz et al., 2010}).
+
+Four principal states of soil are widely recognized: solid, semi-solid, plastic, and liquid (\protect\hyperlink{ref-McBride2002}{McBride, 2002}).
+A soil transitions through these states as its water content increases.
+The four states are delineated by three boundaries (thresholds), termed the shrinkage limit (SL), plastic limit (PL), and liquid limit (LL) (\protect\hyperlink{ref-McBride2002}{McBride, 2002}).
+
+In addition to the three above, Atterberg (\protect\hyperlink{ref-Atterberg1911}{1911}) originally identified four additional states termed: upper limit of dense liquid, lower limit of dense liquid, sticky limit, and cohesion limit.
+Casagrande (\protect\hyperlink{ref-Casagrande1932}{1932}) deemed the upper and lower limits of dense liquid too difficult to define and that the sticky and cohesion limits pertained more to the workability of clay in ceramics than to agriculture or earthworks engineering.
+
+Geotechnical engineers modified and standardized Atterberg's original methods for the three remaining thresholds (LL, PL, and SL).
+The LL test is performed with a mechanical device comprising a brass cup agitated by a rotating cam (\protect\hyperlink{ref-Casagrande1932}{Casagrande, 1932}).
+Terzaghi (\protect\hyperlink{ref-Terzaghi1925}{1925}) introduced the use of a fixed thread diameter (3.2 mm or 1/8 in) for the PL test.
+The PL test remains otherwise unchanged from that described by Atterberg (\protect\hyperlink{ref-Atterberg1911}{1911}).
+Both threshold water contents are measured on a gravimetric basis and conventionally expressed as percentages.
+The plasticity index (PI) is the difference between LL and PL (\protect\hyperlink{ref-ASTMD43182018}{ASTM International, 2018}).
+
+\hypertarget{oversize-particle-removal-in-plasticity-tests}{%
+\subsection{Oversize particle removal in plasticity tests}\label{oversize-particle-removal-in-plasticity-tests}}
+
+Atterberg limit tests are performed only on material \textless425 μm sieve diameter (\protect\hyperlink{ref-ASTMD43182018}{ASTM International, 2018}; \protect\hyperlink{ref-AASHTO2020a}{AASHTO, 2020}).
+Particles \textgreater425 μm are termed ``oversize'' by ASTM D4318 (\protect\hyperlink{ref-ASTMD43182018}{ASTM International, 2018}).
+If oversize particles cannot be removed by hand, the standard dictates the sample be wet-sieved over a \textless425 μm sieve.
+
+The authors are not aware of a fundamental rationale for the choice of 425 μm as the upper boundary for Atterberg limit tests, although we may conjecture that it was chosen to match the boundary between `medium' and `fine' sand in Casagrande's later-published Airfield Classification (AC) scheme (\protect\hyperlink{ref-Casagrande1942}{Casagrande, 1942}).
+The AC became the Unified Soil Classification System (USCS) and the 425 μm boundary is still in use today (\protect\hyperlink{ref-Casagrande1947}{Casagrande, 1947}; \protect\hyperlink{ref-ASTMD2487-17}{ASTM International, 2020}).
+The position of the boundary has not been questioned in primary literature.
+
+When oversize particles are removed to conduct the test, the obtained LL or PL must be adjusted to estimate the whole-soil LL or PL.
+
+The whole-soil LL is computed as:
+
+\begin{equation}
+w_{whole-soil} = w_{<425{\mu}m~fraction} \times m_{<425{\mu}m~fraction}
+\label{eq:oversize-correction-formula}
+\end{equation}
+
+where \(w\) is the gravimetric water content as a decimal and \(m_{<425{\mu}m~fraction}\) is the mass percent passing a 425 μm sieve (as a decimal).
+The whole-soil PL may be obtained using the same calculation (\protect\hyperlink{ref-ASTMD2487-17}{ASTM International, 2020}).
+
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) questioned the accuracy of this correction and suggested that the LL correction becomes invalid when the mass of non-clay particles exceeds 50\%, and that the PL correction is invalid at even lower non-clay content (about 30-40\%).
+
+ASTM (\protect\hyperlink{ref-ASTMD15572015}{2015}) describes an alternative approach to dealing with oversize particles, termed the replacement or substitution method.
+In the substitution method, oversize particles are removed and replaced with an equivalent mass of particles finer than the upper boundary.
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) adapted the substitution method to Atterberg limit tests and compared its results to the correction method (Equation \eqref{eq:oversize-correction-formula}) and suggested the substitution method is invalid for substitutions as low as 10\%.
+This method is no longer permitted by ASTM (\protect\hyperlink{ref-ASTMD15572015}{2015}).
+
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) also suggested that when ≥30\% of a sample is removed via sieving, the accuracy of whole-soil LL and PL results is compromised.
+This supports the language in International (\protect\hyperlink{ref-ASTMInternational2015a}{2015}) which states that results computed from oversize content ≥30\% may be suspect.
+
+The practice of removing oversize particles and then correcting for their absence is performed due to the limited size of the test apparatus and the fixed thread diameter in ASTM International (\protect\hyperlink{ref-ASTMD43182018}{2018}).
+There is little available research on the quantitative definition of ``oversize.''
+
+\hypertarget{previous-research-on-the-effect-of-coarse-fraction-particle-size-on-atterberg-limits}{%
+\subsection{Previous research on the effect of coarse fraction particle size on Atterberg limits}\label{previous-research-on-the-effect-of-coarse-fraction-particle-size-on-atterberg-limits}}
+
+Plasticity is understood to be a property of clay materials (\protect\hyperlink{ref-Guggenheim1995}{Guggenheim and Martin, 1995}).
+While numerous studies have evaluated the influence of clay mineralogy on plasticity (\protect\hyperlink{ref-Seed1964a}{Seed et al., 1964}; \protect\hyperlink{ref-Dumbleton1966a}{Dumbleton, 1966}; \protect\hyperlink{ref-Schmitz2004a}{Schmitz et al., 2004}; \protect\hyperlink{ref-Holtz2010}{Holtz et al., 2010}; \protect\hyperlink{ref-Spagnoli2018}{Spagnoli et al., 2018}),
+less attention has been devoted to the effect of sand-size and silt-size particles on soil plasticity.
+
+Some researchers have measured changes in the Atterberg limits due to the addition of sand-size or silt-size particles to a fine-grained soil.
+Multiple experiments have shown that the size of these particles (termed ``coarse additions'') has a predictable effect on LL and PL (\protect\hyperlink{ref-Dumbleton1966b}{Dumbleton and West, 1966}; \protect\hyperlink{ref-Sivapullaiah1985}{Sivapullaiah and Sridharan, 1985}; \protect\hyperlink{ref-Barnes2013}{Barnes, 2013}).
+Dumbleton and West (\protect\hyperlink{ref-Dumbleton1966b}{1966}) measured LL and PL of mixtures containing varying amounts of coarse additions with either kaolinite or montmorillonite clay.
+Mixtures were produced using equivalent amounts of the coarse additions (coarse sand, D\textsubscript{50}=350 μm; fine sand D\textsubscript{50}=110 μm; or silt, \textless75 μm)
+Sivapullaiah and Sridharan (\protect\hyperlink{ref-Sivapullaiah1985}{1985}) performed a similar set of experiments using three sizes of coarse particles and either kaolinite or montmorillonite. The coarse particle ranges were 150-425 μm, 150 μm--75 μm, or silty soil (no particle size distribution given).
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) tested mixtures of London clay with silt (63-2 μm) or two grades of sand (425-212 μm or 212-63 μm).
+
+The findings of all three studies were similar.
+Each study compared the measured LL and PL to the values predicted by the linear law of mixtures, a term defined by Sivapullaiah and Sridharan (\protect\hyperlink{ref-Sivapullaiah1985}{1985}).
+The the linear law of mixtures (or more simply, linear law) is analogous to the correction performed after removal of naturally-occurring particles \textgreater425 μm (Equation \eqref{eq:oversize-correction-formula}).
+The linear law states that the water content of a soil mixture at its LL or PL is inversely proportional to the \% coarse addition:
+
+\begin{equation}
+w_{whole-soil} =  w_{fines} \times (1 - c)
+\label{eq:linear-law-of-mixtures}
+\end{equation}
+
+where \(c\) is the coarse fraction mass as a decimal and \(w_{fines}\) is the water content of the fines as a decimal.
+
+In all three studies, mixtures containing smaller coarse particles had elevated LL and PL compared with their predicted values.
+However, mixtures containing the larger coarse particles adhered closely to the linear law.
+In other words, the disparity between predicted and measured values narrowed with increasing particle size.
+Note that all the above studies used sand exclusively \textless{} 425 μm.
+
+A single study (\protect\hyperlink{ref-Rehman2020}{Rehman et al., 2020}) tested the LL and PL of natural soils sieved to pass either a 2000 μm or 425 μm sieve.
+For soils with LL \textless35, allowing the 2000-425 μm particles to remain in the sample resulted in minimal LL differences between sample treatment methods.
+When the LL exceeded 35, the two sieving procedures resulted in greater differences.
+
+Collectively, these results demonstrate when coarse particles are added to a fine-grained soil, the size of the particles affects the mixture's LL and PL.
+Mixes containing finer ``coarse additions'' deviate from the linear law while mixes containing the coarsest additions adhere to it more closely.
+
+\hypertarget{relationship-of-atterberg-limits-to-toughness-of-fine-grained-soils}{%
+\subsubsection{Relationship of Atterberg limits to toughness of fine-grained soils}\label{relationship-of-atterberg-limits-to-toughness-of-fine-grained-soils}}
+
+Soil toughness is an important consideration during tillage and earthmoving operations because it governs the energy required to deform, fragment, or compact the soil.
+
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) defined soil toughness as the work required to deform a fully ductile soil specimen over a defined strain range.
+This differs from the definition given by Casagrande (\protect\hyperlink{ref-Casagrande1932}{1932}), which was a soil's shearing resistance (i.e.~peak load) at its plastic limit.
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) considered soil toughness to have its maximum value \(T_{max}\) at the plastic limit.
+
+In the Barnes study (\protect\hyperlink{ref-Barnes2013}{2013}), the size and quantity of coarse additions mixed with clay affected the toughness of the mixtures.
+The mixtures were compared on the basis of their matrix water content, which was defined as the water content per unit mass \textless2 μm:
+
+\begin{equation}
+w_{matrix} = \frac{w_{whole-soil}}{m_{<2\mu m}}
+\label{eq:barnes-matrix-water-content}
+\end{equation}
+
+At equivalent matrix water content, mixes with the coarser sand additions had lower toughness.
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) attributed this to a greater number of contacts between smaller particles, which are more numerous per unit mass.
+However, the soils with the coarser sand also had a lower PL compared to the finer mixtures.
+This means that the mixes with coarser sand could be dried down further before they became brittle, and their toughness at their respective whole-soil PL was higher than that for the mixtures containing the finer sand grade or the silt.
+
+The toughness research by Barnes (\protect\hyperlink{ref-Barnes2009}{2009}, \protect\hyperlink{ref-Barnes2013}{2013}) was performed using a specialized apparatus which is not commercially available.
+To expand the utility of the soil toughness concept, Moreno-Maroto and Alonso-Azcárate (\protect\hyperlink{ref-Moreno-Maroto2018}{2018}) re-analyzed data from Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) to develop an empirical correlation between Atterberg limits and \(T_{max}\).
+Their empirical equation can be solved to predict \(T_{max}\) from PI and LL:
+
+\begin{equation}
+T_{max}~(kJ~m^{-3}) = \frac{\frac{PI}{LL}-0.3397}{0.0077}
+\label{eq:moreno-marato-toughness-equation}
+\end{equation}
+
+Note that Equation \eqref{eq:moreno-marato-toughness-equation} was developed using pure/natural soils as opposed to artificial mixtures.
+
+\hypertarget{utility-of-atterberg-limits-and-toughness-estimates-for-assessing-baseball-infield-soils}{%
+\subsection{Utility of Atterberg limits and toughness estimates for assessing baseball infield soils}\label{utility-of-atterberg-limits-and-toughness-estimates-for-assessing-baseball-infield-soils}}
+
+A baseball field comprises 3 main surface types: natural or artificial turfgrass, the warning track, and the infield skin.
+The infield skin is composed of compacted bare soil and is considered the most critical portion of the field (\protect\hyperlink{ref-Zwaska2007b}{Zwaska, 2007}).
+The behavior of an infield soil is markedly affected by its water content (\protect\hyperlink{ref-STMA2015}{STMA, 2015}).
+Therefore, the Atterberg limits may offer a means to quantitatively assess infield soil performance.
+Toughness is also an important consideration of the field manager.
+A tough infield soil allows minimal disruption to the surface from loads imposed by athletes and baseballs.
+
+Infield skin soils are often dry screened to pass a 2000 μm sieve, but they may still contain up to 50\% of their total mass between 2000 μm and 425 μm (\protect\hyperlink{ref-Schroder2012}{Schroder, 2012}).
+Canonical Atterberg limit methods require much of these samples to be removed.
+While the whole-soil LL and PL could be computed from Equation \eqref{eq:oversize-correction-formula}, the linear law correction may be unreliable when coarse addition content exceeds \textasciitilde30-40\% (\protect\hyperlink{ref-Seed1964a}{Seed et al., 1964}; \protect\hyperlink{ref-Sivapullaiah1985}{Sivapullaiah and Sridharan, 1985}; \protect\hyperlink{ref-Barnes2013}{Barnes, 2013}).
+
+If the linear correction is not used, the removal of particles \textgreater425 μm may limit comparison of test results.
+Consider a case in which two soils contain identical total sand content but different types of fines and different sand-size gradations.
+These soils will likely have different LL and PL values; however, it will be unclear whether the differences are due to the nature of the fines, or simply because more sand 2000-425 μm was removed from the soil having the finer sand gradation.
+
+Given the unreliability of the linear correction for oversize content, and given that infield soils contain a wide range of sand contents and sand sizes, using 425 μm as the upper boundary of acceptable particle sizes may not be the ideal procedure for testing the Atterberg limits of infield soils.
+
+\hypertarget{objectives}{%
+\subsection{Objectives}\label{objectives}}
+
+The present research was designed to answer four questions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Can the Atterberg limit tests be successfully performed without removing ``oversize'' particles 2000-425 μm?
+\item
+  How do LL and PL of soil mixtures containing oversize particles compare to those for mixtures containing only particles \textless425 μm?
+\item
+  How do LL and PL of mixtures containing variously-sized coarse additions compare to the values predicted by the linear law?
+\item
+  How does the particle size of coarse additions affect the calculated toughness of a soil mixture?
+\end{enumerate}
+
+\hypertarget{materials-and-methods}{%
+\section{Materials and methods}\label{materials-and-methods}}
+
+\hypertarget{mixture-component-characterization}{%
+\subsection{Mixture component characterization}\label{mixture-component-characterization}}
+
+Soil mixtures were produced from seven rates of six different-sized coarse additions and a single kaolinitic clay soil.
+Particle size analyses were performed on each coarse addition and clay soil according to Gee and Or (\protect\hyperlink{ref-Gee2002}{2002}).
+Gravity sedimentation plus centrifugation were used along with the the pipette method to compute the percent of the sample finer than 20, 5, 2, and 2 μm (\protect\hyperlink{ref-Gee2002}{Gee and Or, 2002}).
+Prior to blending with any coarse additions, Atterberg limit tests were also performed on the clay soil component.
+
+\hypertarget{mixing-procedure}{%
+\subsection{Mixing procedure}\label{mixing-procedure}}
+
+Components were air-dried and their water contents were determined gravimetrically.
+The clay component was pulverized and passed though a 0.25 mm screen.
+Coarse additions were mixed by hand with the clay component until visually homogenous.
+The component percentages were adjusted for the trace amounts of particles between 2000-53 μm in the clay soil and the air-dry water content of each component.
+Final mixture percentages are expressed on an oven-dry basis (kg kg\textsuperscript{-1}).
+
+\hypertarget{treatments}{%
+\subsection{Treatments}\label{treatments}}
+
+This experiment evaluated soil mixtures, each containing one of the six coarse additions mixed with the kaolinitic clay.
+Each of the six coarse additions were combined with the clay in varying ratios to yield final mixtures having 0, 20, 40, 60, 70, 75, and 80 \% coarse addition, for a total of 42 mixtures.
+The sand-sized coarse additions were produced from a single material having a wide initial particle size distribution. The sand was segregated using a continuous-flow screening device in order to generate adequate quantities of material in 5 size fractions (2-1, 1-0.5, 0.5-0.25, 0.25-0.15, and 0.15-0.053 mm).
+Each fraction was sieved ≥2 additional times to minimize the presence of particles outside the desired range.
+Silt-size material (\textless0.053 mm) comprised the sixth coarse fraction and was obtained from a wholesale ceramic supplier as Sil-co-Sil 52 crushed silica (U.S. Silica, Katy, TX).
+To verify the cleanliness of each fraction, the particle size distributions of each coarse addition were determined using traditional particle size analysis (\protect\hyperlink{ref-Gee2002}{Gee and Or, 2002}) and are shown in Figure \ref{fig:experiment-1-particle-size-curves}.
+
+The five chosen sand-size classes correspond to particle diameters used in the United States Golf Association method for putting green construction (\protect\hyperlink{ref-USGA2018}{USGA, 2018}).
+This specification is familiar to sports field managers and is often referenced when comparing infield mixes.
+Table \ref{tab:usga-sieve-sizes-table} shows the particle size ranges of each of the 6 coarse fractions.
+The D\textsubscript{50} values in Table \ref{tab:usga-sieve-sizes-table} were determined graphically (\protect\hyperlink{ref-USGA2018}{USGA, 2018}) from Figure \ref{fig:experiment-1-particle-size-curves}.
+
+\begin{table}
+
+\caption{\label{tab:usga-sieve-sizes-table}USGA particle size classes used for Experiment 1.}
+\centering
+\begin{tabular}[t]{llcll}
+\toprule
+\multicolumn{3}{c}{ } & \multicolumn{2}{c}{Sieve diameter (mm)} \\
+\cmidrule(l{3pt}r{3pt}){4-5}
+\textbf{Size class} & \textbf{Sub-class} & \textbf{U.S. mesh sizes} & \textbf{Range} & \textbf{D\textsubscript{50}}\\
+\midrule
+ & Very coarse & 10-18 & 2.0 - 1.0 & 1.40\\
+
+ & Coarse & 18-35 & 1.0 - 0.5 & 0.72\\
+
+ & Medium & 35-60 & 0.5 - 0.25 & 0.36\\
+
+ & Fine & 60-100 & 0.25 - 0.15 & 0.19\\
+
+\multirow{-5}{*}{\raggedright\arraybackslash Sand} & Very fine & 100-270 & 0.15 - 0.05 & 0.09\\
+\cmidrule{1-5}
+Silt & - & < 270 & 0.05 - 0.002 & 0.03\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeALims/figs/pdf/experiment-1-particle-size-curves} 
+
+}
+
+\caption{Particle size distributions of the 6 coarse fractions in Experiment 1. Dashed grey lines indicate D~50~ for a given size fraction.}\label{fig:experiment-1-particle-size-curves}
+\end{figure}
+
+\hypertarget{atterberg-limit-test-protocol}{%
+\subsection{Atterberg limit test protocol}\label{atterberg-limit-test-protocol}}
+
+Atterberg limit tests were performed on each of the 42 soil mixtures.
+LL and PL tests were performed according to a modified version of ASTM D4318 (\protect\hyperlink{ref-ASTMD43182018}{ASTM International, 2018}).
+The modification eliminated the wet-sieving procedure so particles between 2000 and 425 μm remained in the sample.
+Note that 100\% of the pure mixture components passed a 2000 μm sieve.
+
+For the LL, a minimum of four data points were collected to plot the flow curve.
+Three PL threads were rolled and their average value was used as the representative value for the sample.
+
+Estimated toughness values were computed from the equation published by Moreno-Maroto and Alonso-Azcárate (\protect\hyperlink{ref-Moreno-Maroto2018}{2018}) (Equation \eqref{eq:moreno-marato-toughness-equation}).
+
+\hypertarget{statistical-analyses-and-computational-environment}{%
+\subsection{Statistical analyses and computational environment}\label{statistical-analyses-and-computational-environment}}
+
+Differences in LL and PL across treatments were statistically compared using general linear models.
+The percent coarse addition and the D\textsubscript{50} were each considered as continuous predictor variables.
+A two-way polynomial model with interaction was fitted to these differences.
+The base-10 logarithm of the D\textsubscript{50} was used as a continuous representation of the coarse fraction variable.
+This permits a single value to more appropriately represent the entire range of particle diameters within a size fraction and affords greater explanatory power than considering size fraction as a categorical variable.
+The logarithms of particle diameters are commonly analyzed because the particle-size distributions of many naturally occurring soils and sediments are log-normally distributed (\protect\hyperlink{ref-Simonson1999}{Simonson, 1999}; \protect\hyperlink{ref-Brady2007}{Brady and Weil, 2007}; \protect\hyperlink{ref-Pettijohn2012}{Pettijohn et al., 2012})
+
+Main effects and interactions were tested using Type III Sums of Squares.
+Treatments were considered significantly different when the predictor variable regression slope was significantly different from zero (P \textless{} 0.05).
+All analyses were performed using the \texttt{lm()} function in the R Language for Statistical Computing (version 4.2.0) (\protect\hyperlink{ref-R-Core-Team2022}{R-Core-Team, 2022}).
+
+The analyses also utilized the authors' soiltestr package for R (\url{https://github.com/evanmascitti/soiltestrhttps://github.com/evanmascitti/soiltestr}), which was developed using principles outlined within the tidyverse framework (\protect\hyperlink{ref-Wickham2019a}{Wickham et al., 2019}).
+GNU \texttt{Make} (\protect\hyperlink{ref-GNU2020}{GNU, 2020}) was used to facilitate reproducible analyses by maintaining links between raw data, analysis code, and finished output.
+A \texttt{Makefile} which runs the relevant analysis code is included in the supplemental materials.
+
+\clearpage
+
+\hypertarget{results-and-discussion}{%
+\section{Results and discussion}\label{results-and-discussion}}
+
+Measured LL and PL values were compared with predicted values computed from the linear law (Equation \eqref{eq:linear-law-of-mixtures}).
+
+There was a significant interaction between coarse addition percent and coarse addition size (Table \ref{tab:experiment-1-d50-ANOVA}).
+Figure \ref{fig:experiment-1-atterberg-limit-facets} shows the LL and PL as a
+function of coarse particle mass, with one panel per size fraction.
+The dashed lines represent the water contents predicted using the linear law.
+With the exception of those including silt-sized additions, all soils containing ≥70\% coarse addition were nonplastic and cannot be plotted in Figure \ref{fig:experiment-1-atterberg-limit-facets}.
+
+\begin{table}
+
+\caption{\label{tab:experiment-1-d50-ANOVA}Analysis of variance table for the \% coarse addition x D\textsubscript{50} linear model. Significant effects at p=0.05 in bold.}
+\centering
+\begin{tabular}[t]{llrll}
+\toprule
+\textbf{Term} & \textbf{Sum Sq.} & \textbf{Deg. of Fr.} & \textbf{F-Statistic} & \textbf{P-value}\\
+\midrule
+Intercept & 0.00134 & 1 & 1.3 & 0.26473\\
+log\textsubscript{10}(D\textsubscript{50})\textsuperscript{2} & 0.00016 & 1 & 0.1 & 0.70386\\
+\textbf{\% coarse addition} & \textbf{0.007} & \textbf{1} & \textbf{6.6} & \textbf{0.01190}\\
+\textbf{log\textsubscript{10}(D\textsubscript{50})\textsuperscript{2} x \% coarse addition} & \textbf{0.01167} & \textbf{1} & \textbf{10.9} & \textbf{0.00131}\\
+Residual error & 0.10669 & 100 & NA & -\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The LL test results adhered closely to the linear law up to 20\% coarse addition.
+Above 20\% coarse addition, adherence was closer for soils including particles with greater D\textsubscript{50}.
+The LL of mixtures containing the coarsest sand (2000-1000 μm) were nearly identical to those predicted by the linear law, all the way up to 75\% coarse addition.
+Conversely, the LL of finer materials were always higher than predicted.
+Mixtures including silt-sized material deviated from the linear law with just 20\% coarse addition, while mixtures containing the finer sands began to depart from the predicted values at about 40\%.
+The effect of particle size was even more pronounced for the plastic limit.
+Those containing coarse additions \textless250 μm had elevated plastic limits and began to diverge from the linear law at around 20\% coarse addition. Mixtures containing coarse additions \textgreater250 μm still adhered closely to the linear law.
+
+The physical meaning of the significant interaction between the percent coarse addition (Table \ref{tab:experiment-1-d50-ANOVA}) and log\textsubscript{10}(D\textsubscript{50}) is that the disparity between predicted and measured values widened with increasing amounts of coarse additions.
+This is graphically depicted by the distance between the solid and dashed lines in Figure \ref{fig:experiment-1-atterberg-limit-facets}.
+However, the plasticity index (PI) was not greatly affected because the LL and PL increased by equivalent amounts.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeALims/figs/pdf/experiment-1-atterberg-limit-facets} 
+
+}
+
+\caption{Liquid and plastic limits as a function of coarse addition content and size. Dashed lines denote water contents predicted by the linear law of mixtures.}\label{fig:experiment-1-atterberg-limit-facets}
+\end{figure}
+
+Each panel represents the Atterberg limits as a function of the coarse addition D\textsubscript{50}, with a separate plot for each \% coarse addition.
+This figure demonstrates that for mixtures having equivalent coarse addition content, mixtures including larger coarse additions have less influence on LL and PL than finer particles.
+This finding aligns with those of Dumbleton and West (\protect\hyperlink{ref-Dumbleton1966b}{1966}), Sivapullaiah and Sridharan (\protect\hyperlink{ref-Sivapullaiah1985}{1985}), Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) and extends the concept to include particles \textgreater425 μm.
+
+Estimated toughness was also compared across mixtures.
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) defined soil toughness as the total work required to deform a specimen to failure at its plastic limit.
+Estimated toughness values \(T_{max}\) were computed from Equation \eqref{eq:moreno-marato-toughness-equation} for all mixtures in Experiment 1 and are plotted against coarse addition content in Figure \ref{fig:experiment-1-estimated-toughness}.
+The \(T_{max}\) estimates are of interest because they represent the influence of coarse addition particle size on the toughness of a soil mixture.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeALims/figs/pdf/experiment-1-estimated-toughness} 
+
+}
+
+\caption{Estimated toughness $T_{max}$ was markedly reduced by finer sands and silt. The toughness of mixtures containing coarser sands more closely resembled that of the pure clay.}\label{fig:experiment-1-estimated-toughness}
+\end{figure}
+
+All mixtures produced lower \(T_{max}\) than the kaolinitic clay alone. The estimate produced some negative values (a physical impossibility) but the trend is still of interest.
+When the percentage of coarse addition was low (≤40\%), estimated \(T_{max}\) was similar across mixtures having different-sized coarse additions.
+At ≥60\% coarse addition their estimated \(T_{max}\) were markedly different.
+A lone exception was the silt-sized material, which had lower \(T_{max}\) than mixtures with corresponding percentage of sand-size additions, even at just 20\% silt.
+
+At ≥60\% mixtures having the same coarse addition mass had markedly different estimated \(T_{max}\).
+For example, adding 70\% coarse additions in the 2000-1000 μm fraction only reduced \(T_{max}\) from 33.1 to 25.3 kJ m\textsuperscript{-3}, while the addition of 70\% particles between 250-150 μm or 150-53 μm reduced \(T_{max}\) to zero.
+
+Collectively, these estimates suggest that the toughness of two soil mixtures can differ even when the coarse addition content and PI values are similar.
+It follows that the toughness of a soil mixture may be controlled by adjusting the size of coarse additions.
+In this experiment, mixtures containing coarse sands could be dried to a lower water content before reaching the plastic limit.
+This allows the clay-water matrix to stiffen, yielding a higher toughness at the PL, while mixtures containing the finer sand or silt are more brittle and have lower toughness at their respective plastic limits.
+If higher toughness is a desired property of a mixture, it should be produced using the coarsest sand available.
+
+Two potential explanations for the observed phenomena have been described in the literature.
+Barnes (\protect\hyperlink{ref-Barnes2013}{2013}) suggested that toughness of soil mixtures could be explained by the number of contacts between coarse particles interacting within the clay-water matrix.
+The coarsest sand used in Experiment 1 had a D\textsubscript{50} of 1.4 mm. Assuming a
+specific gravity of 2.65, 1 gram of these particles comprises 260 individual grains.
+In contrast, the finest sand had a D\textsubscript{50} of 0.09 mm, representing \texttt{r} particles per gram - a factor of \textasciitilde3,800.
+It is likely that far more particle-to-particle contacts occur in mixes containing fine sands and silt.
+As the soil dries, the probability of these fine particles becoming lodged in an unstable configuration would be greater.
+More water is then required to separate the particles and allow them to slide past one another without crumbling (PL test) or slumping (LL test).
+This extra water results in higher water contents at both behavioral thresholds.
+
+Dumbleton and West (\protect\hyperlink{ref-Dumbleton1966b}{1966}) proposed that higher LL and PL for mixes including smaller coarse additions are due to their higher specific surface area (SSA).
+Specific surface area can be calculated for spherical particles as:
+
+\begin{equation}
+SSA = \frac{4~pi~r^2} {\frac{4}{3} ~ \pi ~ r^3 ~ \rho_p}
+\label{eq:specific-surface-area}
+\end{equation}
+
+where \(r\) is the particle radius and \(\rho_p\) is the particle density of the soil solids.
+
+In the present study, SSA for each coarse addition was computed using 2.65 Mg m\textsuperscript{3} for \(\rho_p\) and taking the D\textsubscript{50} of each material as the representative particle diameter.
+This computation yields SSA values of 15 m\textsuperscript{2} g\textsuperscript{-1} for the coarsest sand and 871 m\textsuperscript{2} g for the silt.
+This factor of 58 would seem sufficient to produce the observed disparities in water content among the mixtures.
+Most of the water associates with the clay phase, but some is clearly associated with the sand or silt.
+
+Figure \ref{fig:experiment-1-matrix-water-content-at-LL-and-PL} presents an alternative means to consider the water content at each behavioral threshold.
+The matrix water content \(w_{matrix}\) is computed by assuming all water is confined to voids between the particles in the clay matrix, and that none associates with the coarse addition.
+Note that this definition of \(w_{matrix}\) differs from that of Barnes (\protect\hyperlink{ref-Barnes2013}{2013}), who assumed that water associated only with particles \textless2μm (Equation \eqref{eq:barnes-matrix-water-content}).
+In the present research, \(w_{matrix}\) was computed as the mass of water per unit clay soil component:
+
+\begin{equation}
+w_{matrix} = \frac{w_{whole-soil}}{1 - m_{coarse~addition}}
+\label{eq:my-matrix-water-content}
+\end{equation}
+
+This is identical to the oversize correction and the linear law (Equations \eqref{eq:oversize-correction-formula} and \eqref{eq:linear-law-of-mixtures}).
+The horizontal lines in Figure \ref{fig:experiment-1-matrix-water-content-at-LL-and-PL} represent the water contents for the pure clay at its LL or PL.
+These lie at the same position as water contents predicted from the linear law.
+If the water associated only with the clay, \(w_{matrix}\)would fall directly on these horizontal lines.
+For the three finest size ranges, \(w_{matrix}\) at the PL actually exceeds the LL of the pure clay.
+This is observed by the position of the blue data points above the yellow dashed line.
+The sand and silt grains are contributing frictional resistance and consuming water in order to permit the soil thread to maintain its integrity.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{E:/OneDrive - The Pennsylvania State University/PSU2019-present/A_inf_soils_PhD/oversizeALims/figs/pdf/experiment-1-matrix-water-content-at-LL-and-PL} 
+
+}
+
+\caption{Matrix water contents at the LL and PL for Experiment 1.}\label{fig:experiment-1-matrix-water-content-at-LL-and-PL}
+\end{figure}
+
+The relevant finding from analyzing \(w_{matrix}\) is that the
+inclusion of larger coarse additions interfered less with the LL and PL tests than did particles currently allowed by ASTM D4318.
+
+\hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+
+LL and PL tests may be useful for evaluating baseball field soils because they directly enumerate soil behavior as a function of water content.
+Toughness is also of interest to baseball field managers because this property reduces surface deformation during play.
+
+This research compared the measured LL, PL, and estimated toughness of soil mixtures comprising a single clay mixed with varying ratios of coarse additions.
+All particle diameters of the three finest coarse additions fell below the maximum allowable diameter in standard test procedures (\textless425 μm), while the other three coarse additions included particles which would normally be removed from the sample prior to testing.
+
+Under the conditions of this study, the greatest deviations from the linear law occurred when the mixture was produced using silt-size or fine sand particles. Measured LL and PL were predicted more accurately by the linear law as the coarse addition particle size increased, even beyond the current 425 μm boundary.
+
+This research also showed that two soils containing an identical mass of coarse particles can generate similar PI values but result in different estimated toughness when the particles are of different sizes.
+
+Under the conditions of this study, the LL and PL predicted by the linear law more accurately aligned with measured values as the coarse addition particle diameter increased.
+The greatest deviations occurred when silt-size particles were added.
+
+These findings imply there is no detriment to allowing particles up to 2000 μm to remain in a sample during LL and PL tests, and that the data obtained in this way are equally or more indicative of bulk soil behavior in situ.
+Allowing these particles to remain also reduces processing time for soils containing particles up to 2 mm diameter.
+Together, these advantages could further the adoption and utility of these tests for evaluating infield soils.
+
+A limitation of the current study is that toughness was calculated and not measured.
+Ideally, future research would measure toughness directly using stress-strain curves.
+Additional work could also evaluate the effect of particle shape and particle-size uniformity of coarse additions \textgreater425 μm by producing mixtures with equivalent mean particle diameter but varied shape or uniformity.
+
+\hypertarget{data-availability}{%
+\section{Data availability}\label{data-availability}}
+
+Data are currently being uploaded to Dryad.
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-AASHTO2020a}{}}%
+AASHTO. 2020. {AASHTO T} 89-13, {Determining} the {Liquid Limit} of {Soils}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ASTMD15572015}{}}%
+ASTM. 2015. D1557 - 12e1 {Standard Test Methods} for {Laboratory Compaction Characteristics} of {Soil Using Modified Effort} (56,000 ft-lbf/Ft3/2,700 {kN-m}/M3). ASTM Standard Guide 3: 1--10. doi: \href{https://doi.org/10.1520/D1557-12.1}{10.1520/D1557-12.1}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ASTMD43182018}{}}%
+ASTM International. 2018. D4318-17, {Standard Test Methods} for {Liquid Limit}, {Plastic Limit}, and {Plasticity Index} of {Soils}. : 20. doi: \href{https://doi.org/10.1520/D4318-17E01.}{10.1520/D4318-17E01.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ASTMD2487-17}{}}%
+ASTM International. 2020. Standard {Practice} for {Classification} of {Soils} for {Engineering Purposes} ({Unified Soil Classification System}) {D2487-17}. doi: \href{https://doi.org/10.1520/D2487-17E01.2}{10.1520/D2487-17E01.2}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Atterberg1911}{}}%
+Atterberg, A. 1911. Die {Plastizität} der {Tone}. Intern mitt. boden: 4--37.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Barnes2009}{}}%
+Barnes, G.E. 2009. An apparatus for the plastic limit and workability of soils. Proceedings of the Institution of Civil Engineers-Geotechnical Engineering 162(3): 175--185. doi: \href{https://doi.org/10.1680/geng.2009.162.3.175}{10.1680/geng.2009.162.3.175}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Barnes2013}{}}%
+Barnes, G.E. 2013. The {Plastic Limit} and {Workability} of {Soils}. \url{https://www.escholar.manchester.ac.uk/api/datastream?publicationPid=uk-ac-man-scw:212752\&datastreamId=FULL-TEXT.PDF}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Brady2007}{}}%
+Brady, N.C., and R.C. Weil. 2007. The {Nature} and {Properties} of {Soils}. {Prentice Hall}, {Upper Saddle River, NJ}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Casagrande1932}{}}%
+Casagrande, A. 1932. Research on the {Atterberg} limits of soils. Public Roads 13(8): 121--136.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Casagrande1942}{}}%
+Casagrande, A. 1942. Control of soils for military construction.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Casagrande1947}{}}%
+Casagrande, A. 1947. Classification and identification of soils. Transactions of the American Society of Civil Engineers 113: 901--991.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Dumbleton1966a}{}}%
+Dumbleton, M.J. 1966. Some {Factors Affecting} the {Relation Between} the {Clay Minerals} in {Soils} and {Their Plasticity}. Clay Minerals 6(3): 179--193. doi: \href{https://doi.org/10.1180/claymin.1966.006.3.05}{10.1180/claymin.1966.006.3.05}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Dumbleton1966b}{}}%
+Dumbleton, M.J., and G. West. 1966. The influence of the coarse fraction on the plastic properties of clay soils- {RRL Report No}. 36. {Road Research Laboratory}, {Crowthorne, Berkshire}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Gee2002}{}}%
+Gee, G.W., and D. Or. 2002. Particle-size analysis. In: Dane, J.H. and Topp, C.G., editors, Methods of {Soil Analysis}: {Part} 4 {Physical Methods}. {Soil Science Society of America}, {Madison, WI}. p. 255--293
+
+\leavevmode\vadjust pre{\hypertarget{ref-GNU2020}{}}%
+GNU. 2020. \href{https://www.gnu.org/software/make/}{{GNU Make}}. {The GNU Project}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Guggenheim1995}{}}%
+Guggenheim, S., and R.T. Martin. 1995. Definition of clay and clay mineral: Joint report of the {AIPEA} nomenclature and {CMS} nomenclature committees. Clays and Clay Minerals 43(2): 255--256.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Holtz2010}{}}%
+Holtz, R.D., W.D. Kovacs, and T.C. Sheahan. 2010. An {Introduction} to {Geotechnical Engineering}. {Pearson}, {New York, NY}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ASTMInternational2015a}{}}%
+International, A. 2015. \href{https://doi.org/10.1520/D4718_D4718M-15}{Practice for {Correction} of {Unit Weight} and {Water Content} for {Soils Containing Oversize Particles}}. {ASTM International}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-McBride2002}{}}%
+McBride, R.A. 2002. \href{https://doi.org/10.2136/sssabookser5.4.c17}{Atterberg {Limits}}. In: Dane, J.H. and Topp, C.G., editors, Methods of {Soil Analysis}: {Part} 4 {Physical Methods}. {Soil Science Society of America}, {Madison, WI}. p. 389--398
+
+\leavevmode\vadjust pre{\hypertarget{ref-Moreno-Maroto2018}{}}%
+Moreno-Maroto, J.M., and J. Alonso-Azcárate. 2018. What is clay? {A} new definition of {``clay''} based on plasticity and its impact on the most widespread soil classification systems. Applied Clay Science 161: 57--63. doi: \href{https://doi.org/10.1016/j.clay.2018.04.011}{10.1016/j.clay.2018.04.011}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pettijohn2012}{}}%
+Pettijohn, P.E. Potter, and R. Siever. 2012. Sand and sandstone. {Springer Science \& Business Media}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-Core-Team2022}{}}%
+R-Core-Team. 2022. \href{https://www.r-project.org/}{R: {A} language and environment for statistical computing}. {R Foundation for Statistical Computing}, {Vienna, Austria}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Rehman2020}{}}%
+Rehman, H.U., N. Pouladi, M. Pulido-Moncada, and E. Arthur. 2020. Repeatability and agreement between methods for determining the {Atterberg} limits of fine-grained soils. Soil Science Society of America Journal 84(1): 21--30. doi: \href{https://doi.org/10.1002/saj2.20001}{10.1002/saj2.20001}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Schmitz2004a}{}}%
+Schmitz, R.M., C. Schroeder, and R. Charlier. 2004. Chemo-mechanical interactions in clay: {A} correlation between clay mineralogy and {Atterberg} limits. Applied Clay Science 26: 351--358. doi: \href{https://doi.org/10.1016/j.clay.2003.12.015}{10.1016/j.clay.2003.12.015}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Schroder2012}{}}%
+Schroder, E. 2012. Setting a realistic standard for infield mixes: Opinions from the experts. SportsTurf: 8--16. \url{https://sportsturfonline.com/2012/03/14/setting-a-realistic-standard-for-infield-mixes-opinions-from-the-experts/4637/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Seed1964a}{}}%
+Seed, H.B., R.J. Woodward, and R. Lundgren. 1964. Clay mineralogical aspects of the {Atterberg} limits. Journal of the Soil Mechanics and Foundations Division: Proceedings of the American Society of Civil Engineers 90(4): 107--131.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Simonson1999}{}}%
+Simonson, R.W. 1999. Sources of {Particle-Size Limits} for {Soil Separates}. Soil Horizons 40(2): 50. doi: \href{https://doi.org/10.2136/sh1999.2.0050}{10.2136/sh1999.2.0050}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Sivapullaiah1985}{}}%
+Sivapullaiah, P.V., and A. Sridharan. 1985. Liquid {Limit} of {Soil Mixtures}. Geotechnical Testing Journal 8(3): 111--116. doi: \href{https://doi.org/10.1520/gtj10521j}{10.1520/gtj10521j}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Spagnoli2018}{}}%
+Spagnoli, G., A. Sridharan, P. Oreste, D. Bellato, and L. Di Matteo. 2018. Statistical variability of the correlation plasticity index versus liquid limit for smectite and kaolinite. Applied Clay Science 156: 152--159. doi: \href{https://doi.org/10.1016/j.clay.2018.02.001}{10.1016/j.clay.2018.02.001}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-STMA2015}{}}%
+STMA. 2015. \href{https://www.stma.org/wp-content/uploads/2017/11/65d68a00-150d-457e-8708-dcb12717eecc.pdf}{Sports {Turf Managers Association} - {Management} of skinned infields}. {Sports Turf Managers Association}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Terzaghi1925}{}}%
+Terzaghi, K. 1925. Principles of {Soil Mechanics}: {II- Compressive Strength} of {Clay}. Eng. News Record 95(19): 796--800.
+
+\leavevmode\vadjust pre{\hypertarget{ref-USGA2018}{}}%
+USGA. 2018. Unites {States Golf Association} recommendations for a method of putting green construction.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wickham2019a}{}}%
+Wickham, H., M. Averick, J. Bryan, W. Chang, L. McGowan, et al. 2019. Welcome to the {Tidyverse}. JOSS 4(43): 1686. doi: \href{https://doi.org/10.21105/joss.01686}{10.21105/joss.01686}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Zwaska2007b}{}}%
+Zwaska, P. 2007. Infield {Soils} and {Topdressings} - {Part} 2. Sports Field Managers Association of New Jersey: 4--7.
+
+\end{CSLReferences}
+
+\end{document}

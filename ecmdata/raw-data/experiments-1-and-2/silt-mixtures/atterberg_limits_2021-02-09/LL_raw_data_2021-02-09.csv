@@ -1,0 +1,26 @@
+test_type,date,experiment_name,sample_name,batch_sample_number,tin_number,blow_count,tin_w_wet_sample,tin_w_OD_sample,tin_tare_set,comments
+LL,2021-02-09,Mancino_porcelain,mix_43,1,8,28,13.846,12.102,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_43,1,15,24,13.750,12.060,2020-05-24,note the wonky tin number....be sure to weigh in correct order
+LL,2021-02-09,Mancino_porcelain,mix_43,1,9,21,14.200,12.376,2020-05-24,note the wonky tin number....be sure to weigh in correct order
+LL,2021-02-09,Mancino_porcelain,mix_43,1,16,20,13.852,12.109,2020-05-24,note the wonky tin number....be sure to weigh in correct order
+LL,2021-02-09,Mancino_porcelain,mix_44,2,17,35,16.818,14.657,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_44,2,18,28,14.517,12.839,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_44,2,19,26,14.100,12.517,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_44,2,20,23,13.700,12.204,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_45,3,27,27,12.841,11.689,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_45,3,22,25,14.445,12.937,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_45,3,23,21,16.756,14.786,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_45,3,24,20,15.241,13.526,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_46,4,25,27,15.024,13.466,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_46,4,26,26,13.374,12.172,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_46,4,27,25,18.932,16.597,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_46,4,37,19,15.663,13.931,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_47,5,38,28,15.740,14.121,2020-05-24,-
+LL,2021-02-09,Mancino_porcelain,mix_47,5,42,19,14.823,13.286,2020-05-24,note tin numbers!!!!
+LL,2021-02-09,Mancino_porcelain,mix_47,5,40,21,13.958,12.688,2020-05-24,note tin numbers!!!!
+LL,2021-02-09,Mancino_porcelain,mix_47,5,41,21,13.095,11.966,2020-05-24,note tin numbers!!!!
+LL,2021-02-09,Mancino_porcelain,mix_48,6,39,35,14.689,13.224,2020-05-24,super frustrating but finally got a good pat made
+LL,2021-02-09,Mancino_porcelain,mix_48,6,43,33,12.866,11.750,2020-05-24,note tin numbers!!!!
+LL,2021-02-09,Mancino_porcelain,mix_48,6,44,29,13.746,12.423,2020-05-24,note tin numbers!!!!
+LL,2021-02-09,Mancino_porcelain,mix_48,6,45,25,12.103,11.089,2020-05-24,note tin numbers!!!!
+LL,2021-02-09,Mancino_porcelain,mix_48,6,59,21,21.586,20.065,2020-05-24,note tin numbers!!!!

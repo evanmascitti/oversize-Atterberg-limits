@@ -1,0 +1,12 @@
+Experiment,Variable,Fines mineralogy,Dominant size range \n of coarse addition (\u03bcm),Range of coarse addition mass \\%
+,,,,
+1,Particle size,kaolinite,2000-1000,"0, 20, 40, 60, 70, 75, 80"
+1,Particle size,kaolinite,1000-500,"0, 20, 40, 60, 70, 75, 80"
+1,Particle size,kaolinite,500-250,"0, 20, 40, 60, 70, 75, 80"
+1,Particle size,kaolinite,250-150,"0, 20, 40, 60, 70, 75, 80"
+1,Particle size,kaolinite,150-53,"0, 20, 40, 60, 70, 75, 80"
+1,Particle size,kaolinite,53-2,"0, 20, 40, 60, 70, 75, 80"
+2,Particle shape,kaolinite,1000-500,"0, 20, 40, 60, 70, 75, 80"
+2,Particle shape,kaolinite,1000-500,"0, 20, 40, 60, 70, 75, 80"
+3,Particle-size uniformity,illite + illite/smectite,2000-53,0-60 at 5% increments; 60-80 at 2.5\\% increments
+3,Particle-size uniformity,illite + illite/smectite,1000-150,0-60 at 5% increments; 60-80 at 2.5\\% increments

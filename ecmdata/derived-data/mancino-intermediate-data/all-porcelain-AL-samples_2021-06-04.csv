@@ -1,0 +1,106 @@
+sample_name,test_type,rep,tin_w_wet_sample,tin_w_OD_sample,tin_tare,comments
+1,AL,1,10.899,10.609,7.162,test performed 03-23 due to suspected poor data for specimens 24-25
+1,AL,2,13.286,12.717,7.231,test performed 03-23 due to suspected poor data for specimens 24-26
+1,AL,3,13.007,12.431,7.192,test performed 03-23 due to suspected poor data for specimens 24-27
+2,AL,1,12.284,11.769,7.115,test performed 03-23 due to suspected poor data for specimens 24-28
+2,AL,2,12.397,11.885,7.266,test performed 03-23 due to suspected poor data for specimens 24-29
+2,AL,3,11.738,11.279,7.25,test performed 03-23 due to suspected poor data for specimens 24-30
+3,AL,1,11.262,10.806,7.246,NA
+3,AL,2,10.044,9.703,7.179,NA
+3,AL,3,9.561,9.296,7.182,NA
+4,AL,1,13.285,12.52,7.214,NA
+4,AL,2,12.243,11.604,7.204,NA
+4,AL,3,12.087,11.482,7.25,NA
+5,AL,1,12.504,11.774,7.213,NA
+5,AL,2,10.63,10.143,7.234,NA
+5,AL,3,10.332,9.884,7.249,NA
+6,AL,1,12.139,11.457,7.182,NA
+6,AL,2,10.455,10.03,7.25,NA
+6,AL,3,10.559,10.106,7.165,NA
+7,AL,1,12.171,11.467,7.127,NA
+7,AL,2,11.021,10.54,7.285,NA
+7,AL,3,11.635,11.048,7.232,NA
+8,AL,1,13.468,12.585,7.097,NA
+8,AL,2,12.812,12.002,7.097,NA
+8,AL,3,14.103,13.123,7.056,NA
+9,AL,1,13.205,12.388,7.214,NA
+9,AL,2,12.901,12.088,7.204,NA
+9,AL,3,12.518,11.767,7.166,NA
+10,AL,1,11.608,10.967,7.157,NA
+10,AL,2,11.783,11.132,7.246,NA
+10,AL,3,11.93,11.213,7.179,NA
+16,AL,1,22.748,22.089,7.25,don't feel too solid about this test. Very difficult to discern adhesion limit with such coarse particles.
+16,AL,2,15.431,15.104,7.165,don't feel too solid about this test. Very difficult to discern adhesion limit with such coarse particles.
+16,AL,3,15.761,15.431,7.127,don't feel too solid about this test. Very difficult to discern adhesion limit with such coarse particles.
+17,AL,1,NA,NA,NA,NA
+17,AL,2,NA,NA,NA,NA
+17,AL,3,NA,NA,NA,NA
+18,AL,1,NA,NA,NA,NA
+18,AL,2,NA,NA,NA,NA
+18,AL,3,NA,NA,NA,NA
+19,AL,1,16.813,16.25,7.097,"hard to say for this one too. It seems like a film of the small particles will stick to your skin or tool, but the whole soil lump will not."
+19,AL,2,12.13,11.812,7.056,"hard to say for this one too. It seems like a film of the small particles will stick to your skin or tool, but the whole soil lump will not."
+19,AL,3,17.198,16.602,7.214,"hard to say for this one too. It seems like a film of the small particles will stick to your skin or tool, but the whole soil lump will not."
+20,AL,1,13.716,13.219,7.204,"hard to say for this one too. It seems like a film of the small particles will stick to your skin or tool, but the whole soil lump will not."
+20,AL,2,19.843,19.013,7.166,"hard to say for this one too. It seems like a film of the small particles will stick to your skin or tool, but the whole soil lump will not."
+20,AL,3,20.286,19.25,7.157,"hard to say for this one too. It seems like a film of the small particles will stick to your skin or tool, but the whole soil lump will not."
+21,AL,1,12.629,12.233,7.127,NA
+21,AL,2,14.383,13.871,7.285,NA
+21,AL,3,13.854,13.377,7.232,NA
+22,AL,1,13.235,12.819,7.097,NA
+22,AL,2,12.293,11.851,7.097,NA
+22,AL,3,9.962,9.757,7.056,NA
+23,AL,1,16.067,15.222,7.214,NA
+23,AL,2,9.896,9.708,7.204,NA
+23,AL,3,10.163,9.866,7.166,NA
+24,AL,1,11.609,11.018,7.157,NA
+24,AL,2,11.878,11.252,7.246,NA
+24,AL,3,10.793,10.306,7.179,NA
+25,AL,1,13.179,12.333,7.182,NA
+25,AL,2,14.899,13.797,7.151,NA
+25,AL,3,15.899,14.778,7.211,NA
+26,AL,1,18.147,17.624,7.127,note that the tins are out of order
+26,AL,2,16.852,16.312,7.285,note that the tins are out of order
+26,AL,3,16.461,15.881,7.232,note that the tins are out of order
+27,AL,1,23.747,22.713,7.097,note that the tins are out of order
+27,AL,2,18.432,17.796,7.097,note that the tins are out of order
+27,AL,3,NA,NA,7.056,spilled the tin so data were lost
+28,AL,1,20.475,20.209,7.214,note that the tins are out of order
+28,AL,2,16.079,15.56,7.204,note that the tins are out of order
+28,AL,3,17.421,16.822,7.166,note that the tins are out of order
+29,AL,1,16.223,15.685,7.157,note that the tins are out of order
+29,AL,2,22.239,21.306,7.246,note that the tins are out of order
+29,AL,3,NA,NA,7.179,spilled the tin so data were lost
+30,AL,1,11.455,11.092,7.249,note that the tins are out of order
+30,AL,2,17.218,16.042,7.182,note that the tins are out of order
+30,AL,3,14.589,14.06,7.25,note that the tins are out of order
+37,AL,1,13.184,12.022,7.299,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+37,AL,2,13.543,12.226,7.242,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+37,AL,3,12.917,11.837,7.053,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+38,AL,1,13.184,12.022,7.299,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+38,AL,2,13.543,12.226,7.242,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+38,AL,3,12.917,11.837,7.053,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+39,AL,1,13.184,12.022,7.299,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+39,AL,2,13.543,12.226,7.242,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+39,AL,3,12.917,11.837,7.053,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+40,AL,1,13.184,12.022,7.299,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+40,AL,2,13.543,12.226,7.242,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+40,AL,3,12.917,11.837,7.053,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+41,AL,1,13.184,12.022,7.299,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+41,AL,2,13.543,12.226,7.242,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+41,AL,3,12.917,11.837,7.053,all the same sample. Have to replicate so the zero pct sand data point shows up properly in the facets
+12,AL,1,12.802,11.979,7.165,-
+12,AL,2,12.419,11.636,7.127,-
+12,AL,3,12.457,11.697,7.285,-
+13,AL,1,11.919,11.226,7.232,-
+13,AL,2,14.367,13.273,7.097,-
+13,AL,3,12.82,11.962,7.097,-
+11,AL,4,12.062,11.337,7.115,-
+11,AL,5,13.255,12.374,7.266,-
+11,AL,6,11.46,10.802,7.25,-
+14,AL,4,13.157,12.25,7.223,-
+14,AL,5,12.925,12.048,7.198,-
+14,AL,6,12.014,11.324,7.162,-
+15,AL,4,12.903,12.039,7.097,-
+15,AL,5,12.959,12.094,7.246,-
+15,AL,6,11.531,10.868,7.179,-

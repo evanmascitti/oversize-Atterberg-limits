@@ -1,0 +1,61 @@
+Baseball infield soils are commonly manufactured by blending a washed sand with a finer-grained soil. 
+The behavior of these soils is markedly affected by their water content so the Atterberg limits may offer a useful means to evaluate these soils. 
+Previous research has demonstrated that liquid and plastic limits (LL and PL) of sand-clay mixtures are affected by the quantity and type of the admixed sand. 
+Prior work has focused on the particle size of the sand, but these studies have used sand additions exclusively <425 &mu;m due to the oversize removal requirement in ASTM D4318.
+Little attention has been given to the angularity and particle-size uniformity of the sand component, particularly for sand exceeding the 425 mu;m boundary.
+
+
+This research was conducted to evaluate the effect of sand particle angularity and sand-size uniformity on the Atterberg limits of soil mixtures containing a range of sand contents and having a significant mass percentage of sand >425 &mu;m. 
+
+
+Experiment 1 compared the effect of mixing either an angular or a round sand with kaolinitic clay at sand contents 0-80%. 
+Each sand contained particles only 0.5-1.0 mm. 
+Little difference was observed in the LL and PL, suggesting sand particle shape plays a minimal role on mix performance.
+
+
+Experiment 2 compared the effect of sand size uniformity on LL and PL. 
+Two sands having similar D~50~ values (`r`` and `r` mm) but varying uniformity (uniformity coefficients of `r experiment_3_Cu_values[["low_Cu"]]` and `r experiment_3_Cu_values[["high_Cu"]]`) were mixed with an illitic clay at sand contents 0-80%.
+The high-C~u~ sand had higher LL and PL for equivalent sand content.
+The increase in water content was roughly equal (~1 %) for both LL and PL, so little change in plasticity index occured.
+Mixtures produced with the high-C~u~ sand maintained their plasticity to higher sand content than those produced with the low-C~u~ sand.
+Calculations for the threshold fines content (TFC) and intergranular porosity ($n_{sa}$) indicated mixtures including the high-C~u~ sand could remain plastic up to a greater sand content (~`r max_testable_sand_contents$high_Cu_max_rollable_sand_pct`%) than mixtures including the low-C~u~ sand (~`r max_testable_sand_contents$low_Cu_max_LL_testable_sand_pct`%).
+These calculations agreed closely with the experiments, indicating a potential to estimate the threshold fines content from sand properties alone. 
+
+
+Results from this research compliment other work demonstrating that particles with sieve diameter 2000-425 μm need not be removed for Atterberg limit tests. 
+The effect of particle shape was minimal, and while the uniformity effect was measurable, it is still small compared with that of the dominant particle size. 
+Uniformity had a more notable influence on the sand content marking a boundary between plastic and nonplastic behavior.
+
+
+____
+
+A little shorter version 
+
+The Atterberg limits may offer a useful means to evaluate baseball infield soils because they define changes in soil behavior as a function of water content. 
+Previous research has demonstrated that liquid and plastic limits (LL and PL) of sand-clay mixtures are affected by the quantity and type of admixed sand. 
+Prior work has focused on sand particle size, but these studies have used sand additions exclusively <425 &mu;m.
+Little attention has been devoted to sand angularity and sand-size uniformity, particularly for particles exceeding 425 mu;m.
+
+
+This research was conducted to clarify the effect of sand angularity and sand-size uniformity on the Atterberg limits of soil mixtures containing a range of sand contents and a significant mass percentage >425 &mu;m. 
+
+
+Experiment 1 compared the effect of mixing either an angular or a round sand (both 0.5-1 mm) with kaolinitic clay at sand contents 0-80%. 
+Little difference was observed in LL and PL, suggesting angularity plays a minimal role on mix performance.
+
+
+Experiment 2 compared the effect of sand-size uniformity on LL and PL. 
+Two sands having similar D~50~ values (`r`` and `r` mm) but varying uniformity (uniformity coefficients of `r experiment_3_Cu_values[["low_Cu"]]` and `r experiment_3_Cu_values[["high_Cu"]]`) were mixed with an illitic clay at sand contents 0-80%.
+The high-C~u~ sand had higher LL and PL for equivalent sand content but the increase in water content was roughly equal (~1 %) for both limits, so little change in plasticity index occurred.
+Mixtures produced with the high-C~u~ sand maintained their plasticity to higher sand content (~`r max_testable_sand_contents$high_Cu_max_rollable_sand_pct`%) than those produced with the low-C~u~ sand (~`r max_testable_sand_contents$low_Cu_max_LL_testable_sand_pct`%).
+
+Calculations for the threshold fines content (TFC) and intergranular porosity ($n_{sa}$) agreed closely with the experiments, indicating a potential to estimate TFC from sand properties alone. 
+
+
+Results from this research compliment other work demonstrating that sand 2000-425 μm can be included when performing Atterberg limit tests. 
+The effect of sand angularity was minimal.
+The uniformity effect was measurable, but it was small compared with that of total sand content.
+Uniformity had a more notable influence on the sand content marking the boundary between plastic and nonplastic behavior.
+
+___
+

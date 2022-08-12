@@ -1,0 +1,20 @@
+---
+title: "Part 2 equations only"
+date: "compiled `r Sys.Date()`"
+output:
+  bookdown::word_document2:
+    reference_docx: "oversizeAttLims-paper_word-doc-template.docx"
+    number_sections: false
+---
+
+
+\begin{equation}
+C_u = \frac{D_{60}}{D_{10}}
+(\#eq:Cu-equation)
+\end{equation}
+
+___
+
+
+
+

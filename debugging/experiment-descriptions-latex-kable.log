@@ -1,0 +1,347 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.3.19)  12 APR 2022 10:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**experiment-descriptions-latex-kable.tex
+(./experiment-descriptions-latex-kable.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs
+.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen139
+\lightrulewidth=\dimen140
+\cmidrulewidth=\dimen141
+\belowrulesep=\dimen142
+\belowbottomsep=\dimen143
+\aboverulesep=\dimen144
+\abovetopsep=\dimen145
+\cmidrulesep=\dimen146
+\cmidrulekern=\dimen147
+\defaultaddspace=\dimen148
+\@cmidla=\count189
+\@cmidlb=\count190
+\@aboverulesep=\dimen149
+\@belowrulesep=\dimen150
+\@thisruleclass=\count191
+\@lastruleclass=\count192
+\@thisrulewidth=\dimen151
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.s
+ty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count193
+\LTcapwidth=\dimen152
+\LT@head=\box50
+\LT@firsthead=\box51
+\LT@foot=\box52
+\LT@lastfoot=\box53
+\LT@gbox=\box54
+\LT@cols=\count194
+\LT@rows=\count195
+\c@LT@tables=\count196
+\c@LT@chunks=\count197
+\LT@p@ftn=\toks16
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen153
+\ar@mcellbox=\box55
+\extrarowheight=\dimen154
+\NC@list=\toks17
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box56
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
+.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count198
+\multirow@dima=\skip56
+\bigstrutjot=\dimen155
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
+ty
+\wrapoverhang=\dimen156
+\WF@size=\dimen157
+\c@WF@wrappedlines=\count199
+\WF@box=\box57
+\WF@everypar=\toks18
+Package: wrapfig 2003/01/31  v 3.6
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count266
+\float@exts=\toks19
+\float@box=\box58
+\@float@everytoks=\toks20
+\@floatcapt=\box59
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl
+.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.st
+y
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: xetex.def on input line 149.
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xete
+x.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+))
+\everycr=\toks21
+\minrowclearance=\skip57
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflsca
+pe.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.s
+ty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics
+.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/grap
+hics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+))
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx
+.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+))
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth
+.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box60
+\sift@deathcycles=\count267
+\@vwid@loff=\dimen158
+\@vwid@roff=\dimen159
+)
+\c@taburow=\count268
+\tabu@nbcols=\count269
+\tabu@cnt=\count270
+\tabu@Xcol=\count271
+\tabu@alloc=\count272
+\tabu@nested=\count273
+\tabu@target=\dimen160
+\tabu@spreadtarget=\dimen161
+\tabu@naturalX=\dimen162
+\tabucolX=\dimen163
+\tabu@Xsum=\dimen164
+\extrarowdepth=\dimen165
+\abovetabulinesep=\dimen166
+\belowtabulinesep=\dimen167
+\tabustrutrule=\dimen168
+\tabu@thebody=\toks22
+\tabu@footnotes=\toks23
+\tabu@box=\box61
+\tabu@arstrutbox=\box62
+\tabu@hleads=\box63
+\tabu@vleads=\box64
+\tabu@cellskip=\skip58
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/th
+reeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box65
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/t
+hreeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.s
+ty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimsp
+aces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks24
+)
+\TPTL@width=\skip59
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box66
+\UL@hyphenbox=\box67
+\UL@skip=\skip60
+\UL@hook=\toks25
+\UL@height=\dimen169
+\UL@pe=\count274
+\UL@pixel=\dimen170
+\ULC@box=\box68
+Package: ulem 2019/11/18
+\ULdepth=\dimen171
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell
+.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen172
+\c@nlinenum=\count275
+\TeXr@lab=\toks28
+)
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+! Undefined control sequence.
+<recently read> \n 
+                   
+l.17 \n
+       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+(c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
+nd-xetex.def
+File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
+ (|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count276
+\l__color_backend_stack_int=\count277
+\g__color_backend_stack_int=\count278
+\g__graphics_track_int=\count279
+\l__pdf_internal_box=\box69
+\g__pdf_backend_object_int=\count280
+\g__pdf_backend_annotation_int=\count281
+\g__pdf_backend_link_int=\count282
+) (./experiment-descriptions-latex-kable.aux)
+\openout1 = `experiment-descriptions-latex-kable.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+8.
+ (c:/Users/ecm200/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 23.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 23.
+
+Overfull \hbox (464.61006pt too wide) in paragraph at lines 23--52
+ [][] 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{docmument}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \end{docmument}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.53 \end{docmument}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+)
+! Emergency stop.
+<*> experiment-descriptions-latex-kable.tex
+                                           
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 3199 strings out of 478179
+ 54452 string characters out of 5852813
+ 350602 words of memory out of 5000000
+ 23794 multiletter control sequences out of 15000+600000
+ 469381 words of font info for 31 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 70i,11n,76p,285b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

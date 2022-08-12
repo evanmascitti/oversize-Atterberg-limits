@@ -1,0 +1,7 @@
+expt_sand_number,sand_name,sand_size,rep,cylinder_ID,sand_configuration,preparation_method,compaction_lifts,compaction_moisture,filled_wt,ht_reading_raw,ht_reading_corrected_mm,tin_tare_set,tin_number,tin_w_wet_sample,tin_w_OD_sample,experiment_number
+9,Granusil_4095,1.0-0.5 mm,1,1,loose,funnel_pour,1,air_dry,460.4,-,-,2020-05-24,-,-,-,2
+9,Granusil_4095,1.0-0.5 mm,2,1,loose,funnel_pour,1,air_dry,452.16,-,-,2020-05-24,-,-,-,2
+9,Granusil_4095,1.0-0.5 mm,3,1,loose,funnel_pour,1,air_dry,453.45,-,-,2020-05-24,-,-,-,2
+2,Mancino_angular,1.0-0.5 mm,1,1,loose,funnel_pour,1,air_dry,426.83,-,-,2020-05-24,-,-,-,1
+2,Mancino_angular,1.0-0.5 mm,2,1,loose,funnel_pour,1,air_dry,430.41,-,-,2020-05-24,-,-,-,1
+2,Mancino_angular,1.0-0.5 mm,3,1,loose,funnel_pour,1,air_dry,417.76,-,-,2020-05-24,-,-,-,1

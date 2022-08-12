@@ -1,0 +1,13 @@
+date,experiment_name,protocol_ID,sample_name,replication,batch_sample_number,bouyoucos_cylinder_number,Gs,beaker_tare_set,microns,beaker_number,beaker_mass_w_OD_sample,comments
+2021-03-06,oversizeAlims,1,fireborn-porcelain,1,1,1,2.7,2021-01-15,20,1,49.471,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,1,1,1,2.7,2021-01-15,5,2,50.892,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,1,1,1,2.7,2021-01-15,2,3,50.440,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,1,1,1,2.7,2021-01-15,0.2,4,50.989,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,2,2,2,2.7,2021-01-15,20,5,51.487,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,2,2,2,2.7,2021-01-15,5,6,49.274,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,2,2,2,2.7,2021-01-15,2,7,48.786,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,2,2,2,2.7,2021-01-15,0.2,8,50.704,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,3,3,3,2.7,2021-01-15,20,9,50.673,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,3,3,3,2.7,2021-01-15,5,10,49.795,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,3,3,3,2.7,2021-01-15,2,11,49.335,-
+2021-03-06,oversizeAlims,1,fireborn-porcelain,3,3,3,2.7,2021-01-15,0.2,12,50.440,-

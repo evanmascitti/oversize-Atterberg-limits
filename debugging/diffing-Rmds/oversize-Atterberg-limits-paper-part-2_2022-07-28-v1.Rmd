@@ -1,0 +1,507 @@
+---
+title:  "Influence of coarse additions on the plasticity and toughness of soil mixtures, Part II: Effect of sand angularity and sand size uniformity."
+date: "last compiled `r ecmfuns::ecm_timestamp()`"
+mainfont: Roboto
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: false
+    includes:
+      in_header: preamble.tex
+  officedown::rdocx_document:
+    reference_docx: "oversizeAttLims-paper_word-doc-template.docx"
+    number_sections: false
+    tables:
+      caption:
+        pre: 'Table '
+bibliography: [library.bib, packages.bib]
+csl: soil-science-society-of-america-journal.csl
+linestretch: 1.5
+links-as-notes: false
+papersize: letter
+link-citations: true
+urlcolor: blue
+linkcolor: blue
+toccolor: blue
+mathfont: Fira Math Regular
+---
+
+<!-- Note that in the text of this paper, two experiments are referenced. -->
+<!-- The original deal was having everything in one paper. So the experiments  -->
+<!-- are numbered 1-3. All the data analyses was done with this in mind.  -->
+<!-- So the dynamic number references in this paper all refer to experiments  2, and 3 -->
+<!-- when in fact they are referring to what are (for this paper) termed  -->
+<!-- experiments 1 and 2. A little confusing but leaving it this way  -->
+<!-- will be much, much simpler than trying to re-do all the dynamic references, -->
+<!-- figures, etc.  -->
+
+\linenumbers
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F, message = F,
+                    fig.align = 'center',
+                    dpi = 72,
+                    out.width = '90%')
+
+knitr::opts_knit$set(root.dir = here::here())
+
+options(
+  knitr.graphics.rel_path = FALSE,
+  knitr.kable.NA = "-"
+)
+
+library(purrr)
+```
+
+
+<!-- need to load some variables that will be dynamically referenced in the abstract  -->
+
+
+```{r load-uniformity-experiment-Cu-values}
+# read and unload the list into global environment, then delete the 
+# original list to reduce environment clutter
+uniformity_experiment_d_x_values <- readr::read_rds(
+file = here::here(
+  "ecmdata/derived-data/dynamic-number-references/uniformity-experiment-dx-values.rds"
+)
+)
+
+uniformity_experiment_d_50_values <- uniformity_experiment_d_x_values$uniformity_experiment_d_50_values
+uniformity_experiment_Cu_values <- uniformity_experiment_d_x_values$uniformity_experiment_Cu_values
+```
+
+```{r load-max-testable-sand-contents}
+max_testable_sand_contents <- readr::read_rds(
+  file = "./ecmdata/derived-data/dynamic-number-references/uniformity-experiment-max-testable-sand-contents.rds") %>% 
+   map(~format(100 * ., digits = 3, drop0trailing = TRUE))
+
+```
+
+
+
+```{r load-shape-experiment-pure-clay-atterberg-limit-values}
+
+shape_experiment_pure_clay_atterberg_limit_values <- readr::read_rds(
+here::here('ecmdata/derived-data/dynamic-number-references/shape-experiment-pure-clay-atterberg-limit-values.rds'))
+
+```
+
+
+```{r load-uniformity-experiment-pure-clay-atterberg-limit-values}
+uniformity_experiment_pure_clay_atterberg_limit_values <- readr::read_rds(
+here::here('ecmdata/derived-data/dynamic-number-references/uniformity-experiment-pure-clay-atterberg-limit-values.rds')
+)
+```
+
+
+
+
+# Abstract 
+
+The Atterberg limits may offer a useful means to evaluate baseball infield soils because they quantitatively relate soil behavior to water content. 
+Prior research has demonstrated that liquid and plastic limits (LL and PL) of sand-clay mixtures are affected by the quantity and type of admixed sand, but these studies have used <425 &mu;m sand exclusively and little attention has been devoted to sand angularity and sand-size uniformity. 
+
+
+This research was conducted to clarify the effect of sand angularity and sand-size uniformity on the Atterberg limits of soil mixtures containing a range of sand contents and a significant mass percentage 425-2000 &mu;m. 
+
+
+Experiment 1 compared the effect of mixing either an angular or a round sand (both 0.5-1 mm) with a kaolinitic clay at sand contents between 0 and 80%. 
+Little difference was observed in LL and PL, suggesting angularity plays a minimal role on mix performance.
+
+
+<!-- Experiment 2 compared the effect of sand-size uniformity on LL and PL.  -->
+Experiment 2 compared the effect of mixing one of two sands having similar D~50~ (`r uniformity_experiment_d_50_values[["low_Cu"]]` and `r uniformity_experiment_d_50_values[["high_Cu"]]` mm) but varying uniformity (uniformity coefficients of `r uniformity_experiment_Cu_values[["low_Cu"]]` vs. `r uniformity_experiment_Cu_values[["high_Cu"]]`) with an illitic clay at sand content 0-80%.
+<!-- The high-C~u~ sand had slightly higher LL and PL at equivalent sand content. -->
+Mixtures including the high-C~u~ sand maintained their plasticity to higher sand content (~`r max_testable_sand_contents$high_Cu_max_rollable_sand_pct`%) than those produced with the low-C~u~ sand (~`r max_testable_sand_contents$low_Cu_max_rollable_sand_pct`%).
+
+Calculations for the threshold fines content (TFC) and intergranular porosity agreed closely with the experiments, indicating a potential to estimate TFC from sand porosity alone. 
+
+
+<!-- This research demonstrated the effect of sand angularity on LL and PL was minimal. -->
+<!-- The uniformity effect was measurable, but it was small compared with that of total sand content. -->
+<!-- Uniformity had a more notable influence on the sand content separating plastic and nonplastic mixtures.  -->
+
+
+
+# Introduction 
+
+
+The Atterberg limits are used by geotechnical engineers to classify fine-grained soils [@ASTMInternational2017] and predict their behavior upon loading.
+These tests include the liquid limit (LL) and plastic limit (PL).
+The tests were developed for fine-grained soils, but research has shown the amount and properties of admixed sand also affects the test results [@Dumbleton1966b; @Sivapullaiah1985; @Barnes2013; @Atterberg1911]. 
+Particle angularity and particle-size uniformity are known to affect the behavior of granular materials, but their effects are less clear for soils which contain significant amounts of fines  [@Holtz2010; @Miller2011; @Mitchell1993; @Mittal2004; @Zuo2015].
+
+
+<!-- ## Prior research on Atterberg limits of soils having varied sand angularity   -->
+## Atterberg limits of soils having varied sand angularity  
+
+Particle angularity is defined as the relative protrusion (roughness) of a particle surface [@Wadell1932]. 
+<!-- Mathematical definitions are used in a variety of scientific areas,  -->
+Mathematical definitions have been used to quantify angularity, although it is often estimated using representative charts developed from the metrics  [@Wadell1932; @Suhr2020; @Krumbein1941].
+
+
+Research on the importance of sand angularity in soil mixtures has produced mixed results. 
+@Dumbleton1966b evaluated mixtures of various types of coarse particles with either kaolinite or montmorillonite. 
+This research demonstrated that mixtures including angular sand had higher LL and PL relative to mixtures produced with equivalent amounts of glass  spheres.
+@Dumbleton1966b postulated that angular particles had more surface area compared to the spheres, requiring additional water to coat their surfaces before they could slide or flow past one another.
+
+
+Findings by @Sivapullaiah1985 differ from those of @Dumbleton1966b.
+@Sivapullaiah1985 mixed either angular or round particles of the same size fraction (150 μm – 75 μm) with bentonite clay at sand contents ranging from 20-95 %. 
+@Sivapullaiah1985 reported no difference in the liquid or plastic limits due to angularity.
+
+## Atterberg limits of soils having varied sand uniformity
+
+Particle-size uniformity, or more simply "uniformity," is defined as the similarity of diameters across particles within a soil. 
+The coefficient of uniformity (C~u~) is a commonly used mathematical definition [@Holtz2010; @Adams1994]. 
+C~u~ is the ratio between the particle diameters at which 60% and 10% of the sample is finer:
+
+\begin{equation}
+C_u = \frac{D_{60}}{D_{10}}
+(\#eq:Cu-equation)
+\end{equation}
+
+Little research is available on the effect of sand uniformity on the Atterberg limits of soil mixtures.
+This is probably because the upper boundary of allowed particle sizes in ASTM D4318 (425 &mu;m) limits the total range of sand particle diameters.
+@Dumbleton1966b reported that mixes produced using non-uniform sand had similar Atterberg limits to mixes containing sand from a single mesh size.
+However, all the sand in their experiment was between 425 and 53 &mu;m, limiting the potential variability in uniformity. 
+Efficient particle packing - defined as the ability of smaller particles to fit comfortably in the voids between larger particles - is limited when the majority of particle diameters fall within a factor of 10 [@Lade1998].
+It is possible that a larger uniformity effect on LL and PL would be observed if coarser sand were included in the mixture to create a higher C~u~.
+
+<!-- Sand-size uniformity may play a role in governing the behavior of mixed-grain soils.  -->
+At very low sand contents, angularity and uniformity are probably unimportant because the sand grains are suspended in a clay-water matrix and do play an insignificant role in transmitting loads through the soil skeleton. 
+At higher sand contents, the coarse grains begin to contact one another and the nature of these contacts will affect the behavior of the bulk soil [@Zuo2015; @Mitchell1993].
+As sand content continues to increase, the soil becomes nonplastic because plasticity is not observed in soils dominated by granular particles [@Holtz2010; @Mitchell1993].
+The behavior transition between sand-like and fines-like behavior occurs at a fines content termed the threshold fines content (TFC) [@Zuo2015; @Sibley2020].
+
+
+Because less-uniform sands have less total void space, one could expect these sands to require a lesser proportion of fines to fill their interstices, compared with a more uniform sand. 
+Therefore, sand uniformity could conceivably alter the upper limit of sand content at which the soil will exhibit plasticity.
+
+<!-- The authors are unaware of any other research on mixtures containing sand with lower C~u~.  -->
+
+# Objectives 
+
+<!-- The Atterberg limits may offer a useful way to evaluate baseball infield soils because soil water content is an important consideration for field managers [@Schroder2009; @Zwaska1999]. -->
+Recent research has demonstrated that the LL and PL tests can be performed on soils containing a significant amount of particles 2000-425 &mu;m  (Mascitti and McNitt, this issue).
+<!-- Baseball infield soils often contain significant quantities of sand in this range. -->
+It is unclear what effect sand shape and uniformity play on the Atterberg limits of soil mixtures containing these coarser sands.
+<!-- , and how they may translate to the the behavior of infield soils in situ. -->
+
+The present research was conducted to answer two questions:
+
+1. How does sand particle angularity affect LL and PL of sand-clay mixtures when total sand content and sand particle size are held constant?
+
+
+1. How does sand-size uniformity affect LL and PL of sand-clay mixtures when total sand content and _average_ sand particle size (D~50~) are held constant?
+
+
+
+<!-- 1. How does sand particle angularity (angular vs. round) affect LL and PL of sand-clay mixtures when total sand content and sand particle size are held constant? -->
+
+
+<!-- 1. How does sand-size uniformity (uniform vs. non-uniform) affect LL and PL of sand-clay mixtures when total sand content and _average_ sand particle size (D~50~) are held constant? -->
+
+
+<!-- 1. Do the effects of particle angularity or uniformity interact with sand content? -->
+
+
+<!-- 1. Do the effects of particle angularity or uniformity change as a function of sand content? -->
+
+
+# Materials and methods
+
+Two experiments were conducted to evaluate the effects of sand angularity and uniformity on the Atterberg limits of soil mixtures containing a range of sand contents.
+
+
+## Mixture component characterization
+
+The minimum and maximum void ratios of the sand components used in each experiment were characterized using modified versions of ASTM [-@ASTMF1815-11; -@ASTMInternational2016].
+In the minimum void ratio test , a single lift of sand was dynamically compacted using a specified drop weight. 
+In the maximum void ratio test, the sand was carefully poured into a container of known volume and leveled with a straight edge. 
+
+
+The liquid and plastic limit of each clay component were determined individually using ASTM D4318 [@ASTMD43182018].
+The LL of the kaolinitic clay used in Experiment 1 was `r shape_experiment_pure_clay_atterberg_limit_values$LL` and its PL was `r shape_experiment_pure_clay_atterberg_limit_values$PL`, yielding a plasticity index of `r shape_experiment_pure_clay_atterberg_limit_values$PI`.
+The PL of the illitic clay soil used in Experiment 2 was `r uniformity_experiment_pure_clay_atterberg_limit_values$PL` and its LL was `r uniformity_experiment_pure_clay_atterberg_limit_values$LL`, yielding a PI of `r uniformity_experiment_pure_clay_atterberg_limit_values$PI`. 
+The particle size distribution of the illitic clay soil used in Experiment 2 is also shown in Figure \@ref(fig:uniformity-experiment-particle-size-curves).
+
+
+
+
+## Mixing procedure
+
+All mixture components were air-dried and their water contents were determined gravimetrically.
+The clay components were pulverized and passed though 0.25 mm screen.
+Sands were mixed by hand with the relevant clay component until visually homogeneous.
+The mixture component percentages were adjusted for the trace amounts of particles 2000-53 &mu;m in the clay components. 
+Final mixture percentages are expressed as oven-dry mass.
+
+
+## Treatments 
+
+
+
+Experiment 1 evaluated mixtures containing equivalent amounts of one of two sands having varying angularity.
+Two sands were selected based on their classification as angular and well-rounded.
+The sands were visually classified using a microscope and the chart from @Baker2006a (Figure \@ref(fig:sand-photomicrographs)). 
+Each sand was then repeatedly sieved to remove particles <0.5 mm and >1 mm. 
+The single-mesh sands were mixed with a kaolinitic clay to yield mixtures having 0, 20, 40, 60, 70, 75, and 80 % sand.
+
+
+```{r sand-photomicrographs, fig.cap='Angular (A.) and well-rounded (B.) sands used for Experiment 1.'}
+knitr::include_graphics(
+  here::here(
+'figs', 'png', 'image-figs', 'sand-photo-micrographs.png')
+)
+```
+
+```{r load-uniformity-experiment-dx-values}
+
+uniformity_experiment_d_x_values <- readr::read_rds(
+file = here::here(
+  "ecmdata/derived-data/dynamic-number-references/uniformity-experiment-dx-values.rds"
+)
+)
+
+uniformity_experiment_d_50_values <- uniformity_experiment_d_x_values$uniformity_experiment_d_50_values
+uniformity_experiment_Cu_values <- uniformity_experiment_d_x_values$uniformity_experiment_Cu_values
+
+```
+
+
+Experiment 2 evaluated the effect of sand-size uniformity for mixtures containing one of two sands having similar D~50~ but varying C~u~.
+The two sands were produced from a single washed concrete sand having a wide particle size distribution. 
+The original concrete sand was sieved to remove all particles >1 mm and <0.25 mm.
+The remaining fraction between 1 and 0.5 mm was riffled into two aliquots.
+The first aliquot remained untouched and is termed the "low-C~u~ sand".
+The second aliquot, termed the "high-C~u~ sand", had a portion of the removed particles (>1 mm and <0.25 mm) returned.
+This procedure created a wider particle-size distribution while maintaining a similar D~50~.
+Figure \@ref(fig:uniformity-experiment-particle-size-curves) shows the particle size distributions of the low-C~u~ and high-C~u~ sands.
+These sands meet the criteria of having similar D~50~ values (`r uniformity_experiment_d_50_values[["low_Cu"]]` mm and `r uniformity_experiment_d_50_values[["high_Cu"]]` mm) but different C~u~ values (`r uniformity_experiment_Cu_values[["low_Cu"]]` vs. `r uniformity_experiment_Cu_values[["high_Cu"]]`). 
+While the C~u~ value of `r uniformity_experiment_Cu_values[["high_Cu"]]` is still relatively low compared to natural alluvial sands, in this experiment the maximum obtainable C~u~ was limited by the maximum particle diameter of 2000 &mu;m and the intentionally limited mass of particles <425 &mu;m. 
+
+
+
+<!-- Treatments included sand content and C~u~ and each sand was mixed several ratios ... -->
+
+
+Each of these sands were mixed with a single illitic clay soil to yield mixtures having between 0 and 80% sand, for a total of 42 mixtures. 
+Mixtures were produced at 5% sand content intervals between 0 and 50%, and a 2.5% interval between 50 and 80% sand.
+The increased spacing of data points between 50-80% sand was designed to provide better resolution near the threshold fines content. 
+
+
+```{r uniformity-experiment-particle-size-curves, fig.cap='Particle size distributions for the two sands and one clay used in Experiment 2. Dashed grey lines indicate $D_{50}$ for each sand.'}
+ecmfuns::insert_fig('uniformity-experiment-particle-size-curves')
+```
+
+
+## Atterberg limit test protocol
+
+After mixing the sand with the relevant clay component, LL and PL tests were performed on a series of mixtures to evaluate the effect of sand angularity or uniformity.
+
+The liquid and plastic limit tests were performed according to a modified version of ASTM D4318 [@ASTMD43182018].
+The modification eliminated the wet-sieving procedure so particles between 2000 and 425 &mu;m remained in the sample (Mascitti and McNitt, this issue). 
+At least four data points were collected during the LL test in order to plot the flow curve.
+In the PL test, 3 threads were rolled to the crumbling condition before being weighed to &pm; 0.001 g and oven-dried. 
+In both experiments the average of the 3 results was used to represent the PL of each sample.
+
+
+## Statistical analysis and computational environment
+
+LL and PL were the dependent variables in both experiments. 
+A two-way ANOVA model was fitted to test the interaction effect between particle shape and percent sand (Table \@ref(tab:shape-experiment-anova-table))
+In Experiment 1, particle shape was considered a categorical predictor while a 2nd-order polynomial spline term was used to model percent sand as a continuous predictor. 
+<!-- consuming a single degree of freedom (i.e. covariate). -->
+In Experiment 2, C~u~ was considered a categorical predictor while percent sand was treated as in Experiment 1. 
+Main effects and interactions were tested using Type III Sums of Squares.
+Treatments were considered significantly different at &alpha; = 0.05.
+
+
+All analyses were performed using the `lm()` function in the R Language for Statistical Computing (version `r stringr::str_extract(sessionInfo()$R.version$version.string, "(?<=R\\sversion\\s)[\\dd\\.]*(?=\\s)")`) [@R-Core-Team2022].
+GNU `Make` [@GNU2020] was used to facilitate reproducible analyses by maintaining links between raw data, analysis code, and finished output.
+Raw data and analysis code are included in the supplemental materials. 
+
+<!-- \clearpage -->
+
+
+# Results and discussion
+
+
+## Experiment 1: Effect of sand angularity
+
+Experiment 1 compared the effect of angularity for two sands of equal size ranging from 0-80% sand. 
+Figure \@ref(fig:shape-experiment-atterberg-limit-facets) shows that the LL and PL were nearly identical for sand content <60%.
+At sand content &ge; 60%, a very slight increase in both LL and PL is visible for the angular sand, but this increase was not statistically significant.
+
+
+```{r experiment-2-dynamic-numbers}
+largest_experiment_2_diff <- readr::read_rds(
+here::here(
+  'ecmdata/derived-data/dynamic-number-references/experiment-2-differences.rds'
+)
+)
+```
+
+
+<!-- The interaction effect between particle shape and sand percent was small and not statistically significant. -->
+The maximum difference between angular and round sand for any of the tests was `r largest_experiment_2_diff` % water content.
+Under the conditions of this study, particle angularity is not important when sand size and sand contents are held constant. 
+
+
+```{r shape-experiment-atterberg-limit-facets, fig.cap='The effect of particle shape on both the LL and PL tests was minimal.'}
+ecmfuns::insert_fig('experiment-2-atterberg-limit-facets')
+```
+
+
+```{r shape-experiment-anova-table, tab.cap="Analysis of variance table for each characteristic water content in Experiment 1.", tab.id ="shape-experiment-anova-table", tab.cap.style = "Table Caption"}
+
+# This effect was not significant and I don't think
+# it's important to show, as the difference is 
+# obviously small. Leaving the code here in case omebody asks me to put the table in. 
+
+# update, May 5th, I put it back in now that we have split the paper up into 2 parts.
+
+source(
+here::here(
+  'src/R/table-generation/shape-experiment-ANOVA-table.R'
+)
+)
+if(knitr::is_latex_output()){shape_experiment_anova_tables$latex_kable}
+if(knitr::is_html_output()){shape_experiment_anova_tables$html_kable}
+if(!knitr::is_html_output() && !knitr::is_latex_output()){shape_experiment_anova_tables$word_flextable}
+```
+
+## Experiment 2: Effect of sand-size uniformity
+
+
+### Uniformity effect on LL and PL 
+
+
+```{r uniformity-experiment-sand-contents-count}
+
+# as of 2022-05-10 not using this any more...not really important to count 
+# them as the point is pretty obvious from the plots.
+
+uniformity_experiment_atterberg_limits_data <- readr::read_rds(here::here('ecmdata/derived-data/cleaned-rds-files/uniformity-experiment-atterberg-limits-cleaned-data.rds') )
+
+n_uniformity_experiment_sand_contents <- uniformity_experiment_atterberg_limits_data %>% 
+purrr::pluck('sand_pct') %>% 
+unique() %>% 
+length()
+
+n_uniformity_experiment_high_Cu_w_exceeding_low_Cu <- uniformity_experiment_atterberg_limits_data %>% 
+tidyr::pivot_wider(
+  id_cols = c(sand_pct, test_type),
+  names_from = sand_name,
+  values_from = water_content
+)%>% 
+dplyr::mutate(
+  high_Cu_w_greater = high_Cu_Quickcrete > low_Cu_Quickcrete
+) %>% 
+dplyr::group_by(test_type) %>% 
+dplyr::filter(high_Cu_w_greater) %>% 
+dplyr::count()
+n_uniformity_experiment_high_Cu_w_exceeding_low_Cu_LL <- purrr::pluck(n_uniformity_experiment_high_Cu_w_exceeding_low_Cu[n_uniformity_experiment_high_Cu_w_exceeding_low_Cu$test_type == "LL", 'n'], 'n')
+n_uniformity_experiment_high_Cu_w_exceeding_low_Cu_PL <- purrr::pluck(n_uniformity_experiment_high_Cu_w_exceeding_low_Cu[n_uniformity_experiment_high_Cu_w_exceeding_low_Cu$test_type == "PL", 'n'], 'n')
+
+```
+
+
+<!-- The LL and PL of both mixtures including either sand were inversely proportional, up tpo to the higher end of the range of sand contents tested. -->
+The LL and PL of both mixtures including either sand were inversely proportional to sand content, up to the higher end of the range (~65-70%%), above which the relationship is less clear. 
+Both sands in Experiment 2 were relatively coarse (D~50~ of  `r uniformity_experiment_d_50_values[["low_Cu"]]` and `r uniformity_experiment_d_50_values[["high_Cu"]]` mm), and the strong inverse relationship agrees with other research on mixtures containing coarse sand (Mascitti and McNitt, Part I, this issue).
+
+Mixtures produced with low-C~u~ sand had higher LL and PL than those produced using high-C~u~ sand (Figure \@ref(fig:uniformity-experiment-atterberg-limit-facets)).
+This small effect was statistically significant for the LL but not for the PL (Table \@ref(tab:uniformity-experiment-anova-table)).
+Although this effect is measurable, it is probably of little practical significance because the differences were almost always <1% water content.
+The sand content was more influential on LL and PL than was sand uniformity.
+Also, while only a single clay was tested, the effect of varying clay plasticity would likely affect LL and PL to a greater degree than varying the C~u~ of the sand.
+
+@Dumbleton1966b suggested that observed differences in LL and PL due to sand particle size were attributable to higher specific surface area (SSA).
+The nonlinear relationship between SSA and particle diameter dictates means requires that the low-C~u~ sand would consume more water and increase the water content of the clay matrix.
+
+
+```{r uniformity-experiment-atterberg-limit-facets, fig.cap='The high-Cu sand had higher LL and PL than the low-Cu sand at nearly all sand contents.'}
+ecmfuns::insert_fig('uniformity-experiment-atterberg-limit-facets')
+```
+
+```{r uniformity-experiment-anova-table, tab.cap="Analysis of variance table for each characteristic water content in Experiment 2. Significant effects at α=0.05 in bold.", tab.id ="uniformity-experiment-anova-table", tab.cap.style = "Table Caption"}
+source(
+here::here(
+  'src/R/table-generation/uniformity-experiment-ANOVA-table.R'
+)
+)
+if(knitr::is_latex_output()){uniformity_experiment_tables$latex_kable}
+if(knitr::is_html_output()){
+  uniformity_experiment_tables$html_kable
+  } else{uniformity_experiment_tables$word_flextable}
+```
+
+
+### Uniformity effect on apparent threshold fines content
+
+
+A more interesting feature of Experiment 2 was that the mixtures containing different C~u~ sands became nonplastic at different sand contents.
+Low-C~u~ sand mixes containing 70, 72.5, and 75% sand could not be rolled into threads, but high-C~u~ mixes at these sand contents still had measurable plastic limits.
+These observations suggest that the threshold fines content is affected by sand uniformity and merits further study.
+Calculations for the TFC and real soil behavior observed in experiments rarely coincide [@Zuo2015]. 
+However, little attention has been paid to soil mixtures containing plastic fines as opposed to nonplastic silt or two granular materials.
+While not replicated or tested across multiple clay types, further research may demonstrate that TFC can be accurately computed from the minimum void ratio of a sand without performing time-consuming experiments. 
+
+
+# Conclusions
+
+
+<!-- In Experiment 1, the LL and PL of mixtures containing equivalent sand content but varying uniformity were virtually identical.  -->
+
+<!-- In Experiment 1, mixtures containing equivalent sand content of varying uniformity had similar LL and PL.  -->
+
+<!-- Experiment 1 showed no difference in LL and PL were almost indistinguishable for mixtures containing equivalent sand content with varying uniformity. -->
+
+In Experiment 1, no differences were found in LL and PL between mixtures containing sands of varying uniformity but equivalent sand content.
+
+
+<!-- In Experiment 2, Low-C~u~ mixtures had significantly higher LL compared to high-C~u~ mixtures having equivalent sand content.  -->
+<!-- In Experiment 2, LL and PL of low-C~u~ mixtures were significantly higher than those of high-C~u~ mixtures having equivalent sand content.  -->
+In Experiment 2, LL of low-C~u~ mixtures were significantly greater than LL of high-C~u~ mixtures with equivalent sand content. 
+An analogous trend was observed for PL, but the effect was not significant. 
+These trends could be due to the higher specific surface area of the high-C~u~ sand. 
+
+
+Mixtures produced with the high-C~u~ sand sand became nonplastic at relatively lower sand content.
+This suggests the threshold fines content (marking a transition between plastic and nonplastic behavior) could potentially be computed from the void ratio of the sand alone.
+
+
+Future research could evaluate potential interactions between sand uniformity and clays of varying plasticity. 
+
+
+Additional work could investigate mixtures using less-uniform sands to determine whether a predictive model could use void ratio, C~u~ and/or other sand properties to accurately estimate TFC. 
+
+
+<!-- Higher plasticity clays may consume more water and  -->
+
+<!-- The results of this research can aid soil suppliers and grounds managers in measuring and predicting the performance of baseball infield soils.  -->
+
+
+# Conflict of interest 
+
+The authors declare that there are no conflicts of interest. 
+
+# Author contributions 
+
+<!-- use the tenzing package to auro-generate the Markdown text  -->
+<!-- see <https://marton-balazs-kovacs.github.io/tenzing/articles/local_use.html> -->
+```{r author-contributions}
+
+#tenzing::read_contributors_table()
+#contributions_tbl <- 
+
+#print_credit_roles(contributors_table = my_contributors_table, initials = TRUE, order_by = "contributor")
+```
+
+
+
+# References

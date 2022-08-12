@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+
+*.pdf
+*.png
+*.PNG
+*.jpg
+*.jpeg
+*.JPG
+*.svg
+
+ecmdata/raw-data/imported-from-old-directories/

@@ -1,0 +1,11 @@
+expt_sand_number,sand_name,sand_size,rep,cylinder_ID,sand_configuration,preparation_method,compaction_lifts,compaction_moisture,filled_wt,ht_reading_raw,ht_reading_corrected_mm,tin_number,tin_w_wet_sample,tin_w_OD_sample,experiment_number
+7,high_Cu_Quickcrete,-,1,1,loose,funnel_pour,1,air_dry,424.01,-,-,-,-,-,3
+7,high_Cu_Quickcrete,-,2,1,loose,funnel_pour,1,air_dry,423.21,-,-,-,-,-,3
+7,high_Cu_Quickcrete,-,3,1,loose,funnel_pour,1,air_dry,432.73,-,-,-,-,-,3
+7,high_Cu_Quickcrete,-,4,2,loose,funnel_pour,2,air_dry,419.27,-,-,-,-,-,3
+7,high_Cu_Quickcrete,-,5,3,loose,funnel_pour,3,air_dry,419.29,-,-,-,-,-,3
+8,low_Cu_Quickcrete,-,1,1,loose,funnel_pour,1,air_dry,404.21,-,-,-,-,-,3
+8,low_Cu_Quickcrete,-,2,1,loose,funnel_pour,1,air_dry,400.86,-,-,-,-,-,3
+8,low_Cu_Quickcrete,-,3,1,loose,funnel_pour,1,air_dry,399.75,-,-,-,-,-,3
+8,low_Cu_Quickcrete,-,4,1,loose,funnel_pour,2,air_dry,400.6,-,-,-,-,-,3
+8,low_Cu_Quickcrete,-,5,1,loose,funnel_pour,3,air_dry,402.32,-,-,-,-,-,3

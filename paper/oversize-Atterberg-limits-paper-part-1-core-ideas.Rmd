@@ -1,0 +1,46 @@
+---
+title:  "Coarse additions affect plasticity and toughness of soil mixtures, Part I: Particle size"
+date: "last compiled `r ecmfuns::ecm_timestamp()`"
+mainfont: Roboto
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    number_sections: false
+    includes:
+      in_header: preamble.tex
+  officedown::rdocx_document:
+    reference_docx: "oversizeAttLims-paper_word-doc-template.docx"
+    number_sections: false
+    tables:
+      caption:
+        pre: 'Table '
+bibliography: [library.bib, packages.bib]
+csl: soil-science-society-of-america-journal.csl
+linestretch: 1.5
+links-as-notes: false
+papersize: letter
+link-citations: true
+urlcolor: blue
+linkcolor: blue
+toccolor: blue
+mathfont: Fira Math Regular
+toc: false
+---
+
+
+# Core ideas 
+
+1. Particles 2000-425 µm do not interfere with the liquid and plastic limits.
+
+1. Mixtures containing "oversize" particles behave more predictably than mixtures allowed by the current protocols
+
+1. Estimated soil toughness is positively related to coarse addition particle size.
+
+1. Particles 2000-425 µm should be left in the soil when comparing infield soils via Atterberg limit tests.
+
+
+
+
+
+
+mak

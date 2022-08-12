@@ -1,0 +1,37 @@
+test_type,date,experiment_name,sample_name,batch_sample_number,replication,tin_number,tin_w_wet_sample,tin_w_OD_sample,tin_tare_set,comments
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_1,1,1,49,17.089,16.638,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_1,1,2,50,17.144,16.722,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_1,1,3,51,17.066,16.64,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_2,2,1,52,17.69,17.156,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_2,2,2,53,17.1,16.691,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_2,2,3,54,17.311,16.842,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_3,3,1,55,20.338,19.593,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_3,3,2,56,19.12,18.539,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_3,3,3,57,19.478,18.865,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_4,4,1,58,18.405,17.747,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_4,4,2,59,19.292,18.511,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_4,4,3,60,18.961,18.217,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_5,5,1,61,17.318,16.966,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_5,5,2,62,18.685,18.188,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_5,5,3,63,19.217,18.651,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_6,6,1,64,18.22,17.808,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_6,6,2,65,18.496,18.036,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_6,6,3,66,19.159,18.671,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_7,7,1,67,19.486,18.656,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_7,7,2,68,20.731,19.736,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_7,7,3,69,19.35,18.499,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_8,8,1,70,-,-,2020-05-24,cannot be rolled out
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_8,8,2,71,-,-,2020-05-24,cannot be rolled out
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_8,8,3,72,-,-,2020-05-24,cannot be rolled out
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_9,9,1,73,19.376,18.867,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_9,9,2,74,17.42,17.133,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_9,9,3,75,18.229,17.845,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_10,10,1,76,-,-,2020-05-24,cannot be rolled out
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_10,10,2,77,-,-,2020-05-24,cannot be rolled out
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_10,10,3,78,-,-,2020-05-24,cannot be rolled out
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_11,11,1,79,17.8,17.317,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_11,11,2,80,18.919,18.275,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_11,11,3,81,18.566,17.986,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_12,12,1,82,17.076,16.826,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_12,12,2,83,17.157,16.882,2020-05-24,-
+PL,2020-09-06,Quickcrete_Cu_Casselman,mix_12,12,3,84,17.998,17.675,2020-05-24,-
